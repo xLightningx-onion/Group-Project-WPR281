@@ -223,15 +223,14 @@
                             </tr>
                             <tr>
                                 <td><label for="StatusAdd">Status: </label></td>
-                                <td><select name="StatusAdd" id="StatusAdd">
-                                    <option value="">--Please choose an option--</option>
-                                    <option value="New">New</option>
-                                    <option value="Assigned">Assigned</option>
-                                    <option value="Open">Open</option>
-                                    <option value="Fixed">Fixed</option>
-                                    <option value="Pending Retest">Pending Retest</option>
-                                    <option value="Retest">Retest</option>
-                                    <option value="Closed">Closed</option>
+                                <td><select name="StatusAdd" id="StatusAdd" default="--Please Choose An Option--">
+  
+                                    <option value="todo">To Do</option>
+                                    <option value="progress">In Progress</option>
+                                    <option value="review">Review</option>
+                                    <option value="done">Done</option>
+
+
                                 </select></td>
                             </tr>
                             <tr>

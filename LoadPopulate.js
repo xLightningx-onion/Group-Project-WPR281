@@ -2,6 +2,7 @@
 let ProjectNewID;
 let ProjectNewName;
 let ProjectNewDescription ;
+let ProjectNewStatus;
 let ProjectNewType;
 let addProjectLoad;
 let populateOnce;
@@ -17,43 +18,46 @@ function Populate()
 
    
 
-
+ProjectNewStatus = "todo";
 ProjectNewID = 1;
 ProjectNewName = "Button";
 ProjectNewDescription="Ensure Alignment of all buttons" ;
 ProjectNewType = "Project";
-addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType};
+addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType,ProjectStatus:ProjectNewStatus};
 localStorage.setItem(ProjectNewID,JSON.stringify(addProjectLoad));
 
 
 
-
+ProjectNewStatus = "todo";
 ProjectNewID = 2;
 ProjectNewName = "Color";
 ProjectNewDescription="Ensure All Colors are Complimentary" ;
 ProjectNewType = "Project";
-addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType};
+addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType,ProjectStatus:ProjectNewStatus};
 localStorage.setItem(ProjectNewID,JSON.stringify(addProjectLoad));
 
+ProjectNewStatus = "todo";
 ProjectNewID = 3;
 ProjectNewName = "TextBoxes";
 ProjectNewDescription="Ensure Alignement of TextBox text" ;
 ProjectNewType = "Project";
-addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType};
+addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType,ProjectStatus:ProjectNewStatus};
 localStorage.setItem(ProjectNewID,JSON.stringify(addProjectLoad));
 
+ProjectNewStatus = "todo";
 ProjectNewID =4;
 ProjectNewName = "Text";
 ProjectNewDescription="Ensure Alignement of Text" ;
 ProjectNewType = "Project";
-addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType};
+addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType,ProjectStatus:ProjectNewStatus};
 localStorage.setItem(ProjectNewID,JSON.stringify(addProjectLoad));
 
+ProjectNewStatus = "todo";
 ProjectNewID =5;
 ProjectNewName = "functions";
 ProjectNewDescription="Ensure all functions are accessible by button onclicks" ;
 ProjectNewType = "Project";
-addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType};
+addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType,ProjectStatus:ProjectNewStatus};
 localStorage.setItem(ProjectNewID,JSON.stringify(addProjectLoad));
 
 
