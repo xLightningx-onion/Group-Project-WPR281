@@ -1,0 +1,38 @@
+.four-col-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.column{
+    margin-right: 5%;
+    background-color: #99d9eb;
+    border-radius: 10px;
+}
+.column h4{
+    margin-left: 5%;
+}
+.projects-wrapper{
+    margin: 2%;
+}
+.project-info{
+    
+    background-color: #DAF4FB;
+    padding: 5%;
+    margin-bottom: 3%;
+}
+.status-bar{
+    align-items: center;
+}
+.status-bar img{
+    width: 40%;
+    height: auto;
+    float: left;
+    margin: 9% 5% 0% 5%;
+}
+.employee img{
+    border-radius: 50%;
+    width: 50%;
+}
+.Ticket p{
+    float: left;
+}

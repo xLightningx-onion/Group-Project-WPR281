@@ -1,0 +1,32 @@
+.center{
+    text-align: center;
+}
+.content-body{
+   background-color: #99d9eb;
+   border-radius: 10px; 
+   padding: 1%;
+   width: 30%;
+   margin: auto;
+}
+.input-wrapper{
+    background-color: #DAF4FB;
+    padding: 5%;
+    margin: auto;
+    
+    
+}
+
+.input-wrapper li{
+    list-style: none;
+    margin-bottom: 1%;
+}
+.three-col-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    margin: auto;
+}
+.three-col-grid button{
+    background-color: #99d9eb;
+    padding: 2%;
+}

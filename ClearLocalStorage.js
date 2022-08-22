@@ -1,0 +1,6 @@
+
+function ClearStorage()
+{
+    localStorage.clear();
+    
+}

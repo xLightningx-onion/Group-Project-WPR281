@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/add.css">
+    <link rel="stylesheet" href="./css/board.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <script src="./javasctipt/pageDisplay.js"></script>
+    <script src="AddProject.js"></script>
+    <script src="ClearLocalStorage.js"></script>
+   
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="main-two-col">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                        <img src="./images/antivirus.png" alt="">
+                        <h1>Baking Bad</h1>
+                        <div class="clear"></div>  
+                </div>
+                <div class="side-nav">
+                    <img src="./images/project-management.png" alt="">
+                    <a id="1" href="#" onclick="projects()" >Projects</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="side-nav">
+                    <img src="./images/board.png" alt="">
+                    <a id="2" class="active" href="#" onclick="board()">Board</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="side-nav">
+                    <img src="./images/report.png" alt="">
+                    <a id="3" href="#" onclick="ticket()">Tickets</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="side-nav">
+                    <img src="./images/bug.png" alt="">
+                    <a id="4" href="#" onclick="bugs()">Bugs</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="side-nav">
+                    <img src="./images/add-item.png" alt="">
+                    <a id="5" href="#" onclick="projectAdd()">Add project</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="side-nav">
+                    <img src="./images/add-user.png" alt="">
+                    <a id="6" href="#" onclick="addEmployee()">Add employee</a> 
+                    <div class="clear"></div>
+                </div>
+                <div>
+                    <button onclick="ClearStorage()">Clear local storage</button>
+                </div>
+            </div>
+            <div class="content" id="Board" >
+                <div class="content-header">
+                    <h1>Board</h1>
+                    <div class="four-col-grid">
+                        <div class="column">
+                            <div class="col-header" id="col1" name="col1">
+                                <h4>TO DO</h4>
+                            </div>
+                                <div class="projects-wrapper" id="projectsWrapper" name="projectsWrapper">
+                                    <div class="project-info" id="projectInfo" name="projectInfo">
+                                        <div class="project-header" id="projectHeader" name="projectHeader">
+                                            <h3 id="ProjectName">Project Name</h3>
+                                        </div>
+                                        <div class="project-body" id="ProjectBody" name="ProjectBody">
+                                            <p class="projectDesc" id="projectDesc">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, totam?
+                                            </p>
+                                        </div>
+                                        <div class="four-col-grid status-bar">
+                                            <div class="Status">
+                                                <img src="./images/reported.png" alt="">
+                                            </div>
+                                            <div class="Error">
+                                                <img src="./images/buglogo.png" alt="">
+                                            </div>
+                                            <div class="Ticket">
+                                                <p id="TicketID">105</p>
+                                            </div>
+                                            <div class="employee">
+                                                <img src="./images/employee2.jpg" alt="">
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                   
+                        </div>
+                        <div class="column">
+                            <div class="col-header" id="col2" name="col2">
+                                <h4>IN PROGRESS</h4>
+                            </div> 
+                        </div>
+                        <div class="column">
+                            <div class="col-header" id="col3" name="col4">
+                                <h4>IN REVIEW</h4>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="col-header" id="col4" name="col4">
+                                <h4>DONE</h4>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hide" id="AddEmployee">
+                <div class="content-header center">
+                    <h1>Add an employee</h1>
+                </div>
+                <div class="content-body">
+                    <div class="input-wrapper">
+                        <table>
+                            <tr>
+                              <td><label for="EmployeeIdAdd">Employee ID: </label></td>
+                              <td><input type="text" name="EmployeeIdAdd" id="EmployeeIdAdd"></td>  
+                            </tr>
+                            <tr>
+                                <td><label for="EmployeeFirstNameAdd">First Name: </label></td>
+                                <td><input type="text" name="EmployeeFirstNameAdd" id="EmployeeFirstNameAdd"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="EmployeeLastNameAdd">Last Name: </label></td>
+                                <td><input type="text" name="EmployeeLastNameAdd" id="EmployeeLastNameAdd"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="EmployeeEmailAdd">Email :</label></td>
+                                <td><input type="email" name="EmployeeEmailAdd" id="EmployeeEmailAdd"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="EmployeeUserNameAdd">Username: </label></td>
+                                <td><input type="text" name="EmployeeUserNameAdd" id="EmployeeUserNameAdd"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="EmployeeProfilePicAdd"></label></td>
+                                <td><input type="file" name="EmployeeProfilePicAdd" id="EmployeeProfilePicAdd"></td>
+                            </tr>
+                        </table>
+                        <div class="three-col-grid">
+                            <div>
+                                <button type="button">ADD</button>
+                            </div>
+                            <div>
+                                <button type="button">SAVE</button>
+                            </div>
+                            <div>
+                                <button type="button">DELETE</button>
+                            </div>
+                        </div>
+                        </div>        
+                    </div> 
+                </div>                
+                </div>
+            </div>
+            <div class="hide" id="Projects">
+                <div class="content-header">
+                    <h1>Projects</h1>
+                    <div class="search">
+                        <input type="text" placeholder="Search...">
+                        <button><img src="./images/search-interface-symbol.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <div class="three-col border size" id="ProjectList">
+                        <div class="table-header">
+                            <h4>Project ID</h4>
+                        </div>
+                        <div class="table-header">
+                            <h4>Project Name</h4>
+                        </div>
+                        <div class="table-header">
+                            <h4>Short Description</h4>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="hide" id="Ticket">
+                <div class="content-header center">
+                    <h1>Add a Ticket</h1>
+                </div>
+                <div class="content-body">
+                    <div class="input-wrapper">
+                        <table>
+                            <tr>
+                              <td><label for="ProjectIdTicketAdd">Project ID: </label></td>
+                              <td><input type="text" name="ProjectIdTicketAdd" id="ProjectIdTicketAdd"></td>  
+                            </tr>
+                            <tr>
+                                <td><label for="BugNameAdd">Bug Name: </label></td>
+                                <td><input type="text" name="BugNameAdd" id="BugNameAdd"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="BugShortDescAdd">Short Description: </label></td>
+                                <td><textarea name="BugShortDescAdd" id="BugShortDescAdd" cols="22" rows="5"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><label for="BugLongDescAdd">Long Description: </label></td>
+                                <td><textarea name="BugLongDescAdd" id="BugLongDescAdd" cols="22" rows="10"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><label for="AssignedEmployee">Employee Assigned: </label></td>
+                                <td><input type="text" name="AssignedEmployee" id="AssignedEmployee"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="FoundByAdd"></label>Found By: </td>
+                                <td><input type="text" name="FoundByAdd" id="FoundByAdd"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="DateFoundAdd">Date Found:</label></td>
+                                <td><input type="date" name="DateFoundAdd" id="DateFoundAdd"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="StatusAdd">Status: </label></td>
+                                <td><select name="StatusAdd" id="StatusAdd">
+                                    <option value="">--Please choose an option--</option>
+                                    <option value="New">New</option>
+                                    <option value="Assigned">Assigned</option>
+                                    <option value="Open">Open</option>
+                                    <option value="Fixed">Fixed</option>
+                                    <option value="Pending Retest">Pending Retest</option>
+                                    <option value="Retest">Retest</option>
+                                    <option value="Closed">Closed</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="PriorityAdd">Priority: </label></td>
+                                <td><select name="PriorityAdd" id="PriorityAdd">
+                                    <option value="">--Please choose an option--</option>
+                                    <option value="High">High</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Low">Low</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="TargetDateAdd">Target Date: </label></td>
+                                <td><input type="date" name="TargetDateAdd" id="TargetDateAdd"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="ActualDateAdd">Actual Date:</label></td>
+                                <td><input type="date" name="ActualDateAdd" id="ActualDateAdd"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="ResolutionSummaryAdd">Resolution Summary: </label></td>
+                                <td><textarea name="ResolutionSummaryAdd" id="ResolutionSummaryAdd" cols="22" rows="5"></textarea></td>
+                            </tr>
+                        </table>
+                        <div class="three-col-grid">
+                            <div>
+                                <button type="button">ADD</button>
+                            </div>
+                            <div>
+                                <button type="button">SAVE</button>
+                            </div>
+                            <div>
+                                <button type="button">DELETE</button>
+                            </div>
+                        </div>
+                        </div>        
+                    </div> 
+                </div>          
+            </div>
+            <div class="hide" id="ProjectAdd">
+                <div class="content-header center">
+                    <h1>Add a Project</h1>
+                </div>
+                <div class="content-body">
+                    <div class="input-wrapper">
+                        <table>
+                            <tr>
+                              <td><label for="ProjectId">Project ID: </label></td>
+                              <td><input type="text" name="ProjectId" id="ProjectIdAdd"></td>  
+                            </tr>
+                            <tr>
+                                <td><label for="ProjectNameAdd">Project Name: </label></td>
+                                <td><input type="text" name="ProjectNameAdd" id="ProjectNameAdd"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="ProjectShortDescAdd">Short Description: </label></td>
+                                <td><textarea name="ProjectShortDescAdd" id="ProjectShortDescAdd" cols="22" rows="5"></textarea></td>
+                            </tr>
+                            
+                        </table>
+                        <div class="three-col-grid">
+                         <!--
+                            
+                            <div>
+                                <button type="button">ADD</button>
+                            </div>
+                        -->
+                            <div>
+                                <button type="button" onclick="addProject()">SAVE</button>
+                            </div>
+                            <!--
+                            <div>
+                                <button type="button">DELETE</button>
+                            </div>
+                             -->
+                        </div>
+                    </div>        
+                </div> 
+            </div> 
+            <div class="hide" id="Bugs">
+                <div class="content-header">
+                    <h1>Bugs</h1>
+                    <div class="search">
+                        <input type="text" placeholder="Search...">
+                        <button><img src="./images/search-interface-symbol.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <div class="twelve-col-grid size">
+                        <div class="table-header">
+                            <h4>Project ID</h4>
+                        </div>
+                        <div class="table-header">
+                            <h4>Bug Name</h4>
+                        </div>
+                        <div class="table-header">
+                            <h4>Short Description</h4>
+                        </div>
+                        <div class="table-header">
+                            <h4>long Description</h4>
+                        </div>
+                        <div class="table-header">
+                            <h4>Employee Assigned</h4>
+                        </div>
+                        <div class="table-header">
+                            <h4>Found By</h4>
+                        </div>
+                        <div class="table-header">
+                            <h4>Date Found</h4>
+                        </div>
+                        <div class="table-header">
+                            <h4>Status</h4>
+                        </div>
+                        <div class="table-header">
+                            <h4>Priority</h4>
+                        </div>
+                        <div class="table-header">
+                            <h4>Target Date</h4>
+                        </div>
+                        <div class="table-header">
+                            <h4>Actual Date</h4>
+                        </div>
+                        <div class="table-header">
+                            <h4>Resolution Summary</h4>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div> 
+    </div>
+    <script src="LoadPopulate.js"></script>
+  
+</body>
+</html>
