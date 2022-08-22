@@ -72,6 +72,7 @@ _italics like this_
 
 size is provided for the content of table using dash (-), no of dashes represent the size of that particular column, any character/word typed cannot exceed the size provided using dashes.
 
+
 ---
 
 ## We can Create Lists
