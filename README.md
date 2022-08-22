@@ -1,3 +1,27 @@
+
+Coding Practices
+every bug project user etc etc... every object needs to have a property called 
+# ProjectType
+
+Project type must contain
+# Project
+# User
+# Bug
+
+bugs and projects need to have status which has to contain only
+
+# todo
+# progress
+# review
+# done
+
+
+
+
+
+
+
+
 # I Am A Heading
 
 ## I am a second Heading
