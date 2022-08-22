@@ -7,6 +7,8 @@ Project type must contain
 # User
 # Bug
 
+
+
 bugs and projects need to have status which has to contain only
 
 # todo
