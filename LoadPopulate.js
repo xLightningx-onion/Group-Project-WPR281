@@ -1,3 +1,4 @@
+let populateOnce;
 
 let ProjectNewID;
 let ProjectNewName;
@@ -5,16 +6,70 @@ let ProjectNewDescription ;
 let ProjectNewStatus;
 let ProjectNewType;
 let addProjectLoad;
-let populateOnce;
+
+
+let EmployeeNewID;
+let EmployeeNewFirstName;
+let EmployeeNewLastName;
+let EmployeeNewEmail;
+let EmployeeNewUsername;
+let EmployeeNewPhoto;
+let addEmployeeLoad;
+
+
 function Populate()
 {
-      
+
        populateOnce = localStorage.getItem("FirstLoad");
         if(populateOnce ==null)
        { 
   
              localStorage.clear();
         localStorage.setItem('FirstLoad','Done');
+        
+
+
+
+       EmployeeNewID = 11;
+       EmployeeNewFirstName = "Llewelyn";
+       EmployeeNewLastName = "Smit";
+       EmployeeNewEmail ="llewelyn@gmail.com";
+       EmployeeNewUsername="LlewS99";
+       EmployeeNewPhoto ="";
+       ProjectNewType ="Employee";
+       addEmployeeLoad = {EmployeeID:EmployeeNewID,EmployeeFirstName:EmployeeNewFirstName,EmployeeLastName:EmployeeNewLastName,EmployeeEmail:EmployeeNewEmail,EmployeeUsername:EmployeeNewUsername,EmployeePhoto:EmployeeNewPhoto,ProjectType:ProjectNewType};
+       localStorage.setItem(EmployeeNewID,JSON.stringify(addEmployeeLoad));
+       
+
+       EmployeeNewID = 13;
+       EmployeeNewFirstName = "Karel";
+       EmployeeNewLastName = "Nel";
+       EmployeeNewEmail ="Karel@gmail.com";
+       EmployeeNewUsername="KareN99";
+       EmployeeNewPhoto ="";
+       ProjectNewType ="Employee";
+       addEmployeeLoad = {EmployeeID:EmployeeNewID,EmployeeFirstName:EmployeeNewFirstName,EmployeeLastName:EmployeeNewLastName,EmployeeEmail:EmployeeNewEmail,EmployeeUsername:EmployeeNewUsername,EmployeePhoto:EmployeeNewPhoto,ProjectType:ProjectNewType};
+       localStorage.setItem(EmployeeNewID,JSON.stringify(addEmployeeLoad));
+
+       EmployeeNewID = 15;
+       EmployeeNewFirstName = "Johannes";
+       EmployeeNewLastName = "Jordaan";
+       EmployeeNewEmail ="Johannes@gmail.com";
+       EmployeeNewUsername="JohanJ99";
+       EmployeeNewPhoto ="";
+       ProjectNewType ="Employee";
+       addEmployeeLoad = {EmployeeID:EmployeeNewID,EmployeeFirstName:EmployeeNewFirstName,EmployeeLastName:EmployeeNewLastName,EmployeeEmail:EmployeeNewEmail,EmployeeUsername:EmployeeNewUsername,EmployeePhoto:EmployeeNewPhoto,ProjectType:ProjectNewType};
+       localStorage.setItem(EmployeeNewID,JSON.stringify(addEmployeeLoad));
+
+       EmployeeNewID = 16;
+       EmployeeNewFirstName = "Kyle";
+       EmployeeNewLastName = "van der Westhuizen";
+       EmployeeNewEmail ="Kyle99@gmail.com";
+       EmployeeNewUsername="KyleW99";
+       EmployeeNewPhoto ="";
+       ProjectNewType ="Employee";
+       addEmployeeLoad = {EmployeeID:EmployeeNewID,EmployeeFirstName:EmployeeNewFirstName,EmployeeLastName:EmployeeNewLastName,EmployeeEmail:EmployeeNewEmail,EmployeeUsername:EmployeeNewUsername,EmployeePhoto:EmployeeNewPhoto,ProjectType:ProjectNewType};
+       localStorage.setItem(EmployeeNewID,JSON.stringify(addEmployeeLoad));
 
    
 
@@ -61,7 +116,7 @@ addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescr
 localStorage.setItem(ProjectNewID,JSON.stringify(addProjectLoad));
 
 
-      
+      console.log(localStorage.getItem(16));
         }
 
 
@@ -79,26 +134,36 @@ function PopulatePage()
 
     let populatekeyList =[];
     let lowestkey;
-    let highestkey;
+    let highestkey =0;
     for( key in localStorage)
     {
        
         populatekeyList.push(key);
     }
      populatekeyList.sort();
-     
+     console.log(populatekeyList);
      lowestkey = populatekeyList[0];
    //  lowestkey = Object.keys(localStorage)[0];
         console.log("keyList =" +populatekeyList);
     for( i = 0 ; i < populatekeyList.length;i++)
     {
-
+         let lastNumber =0;
         if(isNaN(populatekeyList[i]))
         {
-          highestkey =populatekeyList[i-1];
+          lastnumber =populatekeyList[i-1];
           break;
         }
+       
     }
+ for(let i =0 ; i<populatekeyList.length;i++)
+        {
+          if(parseInt(populatekeyList[i])>highestkey)        
+          {
+               highestkey = populatekeyList[i];
+          }
+          console.log(highestkey)
+        }
+
     console.log("Lowest Key:"+lowestkey);
     console.log("Highest Key:"+highestkey);
     for(i = lowestkey; i<=highestkey;i++)
@@ -120,6 +185,11 @@ function PopulatePage()
              document.getElementById("ProjectList").innerHTML += "<div>" 
              + currentOBJ.ProjectID +"</div>" +  "<div>"+ currentOBJ.ProjectName +"</div>"    +"<div>"
              + currentOBJ.ProjectDescription+"</div>"; 
+        }
+        else if(currentType == "Employee")
+        {
+          console.log("<option value='" +currentOBJ.EmployeeUsername+"'>"+currentOBJ.EmployeeUsername+"</option>")
+          document.getElementById("AssignedEmployeeAdd").innerHTML += "<option value='" +currentOBJ.EmployeeUsername+"'>"+currentOBJ.EmployeeUsername+"</option>";
         }
         }
         catch

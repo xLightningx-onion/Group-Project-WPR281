@@ -25,7 +25,7 @@ function addProject()
 //console.log(JSON.stringify(addProject));
 
 
-    let GetProject = JSON.parse(localStorage.getItem("1"));
+   // let GetProject = JSON.parse(localStorage.getItem("1"));
   // console.log(GetProject.ProjectName);
   // console.log(GetProject.ProjectID);
   // console.log(GetProject.ProjectDescription);
