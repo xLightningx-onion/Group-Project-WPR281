@@ -16,8 +16,11 @@ bugs and projects need to have status which has to contain only
 # review
 # done
 
+Priorities must contain 
 
-
+# Low
+# Medium
+# High
 
 
 
