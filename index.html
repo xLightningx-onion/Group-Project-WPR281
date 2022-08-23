@@ -13,6 +13,7 @@
     <script src="AddProject.js"></script>
     <script src="ClearLocalStorage.js"></script>
     <script src="AddBug.js"></script>
+    <script src="Grouping.js"></script>
    
 </head> 
 <body>
@@ -59,8 +60,11 @@
                     <a id="6" href="#" onclick="addEmployee()">Add employee</a> 
                     <div class="clear"></div>
                 </div>
-                <div class="button-wrap clear">
-                    <button onclick="ClearStorage()" class="clear-storage">Clear local storage</button>
+                <div>
+                    <button onclick="ClearStorage()">Clear local storage</button>
+                </div>
+                <div>
+                    <button onclick="BoardSorting()">Sorting the Board</button>
                 </div>
             </div>
             <div class="content" id="Board" >

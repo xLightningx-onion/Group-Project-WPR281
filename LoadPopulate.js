@@ -20,7 +20,7 @@ let BugProjectNewID ;
 
 
 
-
+let ProjectNewPriority;
 let ProjectNewID;
 let ProjectNewName;
 let ProjectNewDescription ;
@@ -48,7 +48,7 @@ function Populate()
              localStorage.clear();
         localStorage.setItem('FirstLoad','Done');
         
-
+        ProjectNewPriority="High";
      BugProjectNewID = '20';
        BugNewName = 'ButtonBug';
       BugNewShortDesc = 'Button does funny stuff';
@@ -67,7 +67,7 @@ function Populate()
         BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
         BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
         BugDateFound:BugNewDateFound,Status:BugNewStatusValue,
-        Priority:BugNewPriorityValue,BugTargetDate:BugNewTargetDate,
+        ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
         BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
       ProjectType:ProjectNewType};
         localStorage.setItem(BugProjectNewID,JSON.stringify(addBug));
@@ -139,47 +139,50 @@ function Populate()
        localStorage.setItem(EmployeeNewID,JSON.stringify(addEmployeeLoad));
 
    
-
+ProjectNewPriority="Low";
 ProjectNewStatus = "todo";
 ProjectNewID = 1;
 ProjectNewName = "Button";
 ProjectNewDescription="Ensure Alignment of all buttons" ;
 ProjectNewType = "Project";
-addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType,ProjectStatus:ProjectNewStatus};
+addProjectLoad = {ProjectID:ProjectNewID,ProjectPriority:ProjectNewPriority,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType,ProjectStatus:ProjectNewStatus};
 localStorage.setItem(ProjectNewID,JSON.stringify(addProjectLoad));
 
 
-
+ProjectNewPriority="Medium";
 ProjectNewStatus = "todo";
 ProjectNewID = 2;
 ProjectNewName = "Color";
 ProjectNewDescription="Ensure All Colors are Complimentary" ;
 ProjectNewType = "Project";
-addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType,ProjectStatus:ProjectNewStatus};
+addProjectLoad = {ProjectID:ProjectNewID,ProjectPriority:ProjectNewPriority,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType,ProjectStatus:ProjectNewStatus};
 localStorage.setItem(ProjectNewID,JSON.stringify(addProjectLoad));
 
-ProjectNewStatus = "todo";
+ProjectNewPriority="Low";
+ProjectNewStatus = "done";
 ProjectNewID = 3;
 ProjectNewName = "TextBoxes";
 ProjectNewDescription="Ensure Alignement of TextBox text" ;
 ProjectNewType = "Project";
-addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType,ProjectStatus:ProjectNewStatus};
+addProjectLoad = {ProjectID:ProjectNewID,ProjectPriority:ProjectNewPriority,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType,ProjectStatus:ProjectNewStatus};
 localStorage.setItem(ProjectNewID,JSON.stringify(addProjectLoad));
 
-ProjectNewStatus = "todo";
+ProjectNewPriority="Medium";
+ProjectNewStatus = "review";
 ProjectNewID =4;
 ProjectNewName = "Text";
 ProjectNewDescription="Ensure Alignement of Text" ;
 ProjectNewType = "Project";
-addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType,ProjectStatus:ProjectNewStatus};
+addProjectLoad = {ProjectID:ProjectNewID,ProjectPriority:ProjectNewPriority,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType,ProjectStatus:ProjectNewStatus};
 localStorage.setItem(ProjectNewID,JSON.stringify(addProjectLoad));
 
-ProjectNewStatus = "todo";
+ProjectNewPriority="High";
+ProjectNewStatus = "progress";
 ProjectNewID =5;
 ProjectNewName = "functions";
 ProjectNewDescription="Ensure all functions are accessible by button onclicks" ;
 ProjectNewType = "Project";
-addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType,ProjectStatus:ProjectNewStatus};
+addProjectLoad = {ProjectID:ProjectNewID,ProjectPriority:ProjectNewPriority,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType,ProjectStatus:ProjectNewStatus};
 localStorage.setItem(ProjectNewID,JSON.stringify(addProjectLoad));
 
 location.reload();
@@ -285,7 +288,7 @@ function PopulatePage()
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugFoundBy+"</h4></div>";
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugDateFound+"</h4></div>";
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.Status+"</h4></div>";
-          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.Priority+"</h4></div>";
+          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.ProjectPriority+"</h4></div>";
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugTargetDate+"</h4></div>";
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugActualDate+"</h4></div>";
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugResolutionSummary+"</h4></div>";
