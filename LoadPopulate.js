@@ -114,7 +114,7 @@ function PopulatePage()
             console.log("type is:" + currentType)
         if(currentType == "Project")
         {
-          
+          document.getElementById("ProjectIdTicketAdd").innerHTML += "<option value='"+currentOBJ.ProjectID+"'>"+currentOBJ.ProjectID+"</div>";
 
              
              document.getElementById("ProjectList").innerHTML += "<div>" 
