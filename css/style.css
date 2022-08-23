@@ -68,6 +68,16 @@ body{
     padding-left: 1%;
     position: relative;
 }
+.button-wrap{
+    padding: 10%;
+}
+.clear-storage{
+    background-color: #99d9eb;
+    padding: 2%;
+    width: 50%;
+    margin: auto;
+    margin-left: 20%;
+}
 @media screen and (max-width: 700px){
     .sidebar{
         width: 100%;

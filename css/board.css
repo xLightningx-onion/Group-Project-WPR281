@@ -36,3 +36,7 @@
 .Ticket p{
     float: left;
 }
+.project-info:hover{
+    background-color: #389CFA;
+    box-shadow: 3px 3px 3px #22588b;
+}
