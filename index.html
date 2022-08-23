@@ -195,7 +195,10 @@
                         <table>
                             <tr>
                               <td><label for="ProjectIdTicketAdd">Project ID: </label></td>
-                              <td><input type="text" name="ProjectIdTicketAdd" id="ProjectIdTicketAdd"></td>  
+                              <td>
+                                <select for="projectID" name="ProjectIdTicketAdd" id="ProjectIdTicketAdd">
+                                 </select>
+                              </td>  
                             </tr>
                             <tr>
                                 <td><label for="BugNameAdd">Bug Name: </label></td>
@@ -223,7 +226,7 @@
                             </tr>
                             <tr>
                                 <td><label for="StatusAdd">Status: </label></td>
-                                <td><select name="StatusAdd" id="StatusAdd" default="--Please Choose An Option--">
+                                <td><select name="StatusAdd" id="StatusAdd">
   
                                     <option value="todo">To Do</option>
                                     <option value="progress">In Progress</option>
@@ -236,7 +239,6 @@
                             <tr>
                                 <td><label for="PriorityAdd">Priority: </label></td>
                                 <td><select name="PriorityAdd" id="PriorityAdd">
-                                    <option value="">--Please choose an option--</option>
                                     <option value="High">High</option>
                                     <option value="Medium">Medium</option>
                                     <option value="Low">Low</option>
