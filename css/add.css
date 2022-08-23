@@ -5,15 +5,27 @@
    background-color: #99d9eb;
    border-radius: 10px; 
    padding: 1%;
-   width: 30%;
+   width: fit-content;
    margin: auto;
 }
+input{
+    width: 85%;
+}
+select{
+    width: 89%;
+}
+textarea{
+    width: 85%;
+}
+
 .input-wrapper{
     background-color: #DAF4FB;
     padding: 5%;
     margin: auto;
-    
-    
+    width: fit-content;
+}
+.input-wrapper td{
+    width: fit-content;
 }
 
 .input-wrapper li{
@@ -23,7 +35,7 @@
 .three-col-grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 .three-col-grid button{
