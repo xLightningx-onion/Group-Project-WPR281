@@ -1,0 +1,134 @@
+function BoardSorting(){
+    let todo=[];
+    let progress=[];
+    let review=[];
+    let done=[];
+    let HighPriority=[];
+    let LowPriority=[];
+    let MediumPriority=[];
+    let NotInternalStorage=[];
+    let NotEmployee=[];
+    let BoardArr=[];
+
+
+    for (key in localStorage)
+    {
+        BoardArr.push(key);
+    }
+
+    BoardArr.sort();
+
+    //console.log("BoardArray "+BoardArr)
+
+    for(let i=0;i<=BoardArr.length;i++)
+    {
+        if(isFinite(BoardArr[i])){
+            NotInternalStorage.push(BoardArr[i])
+        }
+
+    }
+
+    //console.log("Not Internal Storage    ..  "+NotInternalStorage)
+
+    for(let i=0;i<NotInternalStorage.length;i++)
+    {
+        //console.log(typeof(NotInternalStorage[0]));
+        //console.log(localStorage.getItem(1));
+
+        let currentOBJ=JSON.parse(localStorage.getItem(NotInternalStorage[i]));
+        let currentType=currentOBJ.ProjectType;
+        //console.log("Object"+currentOBJ);
+        if( currentType  !="Employee"){
+            NotEmployee.push(NotInternalStorage[i]);
+        }
+    }
+
+    //console.log("Not employee "+NotEmployee)
+    
+    for(let i=0;i<NotEmployee.length;i++){
+
+        let currentOBJ=JSON.parse(localStorage.getItem(NotEmployee[i]));
+        let currentType=currentOBJ.ProjectPriority;
+        
+        if(currentType=="High"){
+            HighPriority.push(NotEmployee[i])
+        }
+        else if(currentType=="Medium"){
+            MediumPriority.push(NotEmployee[i])
+        }
+        else if(currentType=="Low"){
+            LowPriority.push(NotEmployee[i])
+        }
+
+    }
+
+    
+    //console.log("High Priority "+HighPriority)
+    //console.log("Medium Priority "+MediumPriority)
+    //console.log("Low Priority "+LowPriority)
+
+    for(let i=0;i<HighPriority.length;i++)
+    {
+        let currentOBJ=JSON.parse(localStorage.getItem(HighPriority[i]));
+        let currentType=currentOBJ.ProjectStatus;
+
+        if(currentType=="todo"){
+            todo.push(HighPriority[i])
+        }
+        else if(currentType=="progress"){
+            progress.push(HighPriority[i])
+        }
+        else if(currentType=="review"){
+            review.push(HighPriority[i])
+        }
+        else if(currentType=="done"){
+            done.push(HighPriority[i])
+        }
+    }
+
+    for(let i=0;i<MediumPriority.length;i++)
+    {
+        let currentOBJ=JSON.parse(localStorage.getItem(MediumPriority[i]));
+        let currentType=currentOBJ.ProjectStatus;
+
+        if(currentType=="todo"){
+            todo.push(MediumPriority[i])
+        }
+        else if(currentType=="progress"){
+            progress.push(MediumPriority[i])
+        }
+        else if(currentType=="review"){
+            review.push(MediumPriority[i])
+        }
+        else if(currentType=="done"){
+            done.push(MediumPriority[i])
+        }
+    }
+
+    for(let i=0;i<LowPriority.length;i++)
+    {
+        let currentOBJ=JSON.parse(localStorage.getItem(LowPriority[i]));
+        let currentType=currentOBJ.ProjectStatus;
+
+        if(currentType=="todo"){
+            todo.push(LowPriority[i])
+        }
+        else if(currentType=="progress"){
+            progress.push(LowPriority[i])
+        }
+        else if(currentType=="review"){
+            review.push(LowPriority[i])
+        }
+        else if(currentType=="done"){
+            done.push(LowPriority[i])
+        }
+    }
+
+        //console.log("todo "+todo)
+        //console.log("Progress "+progress)
+        //console.log("review "+review)
+        //console.log("done "+done)
+    
+    
+
+}
