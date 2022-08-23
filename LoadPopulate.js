@@ -182,11 +182,13 @@ ProjectNewType = "Project";
 addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType,ProjectStatus:ProjectNewStatus};
 localStorage.setItem(ProjectNewID,JSON.stringify(addProjectLoad));
 
-
+location.reload();
    
         }
 
 
+
+        
 
 
 
