@@ -1,5 +1,26 @@
 let populateOnce;
 
+let BugProjectNewID ;
+    let BugNewName ;
+    let BugNewShortDesc ;
+    let BugNewLongDesc ;
+    let BugNewAssignedEmployeeSelect ;
+    let BugNewAssignedEmployee ;
+    let BugNewFoundBy ;
+    let BugNewDateFound ;
+    let BugNewStatusSelect ;
+    let BugNewStatusValue ;
+    let BugNewPrioritySelect ;
+    let BugNewPriorityValue ;
+    let BugNewTargetDate ;
+    let BugNewActualDate ;
+    let BugNewResolutionSummary ;
+
+
+
+
+
+
 let ProjectNewID;
 let ProjectNewName;
 let ProjectNewDescription ;
@@ -27,6 +48,52 @@ function Populate()
              localStorage.clear();
         localStorage.setItem('FirstLoad','Done');
         
+
+     BugProjectNewID = '20';
+       BugNewName = 'ButtonBug';
+      BugNewShortDesc = 'Button does funny stuff';
+        BugNewLongDesc = 'Jumps around like a lunatic';
+         BugNewAssignedEmployee = 'LlewS99';
+       BugNewFoundBy ="Anon Caller";
+        BugNewDateFound = "2022-08-12";
+      BugNewStatusValue = "todo";
+       BugNewPriorityValue ="High";
+        BugNewTargetDate ="2022-09-15";
+        BugNewActualDate ="2022-10-15";
+      BugNewResolutionSummary ="This bug has been added as a test";
+      ProjectNewType = "Bug";
+      
+       addBug = {BugId:BugProjectNewID,BugName:BugNewName,
+        BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+        BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+        BugDateFound:BugNewDateFound,Status:BugNewStatusValue,
+        Priority:BugNewPriorityValue,BugTargetDate:BugNewTargetDate,
+        BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+      ProjectType:ProjectNewType};
+        localStorage.setItem(BugProjectNewID,JSON.stringify(addBug));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -116,7 +183,7 @@ addProjectLoad = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescr
 localStorage.setItem(ProjectNewID,JSON.stringify(addProjectLoad));
 
 
-      console.log(localStorage.getItem(16));
+   
         }
 
 
@@ -128,7 +195,7 @@ PopulatePage();
 
 }
 
-console.log("Storage Length:" +localStorage.length);
+
 function PopulatePage()
 {
 
@@ -141,10 +208,10 @@ function PopulatePage()
         populatekeyList.push(key);
     }
      populatekeyList.sort();
-     console.log(populatekeyList);
+
      lowestkey = populatekeyList[0];
    //  lowestkey = Object.keys(localStorage)[0];
-        console.log("keyList =" +populatekeyList);
+   
     for( i = 0 ; i < populatekeyList.length;i++)
     {
          let lastNumber =0;
@@ -164,19 +231,17 @@ function PopulatePage()
           console.log(highestkey)
         }
 
-    console.log("Lowest Key:"+lowestkey);
-    console.log("Highest Key:"+highestkey);
     for(i = lowestkey; i<=highestkey;i++)
     {
 
       
         try
         { 
-            console.log("In the try 1");
+
             let currentOBJ = JSON.parse(localStorage.getItem(i));
-            console.log("In the try 2");
+      
             let currentType = currentOBJ.ProjectType;
-            console.log("type is:" + currentType)
+     
         if(currentType == "Project")
         {
           document.getElementById("ProjectIdTicketAdd").innerHTML += "<option value='"+currentOBJ.ProjectID+"'>"+currentOBJ.ProjectID+"</div>";
@@ -188,9 +253,44 @@ function PopulatePage()
         }
         else if(currentType == "Employee")
         {
-          console.log("<option value='" +currentOBJ.EmployeeUsername+"'>"+currentOBJ.EmployeeUsername+"</option>")
+   
           document.getElementById("AssignedEmployeeAdd").innerHTML += "<option value='" +currentOBJ.EmployeeUsername+"'>"+currentOBJ.EmployeeUsername+"</option>";
         }
+        else if(currentType == "Bug")
+        {
+          console.log("bug")
+         // <div class="table-header">
+          ///<h4>Project ID</h4>
+     // </div>
+
+     /*
+           addBug = {BugId:BugProjectNewID,BugName:BugNewName,
+        BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+        BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+        BugDateFound:BugNewDateFound,Status:BugNewStatusValue,
+        Priority:BugNewPriorityValue,BugTargetDate:BugNewTargetDate,
+        BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary};
+        localStorage.setItem(BugProjectNewID,JSON.stringify(addBug));
+
+
+
+     */
+          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugId+"</h4></div>";
+          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugName+"</h4></div>";
+          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugShortDesc+"</h4></div>";
+          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugLongDesc+"</h4></div>";
+          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugAssignedEmployee+"</h4></div>";
+          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugFoundBy+"</h4></div>";
+          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugDateFound+"</h4></div>";
+          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.Status+"</h4></div>";
+          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.Priority+"</h4></div>";
+          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugTargetDate+"</h4></div>";
+          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugActualDate+"</h4></div>";
+          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugResolutionSummary+"</h4></div>";
+
+
+        }
+
         }
         catch
         {
@@ -210,6 +310,6 @@ function PopulatePage()
   //  + currentOBJ.ProjectID +"</div>" +  "<div>"+ currentOBJ.ProjectName +"</div>"    +"<div>"
   //  + currentOBJ.ProjectDescription+"</div>"; 
   //  }
-
+  console.log(localStorage)
 }
 Populate();
