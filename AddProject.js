@@ -31,19 +31,10 @@ function addProject()
   // console.log(GetProject.ProjectDescription);
   // console.log(GetProject.ProjectType);
 
-
-
-   // let proID = GetProject.ProjectID;
-   // //let proName = GetProject.ProjectName;
-   // let proDesc = GetProject.ProjectDescription;
    // console.log(proID);
    // console.log(proName);
    // console.log(proDesc);
-
-
-                                                
-                                               
-                                        
+                             
    // console.log(document.getElementById("Projects").innerHTML);
 }
 

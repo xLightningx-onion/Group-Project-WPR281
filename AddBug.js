@@ -92,7 +92,7 @@ function addBug(){
     let addBug = {BugId:BugProjectNewID,BugName:BugNewName,
       BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
       BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
-      BugDateFound:BugNewDateFound,Status:BugNewStatusValue,
+      BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
       Priority:BugNewPriorityValue,BugTargetDate:BugNewTargetDate,
       BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
     ProjectType:ProjectNewType};

@@ -57,7 +57,7 @@ function Populate()
        BugNewFoundBy ="Anon Caller";
         BugNewDateFound = "2022-08-12";
       BugNewStatusValue = "todo";
-       BugNewPriorityValue ="High";
+
         BugNewTargetDate ="2022-09-15";
         BugNewActualDate ="2022-10-15";
       BugNewResolutionSummary ="This bug has been added as a test";
@@ -66,35 +66,135 @@ function Populate()
        addBug = {BugId:BugProjectNewID,BugName:BugNewName,
         BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
         BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
-        BugDateFound:BugNewDateFound,Status:BugNewStatusValue,
+        BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
         ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
         BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
       ProjectType:ProjectNewType};
         localStorage.setItem(BugProjectNewID,JSON.stringify(addBug));
 
+        ProjectNewPriority="Low";
+        BugProjectNewID = 21;
+          BugNewName = 'TextBug';
+         BugNewShortDesc = 'Text does funny stuff';
+           BugNewLongDesc = 'Jumps around like a lunatic';
+            BugNewAssignedEmployee = 'LlewS99';
+          BugNewFoundBy ="Anon Caller";
+           BugNewDateFound = "2022-08-12";
+         BugNewStatusValue = "progress";
+        
+           BugNewTargetDate ="2022-09-15";
+           BugNewActualDate ="2022-10-15";
+         BugNewResolutionSummary ="This bug has been added as a test";
+         ProjectNewType = "Bug";
+         
+          addBug = {BugId:BugProjectNewID,BugName:BugNewName,
+           BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+           BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+           BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+           ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+           BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+         ProjectType:ProjectNewType};
+           localStorage.setItem(BugProjectNewID,JSON.stringify(addBug));
 
 
+           ProjectNewPriority="Medium";
+           BugProjectNewID = 22;
+             BugNewName = 'ButtonBug';
+            BugNewShortDesc = 'Button does funny stuff';
+              BugNewLongDesc = 'Jumps around like a lunatic';
+               BugNewAssignedEmployee = 'LlewS99';
+             BugNewFoundBy ="Anon Caller";
+              BugNewDateFound = "2022-08-12";
+            BugNewStatusValue = "review";
+           
+              BugNewTargetDate ="2022-09-15";
+              BugNewActualDate ="2022-10-15";
+            BugNewResolutionSummary ="This bug has been added as a test";
+            ProjectNewType = "Bug";
+            
+             addBug = {BugId:BugProjectNewID,BugName:BugNewName,
+              BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+              BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+              BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+              ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+              BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+            ProjectType:ProjectNewType};
+              localStorage.setItem(BugProjectNewID,JSON.stringify(addBug));
 
 
+              ProjectNewPriority="Low";
+              BugProjectNewID = 23;
+                BugNewName = 'ButtonBug';
+               BugNewShortDesc = 'Button does funny stuff';
+                 BugNewLongDesc = 'Jumps around like a lunatic';
+                  BugNewAssignedEmployee = 'LlewS99';
+                BugNewFoundBy ="Anon Caller";
+                 BugNewDateFound = "2022-08-12";
+               BugNewStatusValue = "done";
+             
+                 BugNewTargetDate ="2022-09-15";
+                 BugNewActualDate ="2022-10-15";
+               BugNewResolutionSummary ="This bug has been added as a test";
+               ProjectNewType = "Bug";
+               
+                addBug = {BugId:BugProjectNewID,BugName:BugNewName,
+                 BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                 BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                 BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                 ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                 BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+               ProjectType:ProjectNewType};
+                 localStorage.setItem(BugProjectNewID,JSON.stringify(addBug));
 
 
+                 ProjectNewPriority="High";
+                 BugProjectNewID = 24;
+                   BugNewName = 'ButtonBug';
+                  BugNewShortDesc = 'Button does funny stuff';
+                    BugNewLongDesc = 'Jumps around like a lunatic';
+                     BugNewAssignedEmployee = 'LlewS99';
+                   BugNewFoundBy ="Anon Caller";
+                    BugNewDateFound = "2022-08-12";
+                  BugNewStatusValue = "done";
+       
+                    BugNewTargetDate ="2022-09-15";
+                    BugNewActualDate ="2022-10-15";
+                  BugNewResolutionSummary ="This bug has been added as a test";
+                  ProjectNewType = "Bug";
+                  
+                   addBug = {BugId:BugProjectNewID,BugName:BugNewName,
+                    BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                    BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                    BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                    ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                    BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                  ProjectType:ProjectNewType};
+                    localStorage.setItem(BugProjectNewID,JSON.stringify(addBug));
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    ProjectNewPriority="High";
+                    BugProjectNewID = 26;
+                      BugNewName = 'ButtonBug';
+                     BugNewShortDesc = 'Button does funny stuff';
+                       BugNewLongDesc = 'Jumps around like a lunatic';
+                        BugNewAssignedEmployee = 'LlewS99';
+                      BugNewFoundBy ="Anon Caller";
+                       BugNewDateFound = "2022-08-12";
+                     BugNewStatusValue = "review";
+                 
+                       BugNewTargetDate ="2022-09-15";
+                       BugNewActualDate ="2022-10-15";
+                     BugNewResolutionSummary ="This bug has been added as a test";
+                     ProjectNewType = "Bug";
+                     
+                      addBug = {BugId:BugProjectNewID,BugName:BugNewName,
+                       BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                       BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                       BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                       ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                       BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                     ProjectType:ProjectNewType};
+                       localStorage.setItem(BugProjectNewID,JSON.stringify(addBug));
 
 
        EmployeeNewID = 11;
@@ -190,11 +290,6 @@ location.reload();
         }
 
 
-
-        
-
-
-
 PopulatePage();
 
 
@@ -264,22 +359,8 @@ function PopulatePage()
         else if(currentType == "Bug")
         {
           console.log("bug")
-         // <div class="table-header">
-          ///<h4>Project ID</h4>
-     // </div>
-
-     /*
-           addBug = {BugId:BugProjectNewID,BugName:BugNewName,
-        BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
-        BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
-        BugDateFound:BugNewDateFound,Status:BugNewStatusValue,
-        Priority:BugNewPriorityValue,BugTargetDate:BugNewTargetDate,
-        BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary};
-        localStorage.setItem(BugProjectNewID,JSON.stringify(addBug));
 
 
-
-     */
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugId+"</h4></div>";
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugName+"</h4></div>";
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugShortDesc+"</h4></div>";
@@ -303,18 +384,7 @@ function PopulatePage()
         }
       
     }
-  //  for(let storagekey = 2; storagekey <=localStorage.length+1 ; storagekey++)
-  //  {
-      //  console.log(typeof storagekey);
-       // console.log(storagekey);
-       // console.log(localStorage);
-  //     let KeyToString = toString(storagekey);
-//  let currentOBJ = JSON.parse(localStorage.getItem(item));
-    //    console.log(JSON.parse(localStorage.getItem(storagekey)));
-    //        document.getElementById("ProjectList").innerHTML += "<div>" 
-  //  + currentOBJ.ProjectID +"</div>" +  "<div>"+ currentOBJ.ProjectName +"</div>"    +"<div>"
-  //  + currentOBJ.ProjectDescription+"</div>"; 
-  //  }
+
   console.log(localStorage)
 }
 Populate();
