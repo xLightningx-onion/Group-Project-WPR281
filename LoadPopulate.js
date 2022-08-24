@@ -1,6 +1,6 @@
 let populateOnce;
 
-let BugProjectNewID ;
+    let BugProjectNewID ;
     let BugNewName ;
     let BugNewShortDesc ;
     let BugNewLongDesc ;
@@ -49,7 +49,7 @@ function Populate()
         localStorage.setItem('FirstLoad','Done');
         
         ProjectNewPriority="High";
-     BugProjectNewID = '20';
+     BugProjectNewID = 20;
        BugNewName = 'ButtonBug';
       BugNewShortDesc = 'Button does funny stuff';
         BugNewLongDesc = 'Jumps around like a lunatic';
