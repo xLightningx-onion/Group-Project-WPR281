@@ -94,3 +94,9 @@ function bugs(){
     document.getElementById("ProjectAdd").className = "hide";
     document.getElementById("Bugs").className = "content";
 }
+function move_project(projectid){
+    prompt("project is moving")
+}
+function delete_project(projectid){
+    prompt("project is being deleted")
+}

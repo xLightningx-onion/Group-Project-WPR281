@@ -40,3 +40,17 @@
     background-color: #389CFA;
     box-shadow: 3px 3px 3px #22588b;
 }
+.move{
+    background-color: blue;
+}
+.move:active{
+    border-radius: 7px;
+    border-color: blue;
+}
+.delete{
+    background-color: red;
+}
+.delete:active{
+    border-radius: 7px;
+    border-color: red;
+}
