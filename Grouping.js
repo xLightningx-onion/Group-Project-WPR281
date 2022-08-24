@@ -42,6 +42,8 @@ function BoardSorting(){
         if( currentType  !="Employee"){
             NotEmployee.push(NotInternalStorage[i]);
         }
+
+
     }
 
     //console.log("Not employee "+NotEmployee)
@@ -60,157 +62,125 @@ function BoardSorting(){
         else if(currentType=="Low"){
             LowPriority.push(NotEmployee[i]);
         }
+        
+    } 
+    PaintColumn(HighPriority);
+    PaintColumn(MediumPriority);
+    PaintColumn(LowPriority);
 
-    }
 
+}
+
+function PaintColumn (ArrObjects){
+
+    let currStatus;
+    let currentType;
+ console.log("running");
+
+  
+    for(i=0; i<ArrObjects.length;i++)
+    {
     
-    //console.log("High Priority "+HighPriority)
-    //console.log("Medium Priority "+MediumPriority)
-    //console.log("Low Priority "+LowPriority)
-
-    for(let i=0;i<HighPriority.length;i++)
-    {
-        let currentOBJ=JSON.parse(localStorage.getItem(HighPriority[i]));
-        let currentType=currentOBJ.ProjectStatus;
-
-        PassVallue=HighPriority[i]
-
-        if(currentType=="todo"){
-            todo.push(HighPriority[i]);
-            continue;
-        }
-        else if(currentType=="progress"){
-            progress.push(HighPriority[i]);
-            PassVallue=HighPriority[i];
-        }
-        else if(currentType=="review"){
-            review.push(HighPriority[i]);
-            PassVallue=HighPriority[i];
-        }
-        else if(currentType=="done"){
-            done.push(HighPriority[i]);
-            PassVallue=HighPriority[i];
-        }
+          currentOBJ = JSON.parse(localStorage.getItem(ArrObjects[i]));
         
-        console.log("High "+PassVallue);
-        //console.log("Prior not pass val "+HighPriority[i]);
-        
-    }
 
-    for(let i=0;i<MediumPriority.length;i++)
-    {
-        let currentOBJ=JSON.parse(localStorage.getItem(MediumPriority[i]));
-        let currentType=currentOBJ.ProjectStatus;
+     currStatus = currentOBJ.ProjectStatus;
+     console.log(currStatus)
+     currentType = currentOBJ.ProjectType;
+     console.log(currentType)
+   // console.log(JSON.stringify(currentOBJ));
+   if ((currStatus=="todo") && (currentType != "Project"))
+   {
+     
+    let currentColumn = document.getElementById("col1");
+     currentColumn.innerHTML +=   "<div class='projects-wrapper' id='projectsWrapper' name='projectsWrapper'>"+
+     "<div class='project-info' id='projectInfo' name='projectInfo'>"+
+         "<button class='move' id='delete-project' onclick='delete_project()'> Delete </button>"+
+         "<button class='delete' id='move-project' onclick='move_project()'> Move </button>"+
+         "<div class='project-header' id='projectHeader' name='projectHeader'>"+
+         "<h3 id='ProjectName'>"+ 
+         currentOBJ.BugName +
+         "</h3></div><div class='project-body' id='ProjectBody' name='ProjectBody'>"+
+         "<p class='projectDesc' id='projectDesc'>"+
+         currentOBJ.BugLongDesc+
+         "</p></div><div class='four-col-grid status-bar'><div class='Status'>"+
+         "<img src='./images/reported.png' alt=''></div><div class='Error'>"+
+         "<img src='./images/buglogo.png' alt=''></div><div class='Ticket'><p id='TicketID'>"+
+         currentOBJ.BugId +"</p>"+
+         "</div><div class='employee'><img src='./images/employee2.jpg' alt=''></div>"+
+         "<div class='clear'></div>"+
+         "</div></div></div>";
 
-        if(currentType=="todo"){
-            todo.push(MediumPriority[i]);
-            PassVallue=MediumPriority[i];
+   }
+   else if(currStatus =="progress" && currentType != "Project"){
+          
+    let currentColumn = document.getElementById("col2");
+    currentColumn.innerHTML +=   "<div class='projects-wrapper' id='projectsWrapper' name='projectsWrapper'>"+
+    "<div class='project-info' id='projectInfo' name='projectInfo'>"+
+        "<button class='move' id='delete-project' onclick='delete_project()'> Delete </button>"+
+        "<button class='delete' id='move-project' onclick='move_project()'> Move </button>"+
+        "<div class='project-header' id='projectHeader' name='projectHeader'>"+
+        "<h3 id='ProjectName'>"+ 
+        currentOBJ.BugName +
+        "</h3></div><div class='project-body' id='ProjectBody' name='ProjectBody'>"+
+        "<p class='projectDesc' id='projectDesc'>"+
+        currentOBJ.BugLongDesc+
+        "</p></div><div class='four-col-grid status-bar'><div class='Status'>"+
+        "<img src='./images/reported.png' alt=''></div><div class='Error'>"+
+        "<img src='./images/buglogo.png' alt=''></div><div class='Ticket'><p id='TicketID'>"+
+        currentOBJ.BugId +"</p>"+
+        "</div><div class='employee'><img src='./images/employee2.jpg' alt=''></div>"+
+        "<div class='clear'></div>"+
+        "</div></div></div>";
+
+   }
+   else if(currStatus =="review" && currentType != "Project"){
             
-        }
-        else if(currentType=="progress"){
-            progress.push(MediumPriority[i]);
-            PassVallue=MediumPriority[i];
-        }
-        else if(currentType=="review"){
-            review.push(MediumPriority[i]);
-            PassVallue=MediumPriority[i];
-        }
-        else if(currentType=="done"){
-            done.push(MediumPriority[i]);
-            PassVallue=MediumPriority[i];
-        }
-        console.log("Med "+PassVallue);
-        //console.log("Prior not pass val "+MediumPriority[i])
+    let currentColumn = document.getElementById("col3");
+    currentColumn.innerHTML +=   "<div class='projects-wrapper' id='projectsWrapper' name='projectsWrapper'>"+
+    "<div class='project-info' id='projectInfo' name='projectInfo'>"+
+        "<button class='move' id='delete-project' onclick='delete_project()'> Delete </button>"+
+        "<button class='delete' id='move-project' onclick='move_project()'> Move </button>"+
+        "<div class='project-header' id='projectHeader' name='projectHeader'>"+
+        "<h3 id='ProjectName'>"+ 
+        currentOBJ.BugName +
+        "</h3></div><div class='project-body' id='ProjectBody' name='ProjectBody'>"+
+        "<p class='projectDesc' id='projectDesc'>"+
+        currentOBJ.BugLongDesc+
+        "</p></div><div class='four-col-grid status-bar'><div class='Status'>"+
+        "<img src='./images/reported.png' alt=''></div><div class='Error'>"+
+        "<img src='./images/buglogo.png' alt=''></div><div class='Ticket'><p id='TicketID'>"+
+        currentOBJ.BugId +"</p>"+
+        "</div><div class='employee'><img src='./images/employee2.jpg' alt=''></div>"+
+        "<div class='clear'></div>"+
+        "</div></div></div>";
+
+   }
+   else if(currStatus =="done" && currentType != "Project"){
+            
+    let currentColumn = document.getElementById("col4");
+    currentColumn.innerHTML +=   "<div class='projects-wrapper' id='projectsWrapper' name='projectsWrapper'>"+
+    "<div class='project-info' id='projectInfo' name='projectInfo'>"+
+        "<button class='move' id='delete-project' onclick='delete_project()'> Delete </button>"+
+        "<button class='delete' id='move-project' onclick='move_project()'> Move </button>"+
+        "<div class='project-header' id='projectHeader' name='projectHeader'>"+
+        "<h3 id='ProjectName'>"+ 
+        currentOBJ.BugName +
+        "</h3></div><div class='project-body' id='ProjectBody' name='ProjectBody'>"+
+        "<p class='projectDesc' id='projectDesc'>"+
+        currentOBJ.BugLongDesc+
+        "</p></div><div class='four-col-grid status-bar'><div class='Status'>"+
+        "<img src='./images/reported.png' alt=''></div><div class='Error'>"+
+        "<img src='./images/buglogo.png' alt=''></div><div class='Ticket'><p id='TicketID'>"+
+        currentOBJ.BugId +"</p>"+
+        "</div><div class='employee'><img src='./images/employee2.jpg' alt=''></div>"+
+        "<div class='clear'></div>"+
+        "</div></div></div>";
+
+   }
+   
     }
-
-    for(let i=0;i<LowPriority.length;i++)
-    {
-        let currentOBJ=JSON.parse(localStorage.getItem(LowPriority[i]));
-        let currentType=currentOBJ.ProjectStatus;
-
-        if(currentType=="todo"){
-            todo.push(LowPriority[i]);
-            PassVallue=LowPriority[i];
-        }
-        else if(currentType=="progress"){
-            progress.push(LowPriority[i]);
-            PassVallue=LowPriority[i];
-        }
-        else if(currentType=="review"){
-            review.push(LowPriority[i]);
-            PassVallue=LowPriority[i];
-        }
-        else if(currentType=="done"){
-            done.push(LowPriority[i]);
-            PassVallue=LowPriority[i];
-        }
-
-        console.log("Low "+PassVallue);
-        //console.log("Prior not pass val "+LowPriority[i]);
-    }
-        //console.log("todo "+todo);
-        //console.log("Progress "+progress);
-        //console.log("review "+review);
-        //console.log("done "+done);
-    
     
 
 }
 
-function PaintColumn (PassVallue , Priority, Status){
-    if (Priority=="High"&&Status=="todo"){
-
-    }
-    else if(Priority=="High"&& Status =="progress"){
-        
-    }
-    else if(Priority=="High"&& Status =="review"){
-        
-    }
-    else if(Priority=="High"&& Status =="done"){
-        
-    }
-    if (Priority=="Medium"&&Status=="todo"){
-
-    }
-    else if(Priority=="Medium"&& Status =="progress"){
-        
-    }
-    else if(Priority=="Medium"&& Status =="review"){
-        
-    }
-    else if(Priority=="Medium"&& Status =="done"){
-        
-    }
-    if (Priority=="Low"&&Status=="todo"){
-
-    }
-    else if(Priority=="Low"&& Status =="progress"){
-        
-    }
-    else if(Priority=="Low"&& Status =="review"){
-        
-    }
-    else if(Priority=="Low"&& Status =="done"){
-        
-    }
-
-}
-
-
-// function DispTodo(PassVallue){
-
-//     let currentOBJ=JSON.parse(localStorage.getItem(PassVallue));
-
-//     console.log("In function "+PassVallue)
-//     //document.getElementById("projectHeader").innerHTML+="<h3 id='ProjectName'>""</h3>"
-
-// }
-// function DispProgress(PassVallue){
-//     let currentOBJ=JSON.parse(localStorage.getItem(PassVallue));
-
-// }
-// function DispReview(PassVallue){
-//     let currentOBJ=JSON.parse(localStorage.getItem(PassVallue));
-
-// }
