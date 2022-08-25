@@ -53,10 +53,10 @@
     /* background-color: black; */
 }
 #move-bug{
-    color: #FEFCFB;
+    color: #e7ac94;
     margin-left: +5px;
     border-radius: 7px;
-    border-color: black;
+    border-color: #414342;
     border-width: 1px;
     background-color: #414342;
     font-size: 1.2vw;
@@ -70,10 +70,10 @@
 #delete-bug{
     /* margin-left: +5px; */
     font-size: 1.2vw;
-    color: black;
+    color: #414342;
     
     border-radius: 7px;
-    border-color: black;
+    border-color: #e7ac94;
     border-width: 1px;
     background-color: #e7ac94;
 }

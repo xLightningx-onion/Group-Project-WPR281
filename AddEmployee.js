@@ -39,5 +39,5 @@ function addEmployeeDetails()
     
   
       localStorage.setItem(highestkey,JSON.stringify(addEmployee)); 
-      console.log(localStorage)
+      //console.log(localStorage)
 }

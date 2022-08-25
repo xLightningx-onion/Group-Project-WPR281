@@ -123,6 +123,9 @@ body{
     
 }
 .content{
+    color: black;
+}
+.content h1{
     color: #FEFCFB;
 }
 
