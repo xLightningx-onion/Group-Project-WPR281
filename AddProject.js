@@ -1,10 +1,47 @@
 
 function addProject()
 {
+  let ProjectArr=[];
+  let NotInternalStorage=[];
+  let ItsAProject=[];
+  let HigestIdNum = 0;
   
+  //find employees
+  for (key in localStorage)
+  {
+    ProjectArr.push(key);
+  }
+  ProjectArr.sort();
+  //console.log(BugArr);
+  for(let i=0;i<=ProjectArr.length;i++)
+  {
+      if(isFinite(ProjectArr[i])){
+          NotInternalStorage.push(ProjectArr[i]);
+      }
+  
+  }
+  for(let i=0;i<NotInternalStorage.length;i++)
+    {
+        let currentOBJ=JSON.parse(localStorage.getItem(NotInternalStorage[i]));
+        let currentType=currentOBJ.ProjectType;
+
+        if( currentType  != "Employee" && currentType != "Bug"){
+            ItsAProject.push(NotInternalStorage[i]);
+            console.log("Its a project" +NotInternalStorage[i])
+        }
+    }
+  for(i=0; i<ItsAProject.length;i++)
+      {
+          currentOBJ = JSON.parse(localStorage.getItem(ItsAProject[i]));
+          console.log(currentOBJ);
+          if(currentOBJ.ProjectID >= HigestIdNum){
+            HigestIdNum = currentOBJ.ProjectID + 1
+            console.log("New Id:" + HigestIdNum)
+          }
+      }
     let storageKey = (localStorage.length+1);
 
-    let ProjectNewID =document.getElementById("ProjectIdAdd").value;
+    let ProjectNewID = HigestIdNum;
     let ProjectNewName =document.getElementById("ProjectNameAdd").value;
     let ProjectNewDescription =document.getElementById("ProjectShortDescAdd").value;
     let ProjectNewType = "Project";
@@ -36,6 +73,7 @@ function addProject()
    // console.log(proDesc);
                              
    // console.log(document.getElementById("Projects").innerHTML);
+   
 }
 
 
