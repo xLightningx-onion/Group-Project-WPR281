@@ -1,6 +1,7 @@
 let populateOnce;
 
     let BugProjectNewID ;
+    let BugID
     let BugNewName ;
     let BugNewShortDesc ;
     let BugNewLongDesc ;
@@ -49,7 +50,8 @@ function Populate()
         localStorage.setItem('FirstLoad','Done');
         
         ProjectNewPriority="High";
-     BugProjectNewID = 20;
+        BugID = 20;
+        BugProjectNewID = 1;
        BugNewName = 'ButtonBug';
       BugNewShortDesc = 'Button does funny stuff';
         BugNewLongDesc = 'Jumps around like a lunatic';
@@ -63,17 +65,18 @@ function Populate()
       BugNewResolutionSummary ="This bug has been added as a test";
       ProjectNewType = "Bug";
       
-       addBug = {BugId:BugProjectNewID,BugName:BugNewName,
+       addBug = {ProjectId:BugProjectNewID,BugId:BugID,BugName:BugNewName,
         BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
         BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
         BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
         ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
         BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
       ProjectType:ProjectNewType};
-        localStorage.setItem(BugProjectNewID,JSON.stringify(addBug));
+        localStorage.setItem(BugID,JSON.stringify(addBug));
 
         ProjectNewPriority="Low";
-        BugProjectNewID = 21;
+        BugID = 21;
+        BugProjectNewID = 3;
           BugNewName = 'TextBug';
          BugNewShortDesc = 'Text does funny stuff';
            BugNewLongDesc = 'Jumps around like a lunatic';
@@ -87,18 +90,19 @@ function Populate()
          BugNewResolutionSummary ="This bug has been added as a test";
          ProjectNewType = "Bug";
          
-          addBug = {BugId:BugProjectNewID,BugName:BugNewName,
+          addBug = {ProjectId:BugProjectNewID,BugId:BugID,BugName:BugNewName,
            BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
            BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
            BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
            ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
            BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
          ProjectType:ProjectNewType};
-           localStorage.setItem(BugProjectNewID,JSON.stringify(addBug));
+           localStorage.setItem(BugID,JSON.stringify(addBug));
 
 
            ProjectNewPriority="Medium";
-           BugProjectNewID = 22;
+           BugID = 22;
+           BugProjectNewID = 4;
              BugNewName = 'ButtonBug';
             BugNewShortDesc = 'Button does funny stuff';
               BugNewLongDesc = 'Jumps around like a lunatic';
@@ -112,18 +116,19 @@ function Populate()
             BugNewResolutionSummary ="This bug has been added as a test";
             ProjectNewType = "Bug";
             
-             addBug = {BugId:BugProjectNewID,BugName:BugNewName,
+             addBug = {ProjectId:BugProjectNewID,BugId:BugID,BugName:BugNewName,
               BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
               BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
               BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
               ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
               BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
             ProjectType:ProjectNewType};
-              localStorage.setItem(BugProjectNewID,JSON.stringify(addBug));
+              localStorage.setItem(BugID,JSON.stringify(addBug));
 
 
               ProjectNewPriority="Low";
-              BugProjectNewID = 23;
+              BugID = 23;
+              BugProjectNewID = 1;
                 BugNewName = 'ButtonBug';
                BugNewShortDesc = 'Button does funny stuff';
                  BugNewLongDesc = 'Jumps around like a lunatic';
@@ -137,18 +142,19 @@ function Populate()
                BugNewResolutionSummary ="This bug has been added as a test";
                ProjectNewType = "Bug";
                
-                addBug = {BugId:BugProjectNewID,BugName:BugNewName,
+                addBug = {ProjectId:BugProjectNewID,BugId:BugID,BugName:BugNewName,
                  BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
                  BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
                  BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
                  ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
                  BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
                ProjectType:ProjectNewType};
-                 localStorage.setItem(BugProjectNewID,JSON.stringify(addBug));
+                 localStorage.setItem(BugID,JSON.stringify(addBug));
 
 
                  ProjectNewPriority="High";
-                 BugProjectNewID = 24;
+                 BugID = 24;
+                 BugProjectNewID = 5;
                    BugNewName = 'ButtonBug';
                   BugNewShortDesc = 'Button does funny stuff';
                     BugNewLongDesc = 'Jumps around like a lunatic';
@@ -162,18 +168,19 @@ function Populate()
                   BugNewResolutionSummary ="This bug has been added as a test";
                   ProjectNewType = "Bug";
                   
-                   addBug = {BugId:BugProjectNewID,BugName:BugNewName,
+                   addBug = {ProjectId:BugProjectNewID,BugId:BugID,BugName:BugNewName,
                     BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
                     BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
                     BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
                     ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
                     BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
                   ProjectType:ProjectNewType};
-                    localStorage.setItem(BugProjectNewID,JSON.stringify(addBug));
+                    localStorage.setItem(BugID,JSON.stringify(addBug));
 
 
                     ProjectNewPriority="High";
-                    BugProjectNewID = 26;
+                    BugID = 26;
+                    BugProjectNewID = 2;
                       BugNewName = 'ButtonBug';
                      BugNewShortDesc = 'Button does funny stuff';
                        BugNewLongDesc = 'Jumps around like a lunatic';
@@ -187,14 +194,14 @@ function Populate()
                      BugNewResolutionSummary ="This bug has been added as a test";
                      ProjectNewType = "Bug";
                      
-                      addBug = {BugId:BugProjectNewID,BugName:BugNewName,
+                      addBug = {ProjectId:BugProjectNewID,BugId:BugID,BugName:BugNewName,
                        BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
                        BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
                        BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
                        ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
                        BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
                      ProjectType:ProjectNewType};
-                       localStorage.setItem(BugProjectNewID,JSON.stringify(addBug));
+                       localStorage.setItem(BugID,JSON.stringify(addBug));
 
 
        EmployeeNewID = 11;

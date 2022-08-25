@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Board</title>
+    <title>Bug-Hamster</title>
+    
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/add.css">
     <link rel="stylesheet" href="./css/board.css">
     <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="./css/Showbug.css">
+
     <script src="./javasctipt/pageDisplay.js"></script>
     <script src="AddProject.js"></script>
     <script src="ClearLocalStorage.js"></script>
@@ -17,6 +20,7 @@
     <script src="AddEmployee.js"></script>
 
     <script src="AddBug.js"></script>
+    <script src="./javasctipt/ShowBug.js"></script>
     
 
    
@@ -82,14 +86,14 @@
                             <div class="col-header">
                                 <h4>TO DO</h4>
                             </div>
-                                <div class="projects-wrapper" id="projectsWrapper" name="projectsWrapper">
+                                <div class="projects-wrapper" id="projectsWrapper" name="projectsWrapper" >
                                     <div class="project-info" id="projectInfo" name="projectInfo">
                                         <div class="on_bug_move">
                                             <button id="delete-bug" onclick="delete_project()"> Delete </button>
                                             <button id="move-bug" onclick="move_project()"> Move </button>
                                         </div>
                                         <div class="project-header" id="projectHeader" name="projectHeader">
-                                            <h3 id="ProjectName">Project Name</h3>
+                                            <h3 id="ProjectName"></h3>
                                         </div>
                                         <div class="project-body" id="ProjectBody" name="ProjectBody">
                                             <p class="projectDesc" id="projectDesc">
@@ -381,6 +385,106 @@
                         </div>
                     </div>
                 </div> 
+            </div>
+        </div> 
+    </div>
+    <div class="hide" id="ShowBugPage">
+        <div class="bug-content-header">
+            <h1 id="BugnameDisplay">Bug Name</h1>
+        </div>
+        <div class="bug-content-wrapper">
+            <div class="bug-show-two-col">
+                <div class="title Border padding" >
+                    <h4>Project Name: </h4>
+                </div>
+                <div class="Border padding">
+                    <p id="BugProjectNameShow"></p>
+                </div>
+                <div class="title Border padding" >
+                    <h4>Project ID: </h4>
+                </div>
+                <div class="Border padding">
+                    <p id="BugProjectIdShow"></p>
+                </div>
+                <div class="title Border padding">
+                    <h4>Bug Name:</h4>
+                </div>
+                <div class="Border padding">
+                    <p id="BugNameShow"></p>
+                </div>
+                <div class="title Border padding">
+                    <h4>Bug ID:</h4>
+                </div>
+                <div class="Border padding">
+                    <p id="BugIDShow"></p>
+                </div>
+                <div class="title Border padding">
+                    <h4>Short Description:</h4>
+                </div>
+                <div class="Border padding">
+                    <p id="BugShortDescriptionShow"></p>
+                </div>
+                <div class="title Border padding">
+                    <h4>Long Description: </h4>
+                </div>
+                <div class="Border padding">
+                    <p id="BugLongDescriptionShow"></p>
+                </div>
+                <div class="title Border padding">
+                    <h4>Employee Assigned: </h4>
+                </div>
+                <div class="Border padding">
+                    <p id="BugEmployeeAssignedShow"></p>
+                </div>
+                <div class="title Border padding">
+                    <h4>Found By: </h4>
+                </div>
+                <div class="Border padding">
+                    <p id="BugFoundByShow"></p>
+                </div>
+                <div class="title Border padding">
+                    <h4>Date Found:</h4>
+                </div>
+                <div class="Border padding">
+                    <p id="BugDateFoundShow"></p>
+                </div>
+                <div class="title Border padding">
+                    <h4>Status: </h4>
+                </div>
+                <div class="Border padding">
+                    <p id="BugStatusShow"></p>
+                </div>
+                <div class="title Border padding">
+                    <h4>Priority</h4>
+                </div>
+                <div class="Border padding">
+                    <p id="BugPriorityShow"></p>
+                </div>
+                <div class="title Border padding">
+                    <h4>Target Date:</h4>
+                </div>
+                <div class="Border padding">
+                    <p id="BugTargetDateShow"></p>
+                </div>
+                <div class="title Border padding">
+                    <h4>Actual Date:</h4>
+                </div>
+                <div class="Border padding">
+                    <p id="BugActualDateShow"></p>
+                </div>
+                <div class="title Border padding">
+                    <h4>Resolution Summary: </h4>
+                </div>
+                <div class="Border padding">
+                    <p id="BugResolutionSummaryShow"></p>
+                </div>
+                <div class="noBorder">
+                    
+                </div>
+                <div class="noBorder">
+                    <button class="backToBoard" type="button" id="backToBoard" onclick="BackToBoard()">Back</button>
+                    <div class="clearBug noBorder"></div>
+                </div>
             </div>
         </div> 
     </div>

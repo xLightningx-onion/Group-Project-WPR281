@@ -107,7 +107,47 @@ function addBug(){
            console.log("Highestkey"+highestkey)
          }
 */
-    let addBug = {BugId:BugProjectNewID,BugName:BugNewName,
+
+let BugArr=[];
+let NotInternalStorage=[];
+let ItsABug=[];
+let HigestIdNum = 0;
+
+//find bugs
+for (key in localStorage)
+{
+    BugArr.push(key);
+}
+BugArr.sort();
+//console.log(BugArr);
+for(let i=0;i<=BugArr.length;i++)
+{
+    if(isFinite(BugArr[i])){
+        NotInternalStorage.push(BugArr[i]);
+    }
+
+}
+for(let i=0;i<NotInternalStorage.length;i++)
+{
+    let currentOBJ=JSON.parse(localStorage.getItem(NotInternalStorage[i]));
+    let currentType=currentOBJ.ProjectType;
+
+    if( currentType  != "Employee" && currentType != "Project"){
+        ItsABug.push(NotInternalStorage[i]);
+        //console.log(NotInternalStorage[i])
+    }
+}
+for(i=0; i<ItsABug.length;i++)
+    {
+        currentOBJ = JSON.parse(localStorage.getItem(ItsABug[i]));
+        console.log(currentOBJ);
+        if(currentOBJ.BugId >= HigestIdNum){
+          HigestIdNum = currentOBJ.BugId+1
+          console.log("New Id:" + HigestIdNum)
+        }
+    }
+
+    let addBug = {ProjectId:BugProjectNewID,BugId:HigestIdNum,BugName:BugNewName,
       BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
       BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
       BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
@@ -117,7 +157,7 @@ function addBug(){
 
 
   highestkey +=1;
-console.log("Next Key:" +highestkey)
+//console.log("Next Key:" +highestkey)
    
  
      currentOBJ = addBug;
@@ -133,7 +173,7 @@ console.log("Next Key:" +highestkey)
     document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugTargetDate+"</h4></div>";
     document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugActualDate+"</h4></div>";
     document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugResolutionSummary+"</h4></div>";
- localStorage.setItem(highestkey,JSON.stringify(addBug));
-console.log(localStorage)
+    localStorage.setItem(highestkey,JSON.stringify(addBug));
+//console.log(localStorage)
     BoardSorting();
 }
