@@ -373,7 +373,7 @@ for(i=0 ; i <populatekeyList.length;i++)
         }
       
     }
-
+   BoardSorting();
 
 }
 Populate();

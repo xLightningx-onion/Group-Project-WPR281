@@ -1,24 +1,43 @@
-function addEmployee()
+function addEmployeeDetails()
 {
-      let storageKey = (localStorage.length+1); 
-      let EmployeeNewID =document.getElementById("EmployeeIDAdd").value;
+
+      let EmployeeNewID =document.getElementById("EmployeeIdAdd").value;
       let EmployeeNewFirstName=document.getElementById("EmployeeFirstNameAdd").value;
       let EmployeeNewLastName =document.getElementById("EmployeeLastNameAdd").value;
       let EmployeeNewEmail = document.getElementById("EmployeeEmailAdd").value;
-      let EmployeeNewUsername= document.getElementById("EmployeeUsernameAdd").value;
-      let EmployeeNewPhoto= document.getElementById("EmployeeNewPhoto").value;
+      let EmployeeNewUsername= document.getElementById("EmployeeUserNameAdd").value;
+      let EmployeeNewPhoto= document.getElementById("EmployeeProfilePicAdd").value;
       let ProjectNewType= "Employee";
-      let highestkey = 0;
+
       let keyList =[];
-      
-        for( let key in localStorage)
-        {
-          keyList.push(key);
-        }
+      let numberOnlyKeyList =[];
+      let highestkey =0;
+   for( let key in localStorage)
+     {
+       keyList.push(key);
+     }
+    keyList.sort();
   
+    for(i =0 ;i <keyList.length;i++)
+    {
+       if(isNaN(keyList[i]) == false)
+     {
+       numberOnlyKeyList.push(keyList[i])
+     }
+    }
+   for(i=0;i<numberOnlyKeyList.length;i++)
+   {
+     if(parseInt(numberOnlyKeyList[i])>highestkey)
+     {
+       highestkey = parseInt(numberOnlyKeyList[i]);
+     }
+   }
+  
+   highestkey +=1;
       let addEmployee = {EmployeeID:EmployeeNewID,EmployeeFirstName:EmployeeNewFirstName,EmployeeLastName:EmployeeNewLastName,EmployeeEmail:EmployeeNewEmail,EmployeeUsername:EmployeeNewUsername,EmployeePhoto: EmployeeNewPhoto, ProjectType:ProjectNewType };
-  document.getElementById("Employee List").innerHTML +="<div>" + addEmployee.EmployeeID +"</div>" +  "<div>"+ addEmployee.EmployeeFirstName +"</div>"    +"<div>"+ addEmployee.EmployeeLastName+"</div>"   +"</div>"+ addEmployee.EmployeeEmail+"</div>" +"</div>"+ addEmployee.EmployeeUsername +"</div>"  +"</div>"+ addEmployee.EmployeePhoto;
+  
     
   
-      localStorage.setItem(storageKey,JSON.stringify(addEmployee)); 
+      localStorage.setItem(highestkey,JSON.stringify(addEmployee)); 
+      console.log(localStorage)
 }
