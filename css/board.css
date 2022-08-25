@@ -5,7 +5,7 @@
 }
 .column{
     margin-right: 5%;
-    background-color: #99d9eb;
+    background-color: rgb(132, 128, 254);
     border-radius: 10px;
 }
 .column h4{
@@ -14,10 +14,15 @@
 .projects-wrapper{
     margin: 2%;
 }
+/* .projects-wrapper:hover(){
+    transform: scale(1.5);
+    background-color: black;
+} */
 .project-info{
-    
-    background-color: #DAF4FB;
-    padding: 5%;
+    border-radius: 25px;
+    /* background: radial-gradient(circle at center, rgb(8, 0, 255), rgb(8, 0, 255), rgb(132, 128, 254)); */
+    background-color: rgb(132, 128, 254);
+    padding: 7%;
     margin-bottom: 3%;
 }
 .status-bar{
@@ -37,20 +42,39 @@
     float: left;
 }
 .project-info:hover{
-    background-color: #389CFA;
+    /* background-color: rgb(144, 140, 253); */
+    background: radial-gradient(circle at center, rgb(8, 0, 255), rgb(8, 0, 255) , rgb(132, 128, 254));
     box-shadow: 3px 3px 3px #22588b;
+    transform: scale(1.009);
+    box-shadow: 0 0 3px black;
+  margin-top: -3px;
+  margin-left: +3px;
+    /* background-color: black; */
 }
-.move{
-    background-color: blue;
-}
-.move:active{
+#move-bug{
+    margin-left: +5px;
     border-radius: 7px;
+    border-color: black;
+    border-width: 1px;
+    background-color: #389CFA;
+    ;
+}
+#move-bug:active{
+    border-radius: 12px;
     border-color: blue;
 }
-.delete{
+#delete-bug{
+    /* margin-left: +5px; */
+    border-radius: 7px;
+    border-color: black;
+    border-width: 1px;
     background-color: red;
 }
-.delete:active{
-    border-radius: 7px;
+#delete-bug:active{
+    border-radius: 12px;
     border-color: red;
+}
+.on_bug_move{
+    display: flex; 
+    justify-content: flex-end;
 }
