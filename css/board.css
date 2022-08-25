@@ -5,7 +5,7 @@
 }
 .column{
     margin-right: 5%;
-    background-color: rgb(132, 128, 254);
+    background-color: #838888;
     border-radius: 10px;
 }
 .column h4{
@@ -19,9 +19,9 @@
     background-color: black;
 } */
 .project-info{
-    border-radius: 25px;
+    border-radius: 10px;
     /* background: radial-gradient(circle at center, rgb(8, 0, 255), rgb(8, 0, 255), rgb(132, 128, 254)); */
-    background-color: rgb(132, 128, 254);
+    background-color: #999f9f;
     padding: 7%;
     margin-bottom: 3%;
 }
@@ -43,8 +43,8 @@
 }
 .project-info:hover{
     /* background-color: rgb(144, 140, 253); */
-    background: radial-gradient(circle at center, rgb(8, 0, 255), rgb(8, 0, 255) , rgb(132, 128, 254));
-    box-shadow: 3px 3px 3px #22588b;
+    background: radial-gradient(circle at center, #f06236, #ec9074, #f2c3b4);
+    box-shadow: 3px 3px 3px #934027;
     transform: scale(1.009);
     box-shadow: 0 0 3px black;
   margin-top: -3px;
@@ -52,29 +52,34 @@
     /* background-color: black; */
 }
 #move-bug{
+    color: #FEFCFB;
     margin-left: +5px;
     border-radius: 7px;
     border-color: black;
     border-width: 1px;
-    background-color: #389CFA;
+    background-color: black;
     ;
 }
 #move-bug:active{
+    color: #FEFCFB;
     border-radius: 12px;
-    border-color: blue;
+    border-color: black;
 }
 #delete-bug{
     /* margin-left: +5px; */
+    color: #FEFCFB;
     border-radius: 7px;
     border-color: black;
     border-width: 1px;
-    background-color: red;
+    background-color: #f06236;
 }
 #delete-bug:active{
+    color: #FEFCFB;
     border-radius: 12px;
-    border-color: red;
+    border-color: #f06236;
 }
 .on_bug_move{
+    color: #FEFCFB;
     display: flex; 
     justify-content: flex-end;
 }

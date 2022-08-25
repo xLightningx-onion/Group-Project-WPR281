@@ -95,7 +95,7 @@ function addBug(){
       BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
       Priority:BugNewPriorityValue,BugTargetDate:BugNewTargetDate,
       BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
-    ProjectType:ProjectNewType};
+      ProjectType:ProjectNewType};
 
    highestkey+=2;
      console.log(typeof highestkey);
