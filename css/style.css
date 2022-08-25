@@ -2,10 +2,10 @@
 body{
     font-family: 'Roboto Condensed', sans-serif;
     background-image: linear-gradient(to right, 
-                                                rgb(8, 0, 255),
-                                                rgb(162, 159, 254),
-                                                rgb(162, 159, 254),
-                                                rgb(162, 159, 254));
+                                                #020202,
+                                                #282626,
+                                                #555250,
+                                                #aea8a3);
 }
 .main-two-col{
     display: grid;
@@ -59,12 +59,22 @@ body{
     text-decoration: none;
 }
 .sidebar a.active{
-    background-color: #389CFA;
+    background-image: linear-gradient(to right, 
+    #f06236,
+    #f27954,
+    #f59172,
+    #f8c2b2);
+    /*background-color: #389CFA;*/
     color: #FEFCFB;
 }
 .sidebar a:hover:not(.active){
-    background-color: #60B6FB;
-    color: #001f54;
+    background-image: linear-gradient(to right, 
+    #e7ac94,
+    #e9bcab,
+    #f2d0c2,
+    #f6d5c8);
+    /*background-color: #60B6FB;*/
+    color: black;
 }
 .hide{
     display: none;
@@ -99,12 +109,21 @@ body{
     padding: 10%;
 }
 .nav-button{
-    background-color: #99d9eb;
+    background-image: linear-gradient(to right, 
+    #f06236,
+    #f27954,
+    #f59172,
+    #f8c2b2);
+    /*background-color: #99d9eb;*/
     padding: 2%;
     width: 50%;
     margin: auto;
     margin-bottom: 2%;
     margin-left: 20%;
+    
+}
+.content{
+    color: #FEFCFB;
 }
 
 

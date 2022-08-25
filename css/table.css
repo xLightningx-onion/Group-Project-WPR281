@@ -11,7 +11,7 @@
 .search button{
     width: 20%;
     height: 1%;
-    background-color: #99d9eb;
+    background-color: #f06236;
 }
 
 .table-wrapper{
@@ -20,30 +20,33 @@
     margin-top: 10%;
     padding: 1%;
     border-radius: 5px;
-    background-color: #99d9eb;
+    background-color: #838888;
+}
+.margin-right{
+    margin-right: 1%;
 }
 .twelve-col-grid{
     padding: 1%;
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    background-color: #DAF4FB;
+    background-color: #999f9f;
     
 }
 .three-col{
     padding: 1%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    background-color: #DAF4FB;
+    background-color: #999f9f;
 }
 .padding{
     padding: 2%;
 }
 .twelve-col-grid div{
-    border: 1px solid #001f54;
+    border: 1px solid black;
     text-align: center;
 }
 .border div{
-    border: 1px solid #001f54;
+    border: 1px solid black;
     text-align: center;
     
 }
