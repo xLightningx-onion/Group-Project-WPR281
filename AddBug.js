@@ -113,7 +113,7 @@ function addBug(){
       BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
       ProjectPriority:BugNewPriorityValue,BugTargetDate:BugNewTargetDate,
       BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
-
+      ProjectType:ProjectNewType};
 
 
   highestkey +=1;
