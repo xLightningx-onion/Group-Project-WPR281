@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 body{
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: #DAF4FB;
+    background-image: linear-gradient(to right, 
+                                                rgb(8, 0, 255),
+                                                rgb(162, 159, 254),
+                                                rgb(162, 159, 254),
+                                                rgb(162, 159, 254));
 }
 .main-two-col{
     display: grid;
@@ -31,12 +35,16 @@ body{
     padding: 0;
     width: 20vw;
     height: 100vh;
-    background-color: #3055c5;
+    background-color: transparent;
+    /* background-image: linear-gradient(to right, rgb(8, 0, 255), rgb(156, 152, 255)); */
     position: fixed;
     overflow: auto;
     top: 0;
     left: 0;
     bottom: 0;
+}
+.sidebar:hover{
+    background-color: transparent;
 }
 .side-nav img{
     width: 10%;
