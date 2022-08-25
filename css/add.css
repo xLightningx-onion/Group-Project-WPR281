@@ -2,7 +2,7 @@
     text-align: center;
 }
 .content-body{
-   background-color: #99d9eb;
+   background-color: #838888;
    border-radius: 10px; 
    padding: 1%;
    width: fit-content;
@@ -19,7 +19,7 @@ textarea{
 }
 
 .input-wrapper{
-    background-color: #DAF4FB;
+    background-color: #999f9f;
     padding: 5%;
     margin: auto;
     width: fit-content;
@@ -39,6 +39,6 @@ textarea{
     margin: auto;
 }
 .three-col-grid button{
-    background-color: #99d9eb;
-    padding: 2%;
+    background-color: #f06236;
+    padding: 5%;
 }

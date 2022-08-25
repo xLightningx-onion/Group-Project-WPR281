@@ -61,15 +61,32 @@ function addBug(){
     let BugNewResolutionSummary = document.getElementById("ResolutionSummaryAdd").value;
        ProjectNewType = "Bug";
     let keyList =[];
-       
+       let numberOnlyKeyList =[];
+       let highestkey =0;
     for( let key in localStorage)
       {
         keyList.push(key);
       }
      keyList.sort();
-     lowestkey = keyList[0];
-     let highestkey=0;
-     for( i = 0 ; i < keyList.length;i++)
+   
+     for(i =0 ;i <keyList.length;i++)
+     {
+        if(isNaN(keyList[i]) == false)
+      {
+        numberOnlyKeyList.push(keyList[i])
+      }
+     }
+    for(i=0;i<numberOnlyKeyList.length;i++)
+    {
+      if(parseInt(numberOnlyKeyList[i])>highestkey)
+      {
+        highestkey = parseInt(numberOnlyKeyList[i]);
+      }
+    }
+    
+    // console.log("numbersonlykylist: "+numberOnlyKeyList)
+    // console.log(highestkey);
+  /*   for( i = 0 ; i < keyList.length;i++)
      {
           let lastNumber =0;
          if(isNaN(keyList[i]))
@@ -79,27 +96,30 @@ function addBug(){
          }
         
      }
-
+*/
+/*
   for(let i =0 ; i<lastnumber;i++)
          {
            if(parseInt(keyList[i])>highestkey)        
            {
                 highestkey = keyList[i];
            }
-           console.log(highestkey)
+           console.log("Highestkey"+highestkey)
          }
-
+*/
     let addBug = {BugId:BugProjectNewID,BugName:BugNewName,
       BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
       BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
       BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
-      Priority:BugNewPriorityValue,BugTargetDate:BugNewTargetDate,
+      ProjectPriority:BugNewPriorityValue,BugTargetDate:BugNewTargetDate,
       BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
-    ProjectType:ProjectNewType};
+      ProjectType:ProjectNewType};
 
-   highestkey+=2;
-     console.log(typeof highestkey);
 
+  highestkey +=1;
+console.log("Next Key:" +highestkey)
+   
+ 
      currentOBJ = addBug;
     document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugId+"</h4></div>";
     document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugName+"</h4></div>";
@@ -108,12 +128,12 @@ function addBug(){
     document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugAssignedEmployee+"</h4></div>";
     document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugFoundBy+"</h4></div>";
     document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugDateFound+"</h4></div>";
-    document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.Status+"</h4></div>";
+    document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.ProjectStatus+"</h4></div>";
     document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.Priority+"</h4></div>";
     document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugTargetDate+"</h4></div>";
     document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugActualDate+"</h4></div>";
     document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugResolutionSummary+"</h4></div>";
- localStorage.setItem(parseInt(highestkey),JSON.stringify(addBug));
-
-    console.log(localStorage)
+ localStorage.setItem(highestkey,JSON.stringify(addBug));
+console.log(localStorage)
+    BoardSorting();
 }

@@ -8,7 +8,7 @@ function addProject()
     let ProjectNewName =document.getElementById("ProjectNameAdd").value;
     let ProjectNewDescription =document.getElementById("ProjectShortDescAdd").value;
     let ProjectNewType = "Project";
-    let highestkey = 0;
+
     let keyList =[];
     
       for( let key in localStorage)
