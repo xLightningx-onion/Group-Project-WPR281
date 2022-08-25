@@ -1,7 +1,45 @@
 function addEmployeeDetails()
 {
+let EmpArr=[];
+let NotInternalStorage=[];
+let ItsAnEmployee=[];
+let HigestIdNum = 0;
 
-      let EmployeeNewID =document.getElementById("EmployeeIdAdd").value;
+//find employees
+for (key in localStorage)
+{
+  EmpArr.push(key);
+}
+EmpArr.sort();
+//console.log(BugArr);
+for(let i=0;i<=EmpArr.length;i++)
+{
+    if(isFinite(EmpArr[i])){
+        NotInternalStorage.push(EmpArr[i]);
+    }
+
+}
+for(let i=0;i<NotInternalStorage.length;i++)
+{
+    let currentOBJ=JSON.parse(localStorage.getItem(NotInternalStorage[i]));
+    let currentType=currentOBJ.ProjectType;
+
+    if( currentType  == "Employee"){
+      ItsAnEmployee.push(NotInternalStorage[i]);
+     // console.log(NotInternalStorage[i])
+    }
+}
+for(i=0; i<ItsAnEmployee.length;i++)
+    {
+        currentOBJ = JSON.parse(localStorage.getItem(ItsAnEmployee[i]));
+        console.log(currentOBJ);
+        if(currentOBJ.EmployeeID >= HigestIdNum){
+          HigestIdNum = currentOBJ.EmployeeID + 1
+          //console.log("New Id:" + HigestIdNum)
+        }
+    }
+
+      let EmployeeNewID = HigestIdNum;
       let EmployeeNewFirstName=document.getElementById("EmployeeFirstNameAdd").value;
       let EmployeeNewLastName =document.getElementById("EmployeeLastNameAdd").value;
       let EmployeeNewEmail = document.getElementById("EmployeeEmailAdd").value;
