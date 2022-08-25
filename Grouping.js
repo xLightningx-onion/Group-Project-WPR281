@@ -1,17 +1,20 @@
 function BoardSorting(){
-    let todo=[];
-    let progress=[];
-    let review=[];
-    let done=[];
+     
+
     let HighPriority=[];
     let LowPriority=[];
     let MediumPriority=[];
     let NotInternalStorage=[];
     let NotEmployee=[];
     let BoardArr=[];
-    let PassVallue;
 
 
+
+
+    document.getElementById("col1").innerHTML = "<div class='col-header'><h4>TO DO</h4></div>";
+    document.getElementById("col2").innerHTML = "<div class='col-header'><h4>IN PROGRESS</h4></div>";
+    document.getElementById("col3").innerHTML = "<div class='col-header'><h4>IN REVIEW</h4></div>";
+    document.getElementById("col4").innerHTML = "<div class='col-header'><h4>DONE</h4></div>";
     for (key in localStorage)
     {
         BoardArr.push(key);
@@ -29,7 +32,7 @@ function BoardSorting(){
 
     }
 
-    //console.log("Not Internal Storage    ..  "+NotInternalStorage)
+    console.log("Not Internal Storage    ..  "+NotInternalStorage)
 
     for(let i=0;i<NotInternalStorage.length;i++)
     {
@@ -46,7 +49,7 @@ function BoardSorting(){
 
     }
 
-    //console.log("Not employee "+NotEmployee)
+    console.log("Not employee "+NotEmployee)
     
     for(let i=0;i<NotEmployee.length;i++){
 
@@ -75,7 +78,7 @@ function PaintColumn (ArrObjects){
 
     let currStatus;
     let currentType;
- console.log("running");
+ //console.log("running");
 
   
     for(i=0; i<ArrObjects.length;i++)
@@ -85,10 +88,10 @@ function PaintColumn (ArrObjects){
         
 
      currStatus = currentOBJ.ProjectStatus;
-     console.log(currStatus)
+   //  console.log(currStatus)
      currentType = currentOBJ.ProjectType;
-     console.log(currentType)
-   // console.log(JSON.stringify(currentOBJ));
+   //  console.log(currentType)
+ //   console.log(JSON.stringify(currentOBJ));
    if ((currStatus=="todo") && (currentType != "Project"))
    {
      
