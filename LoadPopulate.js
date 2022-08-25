@@ -309,39 +309,28 @@ function PopulatePage()
     }
      populatekeyList.sort();
 
-     lowestkey = populatekeyList[0];
-   //  lowestkey = Object.keys(localStorage)[0];
-   
-    for( i = 0 ; i < populatekeyList.length;i++)
-    {
-         let lastNumber =0;
-        if(isNaN(populatekeyList[i]))
-        {
-          lastnumber =populatekeyList[i-1];
-          break;
-        }
-       
-    }
- for(let i =0 ; i<populatekeyList.length;i++)
-        {
-          if(parseInt(populatekeyList[i])>highestkey)        
-          {
-               highestkey = populatekeyList[i];
-          }
-          console.log(highestkey)
-        }
 
-    for(i = lowestkey; i<=highestkey;i++)
-    {
+ let numbersOnlykeyList =[];
+for(i=0 ; i <populatekeyList.length;i++)
+{
+  if(isNaN(populatekeyList[i]) == false)
+  {
+    numbersOnlykeyList.push(populatekeyList[i]);
+  }
+}
 
+
+   for(number in numbersOnlykeyList)
+    {
+    
       
         try
         { 
-
-            let currentOBJ = JSON.parse(localStorage.getItem(i));
-      
+     //   console.log(numbersOnlykeyList[number])
+        
+          let currentOBJ = JSON.parse(localStorage.getItem(parseInt(numbersOnlykeyList[number])));
             let currentType = currentOBJ.ProjectType;
-     
+     //      console.log(currentType)
         if(currentType == "Project")
         {
           document.getElementById("ProjectIdTicketAdd").innerHTML += "<option value='"+currentOBJ.ProjectID+"'>"+currentOBJ.ProjectID+"</div>";
@@ -358,8 +347,8 @@ function PopulatePage()
         }
         else if(currentType == "Bug")
         {
-          console.log("bug")
-
+        //  console.log("bug")
+       //     console.log(currentOBJ)
 
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugId+"</h4></div>";
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugName+"</h4></div>";
@@ -368,7 +357,7 @@ function PopulatePage()
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugAssignedEmployee+"</h4></div>";
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugFoundBy+"</h4></div>";
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugDateFound+"</h4></div>";
-          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.Status+"</h4></div>";
+          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.ProjectStatus+"</h4></div>";
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.ProjectPriority+"</h4></div>";
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugTargetDate+"</h4></div>";
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugActualDate+"</h4></div>";
@@ -380,11 +369,11 @@ function PopulatePage()
         }
         catch
         {
-          console.log(i +" key doesnt register");
+          console.log(number +" key doesnt register");
         }
       
     }
 
-  console.log(localStorage)
+
 }
 Populate();
