@@ -100,9 +100,91 @@ function bugs(){
     document.getElementById("Bugs").className = "content";
     document.getElementById("ShowBugPage").className = "hide";
 }
-function move_project(projectid){
-    prompt("project is moving")
+function move_project(BugId){
+    document.getElementById("ShowBugPage").className = "hide";
+    document.getElementById("Board").className = "content";
+    document.getElementById("2").className = "active";
+    //console.log(BugId)
+    //prompt("project is moving")
+    let BugIDMove = BugId
+    let BugArr=[];
+    let NotInternalStorage=[];
+    let ItsABug=[];
+    let HigestIdNum = 0;
+    
+    //find bugs
+    for (key in localStorage)
+    {
+        BugArr.push(key);
+    }
+    BugArr.sort();
+    //console.log(BugArr);
+    for(let i=0;i<=BugArr.length;i++)
+    {
+        if(isFinite(BugArr[i])){
+            NotInternalStorage.push(BugArr[i]);
+        }
+    
+    }
+    for(let i=0;i<NotInternalStorage.length;i++)
+    {
+        let currentOBJ=JSON.parse(localStorage.getItem(NotInternalStorage[i]));
+        let currentType=currentOBJ.ProjectType;
+    
+        if( currentType  != "Employee" && currentType != "Project"){
+            ItsABug.push(NotInternalStorage[i]);
+            //console.log(NotInternalStorage[i])
+        }
+    }
+    for(i=0; i<ItsABug.length;i++)
+        {
+            currentOBJ = JSON.parse(localStorage.getItem(ItsABug[i]));
+            //console.log(currentOBJ);
+            if(currentOBJ.BugId == BugIDMove){
+                console.log(currentOBJ);
+            }
+        }
 }
-function delete_project(projectid){
-    prompt("project is being deleted")
+function delete_project(bugid){
+    document.getElementById("ShowBugPage").className = "hide";
+    document.getElementById("Board").className = "content";
+    document.getElementById("2").className = "active";
+    let BugIDDelete = BugId
+    let BugArr=[];
+    let NotInternalStorage=[];
+    let ItsABug=[];
+    let HigestIdNum = 0;
+    
+    //find bugs
+    for (key in localStorage)
+    {
+        BugArr.push(key);
+    }
+    BugArr.sort();
+    //console.log(BugArr);
+    for(let i=0;i<=BugArr.length;i++)
+    {
+        if(isFinite(BugArr[i])){
+            NotInternalStorage.push(BugArr[i]);
+        }
+    
+    }
+    for(let i=0;i<NotInternalStorage.length;i++)
+    {
+        let currentOBJ=JSON.parse(localStorage.getItem(NotInternalStorage[i]));
+        let currentType=currentOBJ.ProjectType;
+    
+        if( currentType  != "Employee" && currentType != "Project"){
+            ItsABug.push(NotInternalStorage[i]);
+            //console.log(NotInternalStorage[i])
+        }
+    }
+    for(i=0; i<ItsABug.length;i++)
+        {
+            currentOBJ = JSON.parse(localStorage.getItem(ItsABug[i]));
+            //console.log(currentOBJ);
+            if(currentOBJ.BugId == BugIDDelete){
+              console.log(currentOBJ);
+            }
+        }
 }

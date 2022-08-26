@@ -99,8 +99,8 @@ function PaintColumn (ArrObjects){
      currentColumn.innerHTML +=   "<div class='projects-wrapper' id='projectsWrapper' name='projectsWrapper' >"+
      "<div class='project-info' id='projectInfo' name='projectInfo' onclick='ShowBugPage("+currentOBJ.BugId+")'>"+
         "<div class='on_bug_move'>"+
-            "<button class='move' id='delete-bug' onclick='delete_project()'> Delete </button>"+
-            "<button class='delete' id='move-bug' onclick='move_project()'> Move </button>"+
+            "<button class='move' id='delete-bug' onclick='delete_project("+currentOBJ.BugId+")'> Delete </button>"+
+            "<button class='delete' id='move-bug' onclick='move_project("+currentOBJ.BugId+")'> Move </button>"+
         "</div>"+
          "<div class='project-header' id='projectHeader' name='projectHeader'>"+
          "<h3 id='ProjectName'>"+ 
@@ -123,8 +123,8 @@ function PaintColumn (ArrObjects){
     currentColumn.innerHTML +=   "<div class='projects-wrapper' id='projectsWrapper' name='projectsWrapper'>"+
     "<div class='project-info' id='projectInfo' name='projectInfo' onclick='ShowBugPage("+currentOBJ.BugId+")'>"+
         "<div class='on_bug_move'>"+
-            "<button class='move' id='delete-bug' onclick='delete_project()'> Delete </button>"+
-            "<button class='delete' id='move-bug' onclick='move_project()'> Move </button>"+
+            "<button class='move' id='delete-bug' onclick='delete_project("+currentOBJ.BugId+")'> Delete </button>"+
+            "<button class='delete' id='move-bug' onclick='move_project("+currentOBJ.BugId+")'> Move </button>"+
         "</div>"+
         "<div class='project-header' id='projectHeader' name='projectHeader'>"+
         "<h3 id='ProjectName'>"+ 
@@ -147,8 +147,8 @@ function PaintColumn (ArrObjects){
     currentColumn.innerHTML +=   "<div class='projects-wrapper' id='projectsWrapper' name='projectsWrapper'>"+
     "<div class='project-info' id='projectInfo' name='projectInfo' onclick='ShowBugPage("+currentOBJ.BugId+")'>"+
     "<div class='on_bug_move'>"+
-        "<button class='move' id='delete-bug' onclick='delete_project()'> Delete </button>"+
-        "<button class='delete' id='move-bug' onclick='move_project()'> Move </button>"+
+        "<button class='move' id='delete-bug' onclick='delete_project("+currentOBJ.BugId+")'> Delete </button>"+
+        "<button class='delete' id='move-bug' onclick='move_project("+currentOBJ.BugId+")'> Move </button>"+
     "</div>"+
         "<div class='project-header' id='projectHeader' name='projectHeader'>"+
         "<h3 id='ProjectName'>"+ 
@@ -171,8 +171,8 @@ function PaintColumn (ArrObjects){
     currentColumn.innerHTML +=   "<div class='projects-wrapper' id='projectsWrapper' name='projectsWrapper'>"+
     "<div class='project-info' id='projectInfo' name='projectInfo' onclick='ShowBugPage("+currentOBJ.BugId+")'>"+
     "<div class='on_bug_move'>"+
-        "<button class='move' id='delete-bug' onclick='delete_project()'> Delete </button>"+
-        "<button class='delete' id='move-bug' onclick='move_project()'> Move </button>"+
+        "<button class='move' id='delete-bug' onclick='delete_project("+currentOBJ.BugId+")'> Delete </button>"+
+        "<button class='delete' id='move-bug' onclick='move_project("+currentOBJ.BugId+")'> Move </button>"+
     "</div>"+
         "<div class='project-header' id='projectHeader' name='projectHeader'>"+
         "<h3 id='ProjectName'>"+ 
