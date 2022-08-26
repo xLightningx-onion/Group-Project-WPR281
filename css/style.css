@@ -7,6 +7,10 @@ body{
                                                 #555250,
                                                 #aea8a3);
 }
+body h1{
+    font-size: 3vw;
+    text-align: center;
+}
 .main-two-col{
     display: grid;
     grid-template-columns: 20vw 75vw;

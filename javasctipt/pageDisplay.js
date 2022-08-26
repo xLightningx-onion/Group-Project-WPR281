@@ -193,7 +193,7 @@ function delete_project(bugid){
     document.getElementById("ShowBugPage").className = "hide";
     document.getElementById("Board").className = "content";
     document.getElementById("2").className = "active";
-    let BugIDDelete = BugId
+    let BugIDDelete = bugid;
     let BugArr=[];
     let NotInternalStorage=[];
     let ItsABug=[];
@@ -229,9 +229,8 @@ function delete_project(bugid){
             
             //console.log(currentOBJ);
             if(currentOBJ.BugId == BugIDDelete){
-              console.log(currentOBJ);
-              
-              
+              localStorage.removeItem(ItsABug[i]);
+              BoardSorting();
             }
         }
 }

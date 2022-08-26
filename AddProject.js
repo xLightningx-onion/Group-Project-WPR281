@@ -39,12 +39,14 @@ function addProject()
             console.log("New Id:" + HigestIdNum)
           }
       }
+      
     let storageKey = (localStorage.length+1);
-
+    
     let ProjectNewID = HigestIdNum;
     let ProjectNewName =document.getElementById("ProjectNameAdd").value;
     let ProjectNewDescription =document.getElementById("ProjectShortDescAdd").value;
     let ProjectNewType = "Project";
+    let ProjectIDToSort = [];
 
     let keyList =[];
     
@@ -55,10 +57,12 @@ function addProject()
  
     let addProject = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType};
  document.getElementById("ProjectList").innerHTML +="<div>" + addProject.ProjectID +"</div>" +  "<div>"+ addProject.ProjectName +"</div>"    +"<div>"+ addProject.ProjectDescription+"</div>"    ;
-  
-//console.log(storageKey);
-    localStorage.setItem(storageKey,JSON.stringify(addProject)); 
 
+      
+//console.log(storageKey);
+    localStorage.setItem(storageKey,JSON.stringify(addProject));
+    PopulatePage();
+   
 //console.log(JSON.stringify(addProject));
 
 
@@ -73,7 +77,6 @@ function addProject()
    // console.log(proDesc);
                              
    // console.log(document.getElementById("Projects").innerHTML);
-   
 }
 
 
