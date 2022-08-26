@@ -140,14 +140,14 @@ for(let i=0;i<NotInternalStorage.length;i++)
 for(i=0; i<ItsABug.length;i++)
     {
         currentOBJ = JSON.parse(localStorage.getItem(ItsABug[i]));
-        console.log(currentOBJ);
+        //console.log(currentOBJ);
         if(currentOBJ.BugId >= HigestIdNum){
           HigestIdNum = currentOBJ.BugId+1
-          console.log("New Id:" + HigestIdNum)
+          //console.log("New Id:" + HigestIdNum)
         }
     }
 
-    let addBug = {ProjectId:BugProjectNewID,BugId:HigestIdNum,BugName:BugNewName,
+    let addBug = {BugId:HigestIdNum,ProjectId:BugProjectNewID,BugName:BugNewName,
       BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
       BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
       BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
