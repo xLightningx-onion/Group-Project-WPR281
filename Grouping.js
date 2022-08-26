@@ -32,7 +32,7 @@ function BoardSorting(){
 
     }
 
-    console.log("Not Internal Storage    ..  "+NotInternalStorage)
+    //console.log("Not Internal Storage    ..  "+NotInternalStorage)
 
     for(let i=0;i<NotInternalStorage.length;i++)
     {
@@ -49,7 +49,7 @@ function BoardSorting(){
 
     }
 
-    console.log("Not employee "+NotEmployee)
+   // console.log("Not employee "+NotEmployee)
     
     for(let i=0;i<NotEmployee.length;i++){
 

@@ -100,6 +100,7 @@ function bugs(){
     document.getElementById("Bugs").className = "content";
     document.getElementById("ShowBugPage").className = "hide";
 }
+
 function move_project(BugId){
     document.getElementById("ShowBugPage").className = "hide";
     document.getElementById("Board").className = "content";
@@ -110,7 +111,7 @@ function move_project(BugId){
     let BugArr=[];
     let NotInternalStorage=[];
     let ItsABug=[];
-    let HigestIdNum = 0;
+
     let currStatus;
     
     //find bugs
@@ -137,24 +138,37 @@ function move_project(BugId){
             //console.log(NotInternalStorage[i])
         }
     }
+    
     for(i=0; i<ItsABug.length;i++)
         {
             currentOBJ = JSON.parse(localStorage.getItem(ItsABug[i]));
             currStatus = currentOBJ.ProjectStatus;
             
             if(currentOBJ.BugId == BugIDMove){
-                console.log(currentOBJ);
-                console.log(currentOBJ.ProjectStatus);
-                if(currStatus === "todo"){
+       
+          
+                if(currStatus == "todo"){
+                    console.log("I am in todo")
                     currentOBJ.ProjectStatus = "progress";
+                    localStorage.removeItem(ItsABug[i]);
+                    localStorage.setItem(ItsABug[i],JSON.stringify(currentOBJ));
+                    console.log("I am changed to"+currentOBJ.ProjectStatus)
                     BoardSorting();
                 }
-                else if(currStatus === "progress"){
+                else if(currStatus == "progress"){
+                    console.log("I am in progress")
                     currentOBJ.ProjectStatus = "review";
+                    localStorage.removeItem(ItsABug[i]);
+                    localStorage.setItem(ItsABug[i],JSON.stringify(currentOBJ));
+                    console.log("I am changed to"+currentOBJ.ProjectStatus)
                     BoardSorting();
                 }
-                else if(currStatus === "review"){
+                else if(currStatus == "review"){
+                    console.log("I am in review")
                     currentOBJ.ProjectStatus = "done";
+                    localStorage.removeItem(ItsABug[i]);
+                    localStorage.setItem(ItsABug[i],JSON.stringify(currentOBJ));
+                    console.log("I am changed to"+currentOBJ.ProjectStatus)
                     BoardSorting();
                 }
             }
@@ -174,6 +188,7 @@ function move_project(BugId){
 
         
 }
+
 function delete_project(bugid){
     document.getElementById("ShowBugPage").className = "hide";
     document.getElementById("Board").className = "content";
