@@ -68,8 +68,8 @@ function ShowBugPage(BugIDinput){
         //console.log(currentOBJ);
         if(currentOBJ.BugId == BugIdToShow){
             ProjectIdToShow = currentOBJ.ProjectId;
-            console.log("does this one work?");
-            console.log("project id: " + ProjectIdToShow);
+            //console.log("does this one work?");
+            //console.log("project id: " + ProjectIdToShow);
             BugNameToShow = currentOBJ.BugName;
             //console.log(BugNameToShow);
             ShortDescToShow = currentOBJ.BugShortDesc;
@@ -89,7 +89,7 @@ function ShowBugPage(BugIDinput){
         currentOBJ = JSON.parse(localStorage.getItem(ItsAProject[i]));
         if(currentOBJ.ProjectID == ProjectIdToShow){
             ProjectNameToShow = currentOBJ.ProjectName;
-            console.log("project name: " + ProjectNameToShow);
+            //console.log("project name: " + ProjectNameToShow);
         }
     }
     //show info on page
