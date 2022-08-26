@@ -111,6 +111,7 @@ function move_project(BugId){
     let NotInternalStorage=[];
     let ItsABug=[];
     let HigestIdNum = 0;
+    let currStatus;
     
     //find bugs
     for (key in localStorage)
@@ -139,11 +140,39 @@ function move_project(BugId){
     for(i=0; i<ItsABug.length;i++)
         {
             currentOBJ = JSON.parse(localStorage.getItem(ItsABug[i]));
-            //console.log(currentOBJ);
+            currStatus = currentOBJ.ProjectStatus;
+            
             if(currentOBJ.BugId == BugIDMove){
                 console.log(currentOBJ);
+                console.log(currentOBJ.ProjectStatus);
+                if(currStatus === "todo"){
+                    currentOBJ.ProjectStatus = "progress";
+                    BoardSorting();
+                }
+                else if(currStatus === "progress"){
+                    currentOBJ.ProjectStatus = "review";
+                    BoardSorting();
+                }
+                else if(currStatus === "review"){
+                    currentOBJ.ProjectStatus = "done";
+                    BoardSorting();
+                }
             }
         }
+        
+    
+        //for(i=0; i<ItsABug.length;i++)
+        //{
+           // currentOBJ = JSON.parse(localStorage.getItem(ItsABug[i]));
+           // if(currentOBJ.BugId == BugIDMove){
+            //    if(cur)
+           // }
+        //}
+
+
+
+
+        
 }
 function delete_project(bugid){
     document.getElementById("ShowBugPage").className = "hide";
@@ -182,9 +211,12 @@ function delete_project(bugid){
     for(i=0; i<ItsABug.length;i++)
         {
             currentOBJ = JSON.parse(localStorage.getItem(ItsABug[i]));
+            
             //console.log(currentOBJ);
             if(currentOBJ.BugId == BugIDDelete){
               console.log(currentOBJ);
+              
+              
             }
         }
 }
