@@ -3,6 +3,9 @@
     grid-template-columns: repeat(4,1fr);
     
 }
+h1{
+    margin-right: 2%;
+}
 .column{
     margin-right: 5%;
     background-color: #838888;
@@ -10,21 +13,24 @@
   
 }
 .column h4{
-    margin-left: 5%;
+    text-align: center;
 }
 .projects-wrapper{
     margin: 2%;
+    background-color: #999f9f;
+    border-radius: 10px;
+    padding: 7%;
 }
 /* .projects-wrapper:hover(){
     transform: scale(1.5);
     background-color: black;
 } */
 .project-info{
-    border-radius: 10px;
+    margin-top: 2%;
+    background-color: #b2b6b6;
     /* background: radial-gradient(circle at center, rgb(8, 0, 255), rgb(8, 0, 255), rgb(132, 128, 254)); */
-    background-color: #999f9f;
-    padding: 7%;
-    margin-bottom: 3%;
+    border-radius: 10px;
+    padding: 5%;
 }
 .status-bar{
     align-items: center;

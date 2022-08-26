@@ -305,7 +305,7 @@ PopulatePage();
 
 function PopulatePage()
 {
-
+    document.getElementById("ProjectIdTicketAdd").innerHTML = "";
     let populatekeyList =[];
     let lowestkey;
     let highestkey =0;
@@ -326,7 +326,7 @@ for(i=0 ; i <populatekeyList.length;i++)
   }
 }
 
-
+  numbersOnlykeyList.sort();
    for(number in numbersOnlykeyList)
     {
     
