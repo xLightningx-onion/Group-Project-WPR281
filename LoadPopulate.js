@@ -306,9 +306,26 @@ PopulatePage();
 function PopulatePage()
 {
     document.getElementById("ProjectIdTicketAdd").innerHTML = "";
+    document.getElementById("AssignedEmployeeAdd").innerHTML = "";
     let populatekeyList =[];
-    let lowestkey;
-    let highestkey =0;
+    let now = new Date();
+    let day = ("0" + now.getDate()).slice(-2);
+    let month = ("0" + (now.getMonth() + 1)).slice(-2);
+    let today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+  
+
+    document.getElementById("DateFoundAdd").value = today;
+
+
+ document.getElementById("TargetDateAdd").value = today;
+
+ document.getElementById("ActualDateAdd").value = today;
+
+
+
+
+
+
     for( key in localStorage)
     {
        
@@ -327,6 +344,7 @@ for(i=0 ; i <populatekeyList.length;i++)
 }
 
   numbersOnlykeyList.sort();
+ console.log("Populate numbers only keylist"+numbersOnlykeyList)
    for(number in numbersOnlykeyList)
     {
     
