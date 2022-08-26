@@ -3,7 +3,7 @@ function addEmployeeDetails()
 let EmpArr=[];
 let NotInternalStorage=[];
 let ItsAnEmployee=[];
-let HigestIdNum = 0;
+ let highestkey =0;
 
 //find employees
 for (key in localStorage)
@@ -19,6 +19,8 @@ for(let i=0;i<=EmpArr.length;i++)
     }
 
 }
+
+
 for(let i=0;i<NotInternalStorage.length;i++)
 {
     let currentOBJ=JSON.parse(localStorage.getItem(NotInternalStorage[i]));
@@ -29,6 +31,7 @@ for(let i=0;i<NotInternalStorage.length;i++)
      // console.log(NotInternalStorage[i])
     }
 }
+/*
 for(i=0; i<ItsAnEmployee.length;i++)
     {
         currentOBJ = JSON.parse(localStorage.getItem(ItsAnEmployee[i]));
@@ -38,8 +41,8 @@ for(i=0; i<ItsAnEmployee.length;i++)
           //console.log("New Id:" + HigestIdNum)
         }
     }
-
-      let EmployeeNewID = HigestIdNum;
+*/
+      let EmployeeNewID = highestkey;
       let EmployeeNewFirstName=document.getElementById("EmployeeFirstNameAdd").value;
       let EmployeeNewLastName =document.getElementById("EmployeeLastNameAdd").value;
       let EmployeeNewEmail = document.getElementById("EmployeeEmailAdd").value;
@@ -49,7 +52,7 @@ for(i=0; i<ItsAnEmployee.length;i++)
 
       let keyList =[];
       let numberOnlyKeyList =[];
-      let highestkey =0;
+    
    for( let key in localStorage)
      {
        keyList.push(key);
@@ -77,5 +80,6 @@ for(i=0; i<ItsAnEmployee.length;i++)
     
   
       localStorage.setItem(highestkey,JSON.stringify(addEmployee)); 
+     PopulatePage();
       //console.log(localStorage)
 }
