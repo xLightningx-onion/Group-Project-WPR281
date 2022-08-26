@@ -65,7 +65,7 @@ function Populate()
       BugNewResolutionSummary ="This bug has been added as a test";
       ProjectNewType = "Bug";
       
-       addBug = {ProjectId:BugProjectNewID,BugId:BugID,BugName:BugNewName,
+       addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
         BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
         BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
         BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
@@ -90,7 +90,7 @@ function Populate()
          BugNewResolutionSummary ="This bug has been added as a test";
          ProjectNewType = "Bug";
          
-          addBug = {ProjectId:BugProjectNewID,BugId:BugID,BugName:BugNewName,
+          addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
            BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
            BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
            BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
@@ -116,7 +116,7 @@ function Populate()
             BugNewResolutionSummary ="This bug has been added as a test";
             ProjectNewType = "Bug";
             
-             addBug = {ProjectId:BugProjectNewID,BugId:BugID,BugName:BugNewName,
+             addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
               BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
               BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
               BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
@@ -142,7 +142,7 @@ function Populate()
                BugNewResolutionSummary ="This bug has been added as a test";
                ProjectNewType = "Bug";
                
-                addBug = {ProjectId:BugProjectNewID,BugId:BugID,BugName:BugNewName,
+                addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
                  BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
                  BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
                  BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
@@ -168,7 +168,7 @@ function Populate()
                   BugNewResolutionSummary ="This bug has been added as a test";
                   ProjectNewType = "Bug";
                   
-                   addBug = {ProjectId:BugProjectNewID,BugId:BugID,BugName:BugNewName,
+                   addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
                     BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
                     BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
                     BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
@@ -194,7 +194,7 @@ function Populate()
                      BugNewResolutionSummary ="This bug has been added as a test";
                      ProjectNewType = "Bug";
                      
-                      addBug = {ProjectId:BugProjectNewID,BugId:BugID,BugName:BugNewName,
+                      addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
                        BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
                        BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
                        BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
