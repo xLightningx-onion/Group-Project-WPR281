@@ -107,7 +107,7 @@ function send_back_project(BugId){
     document.getElementById("2").className = "active";
     //console.log(BugId)
     //prompt("project is moving")
-    let BugIDMove = BugId
+    let BugIDMove = BugId;
     let BugArr=[];
     let NotInternalStorage=[];
     let ItsABug=[];
@@ -148,28 +148,31 @@ function send_back_project(BugId){
        
           
                 if(currStatus == "progress"){
-                    console.log("I am in progress")
+                  //  console.log("I am in progress")
                     currentOBJ.ProjectStatus = "todo";
                     localStorage.removeItem(ItsABug[i]);
                     localStorage.setItem(ItsABug[i],JSON.stringify(currentOBJ));
-                    console.log("I am changed to"+currentOBJ.ProjectStatus)
+                 //   console.log("I am changed to"+currentOBJ.ProjectStatus)
                     BoardSorting();
+                    break;
                 }
                 else if(currStatus == "review"){
-                    console.log("I am in review")
+                  //  console.log("I am in review")
                     currentOBJ.ProjectStatus = "progress";
                     localStorage.removeItem(ItsABug[i]);
                     localStorage.setItem(ItsABug[i],JSON.stringify(currentOBJ));
-                    console.log("I am changed to"+currentOBJ.ProjectStatus)
+                //    console.log("I am changed to"+currentOBJ.ProjectStatus)
                     BoardSorting();
+                    break;
                 }
                 else if(currStatus == "done"){
-                    console.log("I am in review")
+                 //   console.log("I am in review")
                     currentOBJ.ProjectStatus = "review";
                     localStorage.removeItem(ItsABug[i]);
                     localStorage.setItem(ItsABug[i],JSON.stringify(currentOBJ));
-                    console.log("I am changed to"+currentOBJ.ProjectStatus)
+              //      console.log("I am changed to"+currentOBJ.ProjectStatus)
                     BoardSorting();
+                    break;
                 }
             }
         }
@@ -223,37 +226,46 @@ function move_project(BugId){
         }
     }
     
+
     for(i=0; i<ItsABug.length;i++)
         {
+           // console.log(ItsABug)
             currentOBJ = JSON.parse(localStorage.getItem(ItsABug[i]));
+          //  console.log(ItsABug[i])
             currStatus = currentOBJ.ProjectStatus;
-            
+          //  console.log(currentOBJ);
             if(currentOBJ.BugId == BugIDMove){
        
           
                 if(currStatus == "todo"){
-                    console.log("I am in todo")
+                //    console.log("I am in todo")
                     currentOBJ.ProjectStatus = "progress";
-                    localStorage.removeItem(ItsABug[i]);
-                    localStorage.setItem(ItsABug[i],JSON.stringify(currentOBJ));
+                    let ID = currentOBJ.BugId;
+                    localStorage.removeItem(ID);
+                    localStorage.setItem(ID,JSON.stringify(currentOBJ));
                     console.log("I am changed to"+currentOBJ.ProjectStatus)
                     BoardSorting();
+                    break;
                 }
                 else if(currStatus == "progress"){
-                    console.log("I am in progress")
+               //     console.log("I am in progress")
                     currentOBJ.ProjectStatus = "review";
-                    localStorage.removeItem(ItsABug[i]);
-                    localStorage.setItem(ItsABug[i],JSON.stringify(currentOBJ));
-                    console.log("I am changed to"+currentOBJ.ProjectStatus)
+                    let ID = currentOBJ.BugId;
+                    localStorage.removeItem(ID);
+                    localStorage.setItem(ID,JSON.stringify(currentOBJ));
+                //    console.log("I am changed to"+currentOBJ.ProjectStatus)
                     BoardSorting();
+                    break;
                 }
                 else if(currStatus == "review"){
-                    console.log("I am in review")
+               //     console.log("I am in review")
                     currentOBJ.ProjectStatus = "done";
-                    localStorage.removeItem(ItsABug[i]);
-                    localStorage.setItem(ItsABug[i],JSON.stringify(currentOBJ));
-                    console.log("I am changed to"+currentOBJ.ProjectStatus)
+                    let ID = currentOBJ.BugId;
+                    localStorage.removeItem(ID);
+                    localStorage.setItem(ID,JSON.stringify(currentOBJ));
+                //    console.log("I am changed to"+currentOBJ.ProjectStatus)
                     BoardSorting();
+                    break;
                 }
             }
         }
