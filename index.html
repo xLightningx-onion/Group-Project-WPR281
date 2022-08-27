@@ -451,6 +451,7 @@
                 </div>
                 <div class="noBorder">
                     <button class="backToBoard" type="button" id="backToBoard" onclick="BackToBoard()">Back</button>
+                    <button class="backToBoard" type="button" id="backToBoard" onclick="BackToBoard()">Back</button>
                     <div class="clearBug noBorder"></div>
                 </div>
             </div>
@@ -505,7 +506,96 @@
                 <canvas style="width:100%;height:100%;color: black;" id="ThisProjectChart"></canvas>
             </div>
         </div>
+    </div>
+    <div class="hide" id="TicketUpdate">
+        <div class="content-header center">
+            <h1>Update Ticket</h1>
+        </div>
+        <div class="content-body">
+            <div class="input-wrapper">
+                <table>
+                    <tr>
+                      <td><label for="ProjectIdTicketAdd">Project ID: </label></td>
+                      <td>
+                        <select for="projectID" name="ProjectIdTicketAdd" id="ProjectIdTicketAdd">
+                         </select>
+                      </td>  
+                    </tr>
+                    <tr>
+                        <td><label for="BugNameAdd">Bug Name: </label></td>
+                        <td><input type="text" name="BugNameAdd" id="BugNameAdd"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="BugShortDescAdd">Short Description: </label></td>
+                        <td><textarea name="BugShortDescAdd" id="BugShortDescAdd" cols="22" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="BugLongDescAdd">Long Description: </label></td>
+                        <td><textarea name="BugLongDescAdd" id="BugLongDescAdd" cols="22" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="AssignedEmployee">Employee Assigned: </label></td>
+                        <td>
+                            <select name="AssignedEmployee" id="AssignedEmployeeAdd">
+                            
+                            </select>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td><label for="FoundByAdd"></label>Found By: </td>
+                        <td><input type="text" name="FoundByAdd" id="FoundByAdd"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="DateFoundAdd">Date Found:</label></td>
+                        <td><input type="date" name="DateFoundAdd" id="DateFoundAdd"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="StatusAdd">Status: </label></td>
+                        <td><select name="StatusAdd" id="StatusAdd">
 
+                            <option value="todo">To Do</option>
+                            <option value="progress">In Progress</option>
+                            <option value="review">Review</option>
+                            <option value="done">Done</option>
+
+
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="PriorityAdd">Priority: </label></td>
+                        <td><select name="PriorityAdd" id="PriorityAdd">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="TargetDateAdd">Target Date: </label></td>
+                        <td><input type="date" name="TargetDateAdd" id="TargetDateAdd"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ActualDateAdd">Actual Date:</label></td>
+                        <td><input type="date" name="ActualDateAdd" id="ActualDateAdd"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ResolutionSummaryAdd">Resolution Summary: </label></td>
+                        <td><textarea name="ResolutionSummaryAdd" id="ResolutionSummaryAdd" cols="22" rows="5"></textarea></td>
+                    </tr>
+                </table>
+                <div class="three-col-grid">
+                    <!--<div>
+                        <button type="button">ADD</button>
+                    </div>-->
+                    <div>
+                        <button type="button" onclick="addBug()">Update</button>
+                    </div>
+                    <!--<div>
+                        <button type="button">DELETE</button>
+                    </div>-->
+                </div>
+                </div>        
+            </div> 
+        </div>          
     </div>
     <script src="LoadPopulate.js"></script>
     <script src="Chart.js"></script>
