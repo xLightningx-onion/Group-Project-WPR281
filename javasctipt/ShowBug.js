@@ -61,7 +61,10 @@ function ShowBugPage(BugIDinput){
             ProjectNameToShow = currentOBJ.ProjectName;
         }
     }
+    //clearButtons
+    document.getElementById("bug-button-wrapper").innerHTML = ""
     //show info on page
+    
     document.getElementById("BugProjectNameShow").innerHTML = ProjectNameToShow;
     document.getElementById("BugProjectIdShow").innerHTML = ProjectIdToShow;
     document.getElementById("BugNameShow").innerHTML = BugNameToShow;
@@ -77,6 +80,8 @@ function ShowBugPage(BugIDinput){
     document.getElementById("BugTargetDateShow").innerHTML = TargetDateToShow;
     document.getElementById("BugActualDateShow").innerHTML = ActualDateToShow;
     document.getElementById("BugResolutionSummaryShow").innerHTML = ResolutionSummaryToShow;
+
+    document.getElementById("bug-button-wrapper").innerHTML += "<button class='backToBoard' type='button' id='backToBoard' onclick='editbugs("+BugIdToShow+")'>Update</button>"+"<button class='backToBoard' type='button' id='backToBoard' onclick='BackToBoard()'>Back</button>"
 
 }
 function BackToBoard(){
