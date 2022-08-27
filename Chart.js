@@ -1,5 +1,5 @@
 
-  let BugPriorityChart = new Chart(document.getElementById('bugChart'),bugChart());
-  let ProjectPriorityChart = new Chart(document.getElementById('projectChart'),projectChart())
+  let BugPriorityChart = new Chart(document.getElementById('ThisProjectChart'),ThisProjectAVGChart());
+  let ProjectPriorityChart = new Chart(document.getElementById('ProjectsChart'),projectsAVGChart())
 
   
