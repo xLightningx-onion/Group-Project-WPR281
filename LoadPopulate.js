@@ -350,7 +350,7 @@ function PopulatePage()
         else if(currentType == "Bug")
         {
 
-          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugId+"</h4></div>";
+          document.getElementById("bugListWrapper").innerHTML += "<div class='table-header projectIDhover' onclick='ShowBugPage("+currentOBJ.BugId+")'><h4>"+currentOBJ.BugId+"</h4></div>";
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugName+"</h4></div>";
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugShortDesc+"</h4></div>";
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugLongDesc+"</h4></div>";

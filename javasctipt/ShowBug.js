@@ -20,8 +20,16 @@ function ShowBugPage(BugIDinput){
 
     //show bug info page
     document.getElementById("ShowBugPage").className = "content";
+    document.getElementById("Bugs").className = "hide";
+    document.getElementById("ProjectInfo").className = "hide";
     document.getElementById("Board").className = "hide";
+
+    document.getElementById("1").className = "";
     document.getElementById("2").className = "";
+    document.getElementById("3").className = "";
+    document.getElementById("4").className = "";
+    document.getElementById("5").className = "";
+    document.getElementById("6").className = "";
 
     ItsABug = BugList();
 
