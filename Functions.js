@@ -95,67 +95,103 @@ function ProjectList()
 
 
 
-function bugChart()
+function ThisProjectAVGChart(ProjectID)
 {
-    let labels = [
-        'High Priority',
-        'Medium Priority',
-        'Low Priority',
-      ];
-      let data = {
-        labels: labels,
-        datasets: [{
-          label: 'My First dataset',
-          backgroundColor: [ 'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)'],
-          borderColor: ['rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)'],
-          data: [1,2,3],
-        }]
-    
-      
+  
+  let bugs = BugList();
+  let lowCount =0;
+  let mediumCount =0;
+  let highCount = 0;
+console.log(ProjectID)
+  for(i=0;i<bugs.length;i++)
+  {
+   let  currentOBJ = JSON.parse(localStorage.getItem(bugs[i]));
+    if(currentOBJ.ProjectId == ProjectID)
+    {
+      if(currentOBJ.ProjectPriority == "Low")
+      {
+      lowCount++;
       }
-      
-      ;
-      let config = {
-        type: 'pie',
-        data: data,
-        options: {}
-      };
+      else if(currentOBJ.ProjectPriority == "Medium")
+      {
+      mediumCount++;
+      }
+      else if(currentOBJ.ProjectPriority == "High")
+      {
+      highCount++;
+      }
 
-      return config;
+
+    }
+
+
+  }
+  lowCount = (lowCount/bugs.length)*100;
+  mediumCount = (mediumCount/bugs.length)*100;
+  highCount = (highCount/bugs.length)*100;
+
+  let labels = ['High Priority','Medium Priority','Low Priority',];
+  let data = {
+              labels: labels,
+               datasets: [{label: 'My First dataset',
+                          backgroundColor: [ 'rgba(255, 99, 132, 0.2)',
+                                          'rgba(54, 162, 235, 0.2)',
+                                          'rgba(255, 206, 86, 0.2)'],
+                             borderColor: ['rgba(255, 99, 132, 1)',
+                                         'rgba(54, 162, 235, 1)',
+                                          'rgba(255, 206, 86, 1)'],
+                             data: [highCount,mediumCount,lowCount],
+                          }]
+             };
+  let config = {type: 'pie',data: data,options: {}};
+  return config;
 }
-function projectChart()
-{
-    let labels = [
-        'High Priority',
-        'Medium Priority',
-        'Low Priority',
-      ];
-      let data = {
-        labels: labels,
-        datasets: [{
-          label: 'My First dataset',
-          backgroundColor: [ 'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)'],
-          borderColor: ['rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)'],
-          data: [1,2,3],
-        }]
-    
-      
-      }
-      
-      ;
-      let config = {
-        type: 'pie',
-        data: data,
-        options: {}
-      };
 
+
+function projectsAVGChart()
+{
+  let bugs = BugList();
+  let lowCount =0;
+  let mediumCount =0;
+  let highCount = 0;
+
+  for(i=0;i<bugs.length;i++)
+  {
+    let currentOBJ = JSON.parse(localStorage.getItem(bugs[i]));
+  
+  
+      if(currentOBJ.ProjectPriority == "Low")
+      {
+      lowCount++;
+      }
+      else if(currentOBJ.ProjectPriority == "Medium")
+      {
+      mediumCount++;
+      }
+      else if(currentOBJ.ProjectPriority == "High")
+      {
+      highCount++;
+      }
+    }
+   
+    lowCount = (lowCount/bugs.length)*100;
+    mediumCount = (mediumCount/bugs.length)*100;
+    highCount = (highCount/bugs.length)*100;
+
+   
+    let labels = ['High Priority','Medium Priority','Low Priority',];
+      let data = {
+                  labels: labels,
+                   datasets: [{label: 'My First dataset',
+                              backgroundColor: [ 'rgba(255, 99, 132, 0.2)',
+                                              'rgba(54, 162, 235, 0.2)',
+                                              'rgba(255, 206, 86, 0.2)'],
+                                 borderColor: ['rgba(255, 99, 132, 1)',
+                                             'rgba(54, 162, 235, 1)',
+                                              'rgba(255, 206, 86, 1)'],
+                                 data: [highCount,mediumCount,lowCount],
+                              }]
+                 };
+      let config = {type: 'pie',data: data,options: {}};
       return config;
 }
