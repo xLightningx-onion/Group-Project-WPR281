@@ -96,6 +96,7 @@ function ShowBugPage(BugIDinput){
     document.getElementById("BugProjectNameShow").innerHTML = ProjectNameToShow;
     document.getElementById("BugProjectIdShow").innerHTML = ProjectIdToShow;
     document.getElementById("BugNameShow").innerHTML = BugNameToShow;
+    document.getElementById("BugnameDisplay").innerHTML = BugNameToShow;
     document.getElementById("BugIDShow").innerHTML = BugIdToShow;
     document.getElementById("BugShortDescriptionShow").innerHTML = ShortDescToShow;
     document.getElementById("BugLongDescriptionShow").innerHTML = LongDescToShow;

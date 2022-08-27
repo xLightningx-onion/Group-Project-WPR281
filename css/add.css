@@ -39,6 +39,11 @@ textarea{
     margin: auto;
 }
 .three-col-grid button{
-    background-color: #f06236;
-    padding: 5%;
+    color: #414342;
+    margin-right: +5px;
+    border-radius: 7px;
+    border-color: #e7ac94;
+    border-width: 1px;
+    background-color: #e7ac94;
+    font-size: 1vw;
 }

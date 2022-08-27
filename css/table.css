@@ -37,6 +37,9 @@
     grid-template-columns: repeat(3,1fr);
     background-color: #999f9f;
 }
+.padding5{
+    padding: 5%;
+}
 .padding{
     padding: 2%;
 }
