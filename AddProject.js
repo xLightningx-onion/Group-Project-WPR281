@@ -22,7 +22,8 @@ NotInternalStorage = NumbersKeyList();
     let ProjectNewType = "Project";
 
     let addProject = {ProjectID:ProjectNewID,ProjectName:ProjectNewName,ProjectDescription:ProjectNewDescription,ProjectType:ProjectNewType};
- document.getElementById("ProjectList").innerHTML +="<div>" + addProject.ProjectID +"</div>" +  "<div>"+ addProject.ProjectName +"</div>"    +"<div>"+ addProject.ProjectDescription+"</div>"    ;
+ document.getElementById("ProjectList").innerHTML +="<div>" + addProject.ProjectID +"</div>" +  "<div>"+ addProject.ProjectName +"</div>"    +
+     "<div>"+ addProject.ProjectDescription+"</div><div> <button onclick='DeleteProject("+currentOBJ.ProjectID+")'>Delete Project "+ currentOBJ.ProjectID+" </button> </div>" ; 
 
     localStorage.setItem(highestkey,JSON.stringify(addProject));
     console.log(localStorage)

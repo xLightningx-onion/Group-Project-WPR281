@@ -102,6 +102,7 @@ function ThisProjectAVGChart(ProjectID)
   let lowCount =0;
   let mediumCount =0;
   let highCount = 0;
+
 //console.log(ProjectID)
   for(i=0;i<bugs.length;i++)
   {
@@ -129,17 +130,34 @@ function ThisProjectAVGChart(ProjectID)
   lowCount = (lowCount/bugs.length)*100;
   mediumCount = (mediumCount/bugs.length)*100;
   highCount = (highCount/bugs.length)*100;
+  if((lowCount==0 && mediumCount==0) 
+       || (lowCount==0 && highCount==0)
+       || (mediumCount==0 && highCount==0))
+       {
+        if(lowCount>0)
+        {
+          lowCount = 100;
+        }
+        else if(mediumCount>0)
+        {
+        mediumCount =100;
+        }
+        else
+        {
+         highCount =100; 
+        }
+       }
 
   let labels = ['High Priority(%)','Medium Priority(%)','Low Priority(%)',];
   let data = {
               labels: labels,
                datasets: [{label: 'My First dataset',
                           backgroundColor: [ 'rgba(255, 99, 132, 0.2)',
-                                          'rgba(54, 162, 235, 0.2)',
-                                          'rgba(255, 206, 86, 0.2)'],
+                                           'rgba(255, 206, 86, 0.2)',
+                                          'rgba(54, 162, 235, 0.2)'],
                              borderColor: ['rgba(255, 99, 132, 1)',
-                                         'rgba(54, 162, 235, 1)',
-                                          'rgba(255, 206, 86, 1)'],
+                                           'rgba(255, 206, 86, 1)',
+                                         'rgba(54, 162, 235, 1)' ],
                              data: [highCount,mediumCount,lowCount],
                              hoverOffset:10,
                              weight:100
@@ -180,24 +198,62 @@ function projectsAVGChart()
     lowCount = (lowCount/bugs.length)*100;
     mediumCount = (mediumCount/bugs.length)*100;
     highCount = (highCount/bugs.length)*100;
+    if((lowCount==0 && mediumCount==0) 
+    || (lowCount==0 && highCount==0)
+    || (mediumCount==0 && highCount==0))
+    {
+     if(lowCount>0)
+     {
+       lowCount = 100;
+     }
+     else if(mediumCount>0)
+     {
+     mediumCount =100;
+     }
+     else
+     {
+      highCount =100; 
+     }
+    }
 
-   
+
+
+
+
+
+
+
+
+
     let labels = ['High Priority(%)','Medium Priority(%)','Low Priority(%)',];
       let data = {
                   labels: labels,
                    datasets: [{label: 'My First dataset',
-                              backgroundColor: [ 'rgba(255, 99, 132, 0.2)',
-                                              'rgba(54, 162, 235, 0.2)',
-                                              'rgba(255, 206, 86, 0.2)'],
-                                 borderColor: ['rgba(255, 99, 132, 1)',
-                                             'rgba(54, 162, 235, 1)',
-                                              'rgba(255, 206, 86, 1)'],
+                               backgroundColor: [ 'rgba(255, 99, 132, 0.2)',
+                                                'rgba(255, 206, 86, 0.2)',
+                                                'rgba(54, 162, 235, 0.2)'],
+                                    borderColor: ['rgba(255, 99, 132, 1)',
+                                                'rgba(255, 206, 86, 1)',
+                                                 'rgba(54, 162, 235, 1)' ],
                                  data: [highCount,mediumCount,lowCount],
+                               
                                  hoverOffset:10,
                                  weight:100
                               }]
                  };
       let config = {type: 'doughnut',data: data,options: {responsive: true,
-        maintainAspectRatio: false , plugins:{ legend:{labels:{color:"black"}}, title:{color:'black',display:true,text:'Current Project Bug Priority'}}}};
+        maintainAspectRatio: false , plugins:{legend:{labels:{color:"black"}}, title:{color:'black',display:true,text:'Overall Project Bug Priority'}}}};
       return config;
+}
+//svsvsfvdfvdfv
+
+function NewThisProjectChart()
+{
+  ThisProjectChart.destroy();
+  
+}
+
+function NewProjectsChart()
+{
+  ProjectsChart.destroy();
 }
