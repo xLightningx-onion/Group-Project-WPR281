@@ -1,10 +1,10 @@
 function addEmployeeDetails()
 {
-let EmpArr=[];
-let NotInternalStorage=[];
-let ItsAnEmployee=[];
- let highestkey =0;
-
+//let EmpArr=[];
+//let NotInternalStorage=[];
+let ItsAnEmployee=EmployeeList();
+ let highestkey =NewKey();
+/*
 //find employees
 for (key in localStorage)
 {
@@ -31,6 +31,7 @@ for(let i=0;i<NotInternalStorage.length;i++)
      // console.log(NotInternalStorage[i])
     }
 }
+
 /*
 for(i=0; i<ItsAnEmployee.length;i++)
     {
@@ -49,7 +50,7 @@ for(i=0; i<ItsAnEmployee.length;i++)
       let EmployeeNewUsername= document.getElementById("EmployeeUserNameAdd").value;
       let EmployeeNewPhoto= document.getElementById("EmployeeProfilePicAdd").value;
       let ProjectNewType= "Employee";
-
+/*
       let keyList =[];
       let numberOnlyKeyList =[];
     
@@ -75,6 +76,8 @@ for(i=0; i<ItsAnEmployee.length;i++)
    }
   
    highestkey +=1;
+
+   */
       let addEmployee = {EmployeeID:EmployeeNewID,EmployeeFirstName:EmployeeNewFirstName,EmployeeLastName:EmployeeNewLastName,EmployeeEmail:EmployeeNewEmail,EmployeeUsername:EmployeeNewUsername,EmployeePhoto: EmployeeNewPhoto, ProjectType:ProjectNewType };
   
     

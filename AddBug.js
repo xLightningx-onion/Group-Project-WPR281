@@ -60,10 +60,11 @@ function addBug(){
     let BugNewActualDate = document.getElementById("ActualDateAdd").value;
     let BugNewResolutionSummary = document.getElementById("ResolutionSummaryAdd").value;
        ProjectNewType = "Bug";
-    let keyList =[];
-       let numberOnlyKeyList =[];
-       let highestkey =0;
-    for( let key in localStorage)
+
+   // let keyList =[];
+    //   let numberOnlyKeyList =[];
+       let highestkey =NewKey();
+   /* for( let key in localStorage)
       {
         keyList.push(key);
       }
@@ -83,7 +84,7 @@ function addBug(){
         highestkey = parseInt(numberOnlyKeyList[i]);
       }
     }
-    
+    */
     // console.log("numbersonlykylist: "+numberOnlyKeyList)
     // console.log(highestkey);
   /*   for( i = 0 ; i < keyList.length;i++)
@@ -112,7 +113,7 @@ let BugArr=[];
 let NotInternalStorage=[];
 let ItsABug=[];
 let HigestIdNum = 0;
-
+/*
 //find bugs
 for (key in localStorage)
 {
@@ -146,8 +147,8 @@ for(i=0; i<ItsABug.length;i++)
           //console.log("New Id:" + HigestIdNum)
         }
     }
-
-    let addBug = {BugId:HigestIdNum,ProjectId:BugProjectNewID,BugName:BugNewName,
+*/
+    let addBug = {BugId:highestkey,ProjectId:BugProjectNewID,BugName:BugNewName,
       BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
       BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
       BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
@@ -156,7 +157,7 @@ for(i=0; i<ItsABug.length;i++)
       ProjectType:ProjectNewType};
 
 
-  highestkey +=1;
+ // highestkey +=1;
 //console.log("Next Key:" +highestkey)
    
  
@@ -174,6 +175,6 @@ for(i=0; i<ItsABug.length;i++)
     document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugActualDate+"</h4></div>";
     document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugResolutionSummary+"</h4></div>";
     localStorage.setItem(highestkey,JSON.stringify(addBug));
-//console.log(localStorage)
+
     BoardSorting();
 }
