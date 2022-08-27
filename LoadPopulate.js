@@ -307,7 +307,7 @@ function PopulatePage()
 {
     document.getElementById("ProjectIdTicketAdd").innerHTML = "";
     document.getElementById("AssignedEmployeeAdd").innerHTML = "";
-    let populatekeyList =[];
+  //  let populatekeyList =[];
     let now = new Date();
     let day = ("0" + now.getDate()).slice(-2);
     let month = ("0" + (now.getMonth() + 1)).slice(-2);
@@ -325,7 +325,7 @@ function PopulatePage()
 
 
 
-
+/*
     for( key in localStorage)
     {
        
@@ -342,8 +342,9 @@ for(i=0 ; i <populatekeyList.length;i++)
     numbersOnlykeyList.push(populatekeyList[i]);
   }
 }
-
-  numbersOnlykeyList.sort();
+*/
+ numbersOnlykeyList = NumbersKeyList();
+ //console.log(numbersOnlykeyList);
 // console.log("Populate numbers only keylist"+numbersOnlykeyList)
    for(number in numbersOnlykeyList)
     {

@@ -107,13 +107,13 @@ function send_back_project(BugId){
     document.getElementById("2").className = "active";
     //console.log(BugId)
     //prompt("project is moving")
-    let BugIDMove = BugId;
-    let BugArr=[];
-    let NotInternalStorage=[];
-    let ItsABug=[];
+    //let BugId = BugId;
+  //  let BugArr=[];
+ //   let NotInternalStorage=[];
+    let ItsABug=BugList();
 
     let currStatus;
-    
+  /*  
     //find bugs
     for (key in localStorage)
     {
@@ -137,14 +137,14 @@ function send_back_project(BugId){
             ItsABug.push(NotInternalStorage[i]);
             //console.log(NotInternalStorage[i])
         }
-    }
-    
+    }*/
+    ItsABug = BugList();
     for(i=0; i<ItsABug.length;i++)
         {
             currentOBJ = JSON.parse(localStorage.getItem(ItsABug[i]));
             currStatus = currentOBJ.ProjectStatus;
             
-            if(currentOBJ.BugId == BugIDMove){
+            if(currentOBJ.BugId == BugId){
        
           
                 if(currStatus == "progress"){
@@ -194,13 +194,13 @@ function move_project(BugId){
     document.getElementById("2").className = "active";
     //console.log(BugId)
     //prompt("project is moving")
-    let BugIDMove = BugId
-    let BugArr=[];
-    let NotInternalStorage=[];
-    let ItsABug=[];
+   // let BugId = BugId;
+   // let BugArr=[];
+  //  let NotInternalStorage=[];
+    let ItsABug=BugList();
 
     let currStatus;
-    
+    /*
     //find bugs
     for (key in localStorage)
     {
@@ -225,7 +225,7 @@ function move_project(BugId){
             //console.log(NotInternalStorage[i])
         }
     }
-    
+    */
 
     for(i=0; i<ItsABug.length;i++)
         {
@@ -234,7 +234,7 @@ function move_project(BugId){
           //  console.log(ItsABug[i])
             currStatus = currentOBJ.ProjectStatus;
           //  console.log(currentOBJ);
-            if(currentOBJ.BugId == BugIDMove){
+            if(currentOBJ.BugId == BugId){
        
           
                 if(currStatus == "todo"){
@@ -243,7 +243,7 @@ function move_project(BugId){
                     let ID = currentOBJ.BugId;
                     localStorage.removeItem(ID);
                     localStorage.setItem(ID,JSON.stringify(currentOBJ));
-                    console.log("I am changed to"+currentOBJ.ProjectStatus)
+                  //  console.log("I am changed to"+currentOBJ.ProjectStatus)
                     BoardSorting();
                     break;
                 }
@@ -281,16 +281,19 @@ function move_project(BugId){
 }
 
 
-function delete_project(bugid){
+function delete_project(BugId){
     document.getElementById("ShowBugPage").className = "hide";
     document.getElementById("Board").className = "content";
     document.getElementById("2").className = "active";
-    let BugIDDelete = bugid;
+    let BugIdDelete = BugId;
     let BugArr=[];
     let NotInternalStorage=[];
-    let ItsABug=[];
+    let ItsABug=BugList();
     let HigestIdNum = 0;
-    
+   // console.log(BugId)
+    //console.log(ItsABug)
+
+    /*
     //find bugs
     for (key in localStorage)
     {
@@ -315,13 +318,15 @@ function delete_project(bugid){
             //console.log(NotInternalStorage[i])
         }
     }
+    */
     for(i=0; i<ItsABug.length;i++)
         {
             currentOBJ = JSON.parse(localStorage.getItem(ItsABug[i]));
             
-            //console.log(currentOBJ);
-            if(currentOBJ.BugId == BugIDDelete){
+  
+            if(currentOBJ.BugId == BugIdDelete){
               localStorage.removeItem(ItsABug[i]);
+    
               BoardSorting();
             }
         }

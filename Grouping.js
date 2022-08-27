@@ -15,7 +15,7 @@ function BoardSorting(){
     document.getElementById("col2").innerHTML = "<div class='col-header'><h4>IN PROGRESS</h4></div>";
     document.getElementById("col3").innerHTML = "<div class='col-header'><h4>IN REVIEW</h4></div>";
     document.getElementById("col4").innerHTML = "<div class='col-header'><h4>DONE</h4></div>";
-    for (key in localStorage)
+    /*for (key in localStorage)
     {
         BoardArr.push(key);
     }
@@ -30,10 +30,12 @@ function BoardSorting(){
             NotInternalStorage.push(BoardArr[i]);
         }
 
-    }
+    }*/
 
+
+    NotInternalStorage = NumbersKeyList();
     //console.log("Not Internal Storage    ..  "+NotInternalStorage)
-
+ 
     for(let i=0;i<NotInternalStorage.length;i++)
     {
         //console.log(typeof(NotInternalStorage[0]));

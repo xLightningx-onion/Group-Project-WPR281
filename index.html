@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="./css/board.css">
     <link rel="stylesheet" href="./css/table.css">
     <link rel="stylesheet" href="./css/Showbug.css">
-
+     <script src="Functions.js"></script>
     <script src="./javasctipt/pageDisplay.js"></script>
     <script src="AddProject.js"></script>
     <script src="ClearLocalStorage.js"></script>
     <script src="Grouping.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="AddEmployee.js"></script>
 
     <script src="AddBug.js"></script>
@@ -104,6 +104,7 @@
                             </div> 
                         </div>
                     </div>
+               
                 </div>
             </div>
             <div class="hide" id="AddEmployee">
@@ -166,6 +167,12 @@
                             <h4>Short Description</h4>
                         </div>
                     </div>
+                    <div>
+                        <canvas id="bugChart"></canvas>
+                      </div>
+                      <div>
+                        <canvas id="projectChart"></canvas>
+                      </div>
                 </div> 
             </div>
             <div class="hide" id="Ticket">
@@ -442,6 +449,6 @@
         </div> 
     </div>
     <script src="LoadPopulate.js"></script>
-  
+    <script src="Chart.js"></script>
 </body>
 </html>
