@@ -102,7 +102,7 @@ function ThisProjectAVGChart(ProjectID)
   let lowCount =0;
   let mediumCount =0;
   let highCount = 0;
-console.log(ProjectID)
+//console.log(ProjectID)
   for(i=0;i<bugs.length;i++)
   {
    let  currentOBJ = JSON.parse(localStorage.getItem(bugs[i]));
@@ -146,7 +146,7 @@ console.log(ProjectID)
                           }]
              };
   let config = {type: 'doughnut',data: data,options: {responsive: true,
-    maintainAspectRatio: false, plugins:{ title:{display:true,text:'Current Project Bug Priority'}}}};
+    maintainAspectRatio: false, plugins:{ legend:{labels:{color:"black"}}, title:{color:'black',display:true,text:'Current Project Bug Priority'}}}};
   return config;
 }
 
@@ -198,6 +198,6 @@ function projectsAVGChart()
                               }]
                  };
       let config = {type: 'doughnut',data: data,options: {responsive: true,
-        maintainAspectRatio: false , plugins:{ title:{display:true,text:'Overall Bug Priority'}}}};
+        maintainAspectRatio: false , plugins:{ legend:{labels:{color:"black"}}, title:{color:'black',display:true,text:'Current Project Bug Priority'}}}};
       return config;
 }
