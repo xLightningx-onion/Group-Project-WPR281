@@ -50,8 +50,15 @@
 .border div{
     border: 1px solid black;
     text-align: center;
-    
 }
 .table-header{
     font-weight: bold;
+}
+.projectIDhover:hover{
+    background: radial-gradient(circle at center, #f06236, #ec9074, #f2c3b4);
+    box-shadow: 3px 3px 3px #934027;
+    transform: scale(1.005);
+    box-shadow: 0 0 3px black;
+    margin-top: 0px;
+    margin-left: +3px;
 }

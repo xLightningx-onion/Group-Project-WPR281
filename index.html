@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/board.css">
     <link rel="stylesheet" href="./css/table.css">
     <link rel="stylesheet" href="./css/Showbug.css">
+    
      <script src="Functions.js"></script>
     <script src="./javasctipt/pageDisplay.js"></script>
     <script src="AddProject.js"></script>
@@ -21,6 +22,7 @@
 
     <script src="AddBug.js"></script>
     <script src="./javasctipt/ShowBug.js"></script>
+    <script src="./javasctipt/ShowProject.js"></script>
     
 
    
@@ -308,7 +310,7 @@
                 <div class="table-wrapper margin-right">
                     <div class="twelve-col-grid size " id="bugListWrapper">
                         <div class="table-header">
-                            <h4>Project ID</h4>
+                            <h4>Bug ID</h4>
                         </div>
                         <div class="table-header">
                             <h4>Bug Name</h4>
@@ -445,6 +447,52 @@
                     <button class="backToBoard" type="button" id="backToBoard" onclick="BackToBoard()">Back</button>
                     <div class="clearBug noBorder"></div>
                 </div>
+            </div>
+        </div> 
+    </div>
+    <div class="hide" id="ProjectInfo">
+        <div class="content-header">
+            <h1>Project Name</h1>
+        </div>
+        <div class="table-wrapper margin-right">
+            <div class="project-info-twelve-col-grid size " id="ProjectInfoWrapper">
+                <div class="table-header Border">
+                    <h4>Bug Id</h4>
+                </div>
+                <div class="table-header Border">
+                    <h4>Bug Name</h4>
+                </div>
+                <div class="table-header Border">
+                    <h4>Short Description</h4>
+                </div>
+                <div class="table-header Border">
+                    <h4>long Description</h4>
+                </div>
+                <div class="table-header Border">
+                    <h4>Employee Assigned</h4>
+                </div>
+                <div class="table-header Border">
+                    <h4>Found By</h4>
+                </div>
+                <div class="table-header Border">
+                    <h4>Date Found</h4>
+                </div>
+                <div class="table-header Border">
+                    <h4>Status</h4>
+                </div>
+                <div class="table-header Border">
+                    <h4>Priority</h4>
+                </div>
+                <div class="table-header Border">
+                    <h4>Target Date</h4>
+                </div>
+                <div class="table-header Border">
+                    <h4>Actual Date</h4>
+                </div>
+                <div class="table-header Border">
+                    <h4>Resolution Summary</h4>
+                </div>
+                
             </div>
         </div> 
     </div>

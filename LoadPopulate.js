@@ -362,7 +362,7 @@ for(i=0 ; i <populatekeyList.length;i++)
           document.getElementById("ProjectIdTicketAdd").innerHTML += "<option value='"+currentOBJ.ProjectID+"'>"+currentOBJ.ProjectID+"</div>";
 
              
-             document.getElementById("ProjectList").innerHTML += "<div>" 
+             document.getElementById("ProjectList").innerHTML += "<div class='projectIDhover' onclick='showProject("+currentOBJ.ProjectID+")'>" 
              + currentOBJ.ProjectID +"</div>" +  "<div>"+ currentOBJ.ProjectName +"</div>"    +"<div>"
              + currentOBJ.ProjectDescription+"</div>"; 
         }

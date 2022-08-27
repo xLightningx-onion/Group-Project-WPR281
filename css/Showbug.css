@@ -10,12 +10,25 @@
     display: grid;
     grid-template-columns: 30% 70%;
     background-color: #999f9f;
+    text-align: center;
+}
+.bug-show-two-col h4{
+    text-align: center;
+}
+
+.project-info-twelve-col-grid{
+    padding: 1%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    background-color: #999f9f;
+    
 }
 .bug-show-two-col div{
     text-align: justify;
 }
 .Border{
     border: 1px solid black;
+    text-align: center;
 }
 .backToBoard{
     margin-top: 5%;
