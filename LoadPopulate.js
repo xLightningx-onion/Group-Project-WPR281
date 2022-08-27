@@ -373,7 +373,13 @@ function PopulatePage()
         }
       
     }
+ 
+   
+   
    BoardSorting();
 
 }
+
 Populate();
+let ProjectsChart = new Chart(document.getElementById('ProjectsChart'),projectsAVGChart());
+let ThisProjectChart = new Chart(document.getElementById('ThisProjectChart'),projectsAVGChart());
