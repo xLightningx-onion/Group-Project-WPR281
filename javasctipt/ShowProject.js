@@ -1,4 +1,6 @@
 function showProject(projectID){
+
+    let BugPriorityChart = new Chart(document.getElementById('ThisProjectChart'),ThisProjectAVGChart(projectID));
     let projectIdToDisplay = projectID;
     let BugArray = [];
     document.getElementById("ProjectInfo").className = "content";
