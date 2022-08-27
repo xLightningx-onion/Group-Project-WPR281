@@ -15,6 +15,9 @@ function board(){
     document.getElementById("Bugs").className = "hide";
     document.getElementById("ShowBugPage").className = "hide";
     document.getElementById("ProjectInfo").className = "hide";
+    document.getElementById("TicketUpdate").className = "hide";
+
+    
 }
 function addEmployee(){
     //nav status
@@ -33,6 +36,7 @@ function addEmployee(){
     document.getElementById("Bugs").className = "hide";
     document.getElementById("ShowBugPage").className = "hide";
     document.getElementById("ProjectInfo").className = "hide";
+    document.getElementById("TicketUpdate").className = "hide";
 }
 function projects(){
     //nav status
@@ -51,6 +55,7 @@ function projects(){
     document.getElementById("Bugs").className = "hide";
     document.getElementById("ShowBugPage").className = "hide";
     document.getElementById("ProjectInfo").className = "hide";
+    document.getElementById("TicketUpdate").className = "hide";
 }
 function ticket(){
     //nav status
@@ -69,6 +74,7 @@ function ticket(){
     document.getElementById("Bugs").className = "hide";
     document.getElementById("ShowBugPage").className = "hide";
     document.getElementById("ProjectInfo").className = "hide";
+    document.getElementById("TicketUpdate").className = "hide";
 }
 function projectAdd(){
     //nav status
@@ -87,6 +93,7 @@ function projectAdd(){
     document.getElementById("Bugs").className = "hide";
     document.getElementById("ShowBugPage").className = "hide";
     document.getElementById("ProjectInfo").className = "hide";
+    document.getElementById("TicketUpdate").className = "hide";
 }
 function bugs(){
     //nav status
@@ -105,6 +112,7 @@ function bugs(){
     document.getElementById("Bugs").className = "content";
     document.getElementById("ShowBugPage").className = "hide";
     document.getElementById("ProjectInfo").className = "hide";
+    document.getElementById("TicketUpdate").className = "hide";
 }
 
 function send_back_project(BugId){
