@@ -14,9 +14,9 @@ function editbugs(bugID){
     document.getElementById("6").className = "";
 
     let bugIDToUpdate = bugID;
-    console.log(bugIDToUpdate);
+    //console.log(bugIDToUpdate);
     let bugArray = BugList();
-    console.log(bugArray);
+    //console.log(bugArray);
     
     let ProjectIdToUpdate = 0;
     let BugNameToUpdate;
@@ -90,5 +90,8 @@ function editbugs(bugID){
     document.getElementById("TargetDateUpdate").value = TargetDateToUpdate;
     document.getElementById("ActualDateUpdate").value = ActualDateToUpdate;
     document.getElementById("ResolutionSummaryUpdate").innerHTML = ResolutionSummaryToUpdate;
+    
+}
+function UpdateBugs(){
     
 }

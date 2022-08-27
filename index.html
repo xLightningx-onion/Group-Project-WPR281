@@ -12,19 +12,19 @@
     <link rel="stylesheet" href="./css/table.css">
     <link rel="stylesheet" href="./css/Showbug.css">
     
-     <script src="Functions.js"></script>
+     <script src="./javascript/Functions.js"></script>
     <script src="./javascript/pageDisplay.js"></script>
-    <script src="AddProject.js"></script>
-    <script src="ClearLocalStorage.js"></script>
-    <script src="Grouping.js"></script>
+    <script src="./javascript/AddProject.js"></script>
+    <script src="./javascript/ClearLocalStorage.js"></script>
+    <script src="./javascript/Grouping.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="AddEmployee.js"></script>
-    <script src="AddBug.js"></script>
-
+    <script src="./javascript/AddEmployee.js"></script>
+    <script src="./javascript/AddBug.js"></script>
     <script src="./javascript/ShowBug.js"></script>
     <script src="./javascript/ShowProject.js"></script>
-
     <script src="./javascript/EditBugs.js"></script>
+    <script src="./javascript/EditEmployee.js"></script>
+    <script src="./javascript/EditProjects.js"></script>
 
     
 
@@ -72,6 +72,11 @@
                 <div class="side-nav">
                     <img src="./images/add-user.png" alt="">
                     <a id="6" href="#" onclick="addEmployee()">Add employee</a> 
+                    <div class="clear"></div>
+                </div>
+                <div class="side-nav">
+                    <img src="./images/user.png" alt="">
+                    <a id="7" href="#" onclick="Employee()">Employees</a> 
                     <div class="clear"></div>
                 </div>
                 <div class="button-wrap">
@@ -460,7 +465,7 @@
     </div>
     <div class="hide" id="ProjectInfo">
         <div class="content-header">
-            <h1>Project Name</h1>
+            <h1 id="ProjectNameToUpdateShow">Project Name</h1>
         </div>
         <div class="table-wrapper margin-right">
             <div class="project-info-twelve-col-grid  " id="ProjectInfoWrapper">
@@ -593,7 +598,7 @@
                         <button type="button">ADD</button>
                     </div>-->
                     <div>
-                        <button type="button" onclick="addBug()">Update</button>
+                        <button type="button" onclick="UpdateBugs()">Update</button>
                     </div>
                     <!--<div>
                         <button type="button">DELETE</button>
@@ -603,7 +608,115 @@
             </div> 
         </div>          
     </div>
-    <script src="LoadPopulate.js"></script>
+    <div class="hide" id="Employees">
+        <div class="content-header">
+            <h1>Employees</h1>
+        </div>
+        <div class="table-wrapper">
+            <div class="six-col border  padding" id="EmployeeList">
+                <div class="table-header">
+                    <h4>Employee ID</h4>
+                </div>
+                <div class="table-header">
+                    <h4>First Name</h4>
+                </div>
+                <div class="table-header">
+                    <h4>Last Name</h4>
+                </div>  
+                <div class="table-header">
+                    <h4>Email</h4>
+                </div>
+                <div class="table-header">
+                    <h4>Username</h4>
+                </div>
+                <div class="table-header">
+                    <h4>Profile picture</h4>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="hide" id="EmployeeEdit">
+        <div class="content-header center">
+            <h1>Edit Employee</h1>
+        </div>
+        <div class="content-body">
+            <div class="input-wrapper">
+                <table>
+                    <tr>
+                        <td><label for="EmployeeFirstNameToUpdate">First Name: </label></td>
+                        <td><input type="text" name="EmployeeFirstNameToUpdate" id="EmployeeFirstNameToUpdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="EmployeeLastNameToUpdate">Last Name: </label></td>
+                        <td><input type="text" name="EmployeeLastNameToUpdate" id="EmployeeLastNameToUpdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="EmployeeEmailToUpdate">Email :</label></td>
+                        <td><input type="email" name="EmployeeEmailToUpdate" id="EmployeeEmailToUpdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="EmployeeUserNameToUpdate">Username: </label></td>
+                        <td><input type="text" name="EmployeeUserNameToUpdate" id="EmployeeUserNameToUpdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="EmployeeProfilePicToUpdate">Picture: </label></td>
+                        <td><input type="file" name="EmployeeProfilePicToUpdate" id="EmployeeProfilePicToUpdate"></td>
+                    </tr>
+                </table>
+                <div class="three-col-grid">
+                    <div>
+                        <button type="button" onclick="BackToEmployees()">Back</button>
+                    </div>
+                    <div>
+                        <button type="button" id="btnSaveEmployee" onclick="UpdateEmployee()">Update</button>
+                    </div>
+                    <!--<div>
+                        <button type="button">DELETE</button>
+                    </div>-->
+                </div>
+                </div>        
+            </div> 
+        </div>                
+        </div>
+    </div>
+    <div class="hide" id="ProjectEdit">
+        <div class="content-header center">
+            <h1>&nbsp Edit Project</h1>
+        </div>
+        <div class="content-body">
+            <div class="input-wrapper">
+                <table>
+                    <tr>
+                        <td>Project ID:</td>
+                        <td><p id="ProjectIDToUpdate"></p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ProjectNameToUpdate">Project Name: </label></td>
+                        <td><input type="text" name="ProjectNameToUpdate" id="ProjectNameToUpdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ProjectShortDescToUpdate">Short Description: </label></td>
+                        <td><textarea name="ProjectShortDescToUpdate" id="ProjectShortDescToUpdate" cols="22" rows="5"></textarea></td>
+                    </tr>
+                    
+                </table>
+                <div class="three-col-grid"> 
+                    <div>
+                        <button type="button" onclick="BackToProjectInfo()">Back</button>
+                    </div>
+                    <div>
+                        <button type="button" onclick="UpdateProject()">Update</button>
+                    </div>
+                    <!--
+                    <div>
+                        <button type="button">DELETE</button>
+                    </div>
+                     -->
+                </div>
+            </div>        
+        </div> 
+    </div> 
+    <script src="./javascript/LoadPopulate.js"></script>
    
 
 </body>

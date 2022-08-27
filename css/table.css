@@ -43,6 +43,12 @@
     grid-template-columns: repeat(4,1fr);
     background-color: #999f9f;
 }
+.six-col{
+    padding: 1%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    background-color: #999f9f;
+}
 .four-col button{
     color: #414342;
     margin: 1%;
