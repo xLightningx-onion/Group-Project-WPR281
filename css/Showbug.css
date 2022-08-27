@@ -19,8 +19,14 @@
 }
 .backToBoard{
     margin-top: 5%;
-    background-color: #f06236;
-    padding: 5%;
+    padding: 3%;
+    color: #414342;
+    margin-right: +5px;
+    border-radius: 7px;
+    border-color: #e7ac94;
+    border-width: 1px;
+    background-color: #e7ac94;
+    font-size: 1vw;
     float: right;
 }
 .clearBug{
