@@ -31,25 +31,47 @@ function editbugs(bugID){
     let ActualDateToUpdate;
     let ResolutionSummaryToUpdate;
     
-    
+    numbersOnlykeyList = NumbersKeyList();
+
+   for(number in numbersOnlykeyList)
+    {
+            let currentOBJ = JSON.parse(localStorage.getItem(parseInt(numbersOnlykeyList[number])));
+            let currentType = currentOBJ.ProjectType;
+            if(currentType == "Employee")
+            {
+        
+                document.getElementById("AssignedEmployeeUpdate").innerHTML += "<option value='" +currentOBJ.EmployeeUsername+"'>"+currentOBJ.EmployeeUsername+"</option>";
+            }
+    }
 
     for (let i = 0; i < bugArray.length; i++) {
         currentOBJ = JSON.parse(localStorage.getItem(bugArray[i]));
-        console.log(currentOBJ)
-        if (bugArray.BugId == bugIDToUpdate) {
+        //console.log(currentOBJ)
+        if (currentOBJ.BugId == bugIDToUpdate) {
             ProjectIdToUpdate = currentOBJ.ProjectId;
-            console.log(ProjectIdToUpdate)
+            //console.log(ProjectIdToUpdate);
             BugNameToUpdate = currentOBJ.BugName;
+            //console.log(BugNameToUpdate);
             ShortDescToUpdate = currentOBJ.BugShortDesc;
+            //console.log(ShortDescToUpdate);
             LongDescToUpdate = currentOBJ.BugLongDesc;
+            //console.log(LongDescToUpdate);
             EmpAssignedToUpdate = currentOBJ.BugAssignedEmployee;
+            //console.log(EmpAssignedToUpdate);
             FoundByToUpdate = currentOBJ.BugFoundBy;
+            //console.log(FoundByToUpdate);
             DateFoundToUpdate = currentOBJ.BugDateFound;
+            //console.log(DateFoundToUpdate);
             StatusToUpdate = currentOBJ.ProjectStatus;
+            //console.log(StatusToUpdate);
             PriorityToUpdate = currentOBJ.ProjectPriority;
+            //console.log(PriorityToUpdate);
             TargetDateToUpdate = currentOBJ.BugTargetDate;
+            //console.log(TargetDateToUpdate);
             ActualDateToUpdate = currentOBJ.BugActualDate;
+            //console.log(ActualDateToUpdate);
             ResolutionSummaryToUpdate = currentOBJ.BugResolutionSummary
+            //console.log(ResolutionSummaryToUpdate);
         }
         
     }
@@ -57,16 +79,16 @@ function editbugs(bugID){
 
     document.getElementById("ProjectIdTicketUpdate").innerHTML = ProjectIdToUpdate;
     document.getElementById("BugIdTicketUpdate").innerHTML = bugIDToUpdate;
-    document.getElementById("BugNameUpdate").innerHTML = BugNameToUpdate;
+    document.getElementById("BugNameUpdate").value = BugNameToUpdate;
     document.getElementById("BugShortDescUpdate").innerHTML = ShortDescToUpdate;
     document.getElementById("BugLongDescUpdate").innerHTML = LongDescToUpdate;
-    document.getElementById("AssignedEmployeeUpdate").innerHTML = EmpAssignedToUpdate;
-    document.getElementById("FoundByUpdate").innerHTML = FoundByToUpdate;
-    document.getElementById("DateFoundUpdate").innerHTML = DateFoundToUpdate;
-    document.getElementById("StatusUpdate").innerHTML = StatusToUpdate;
-    document.getElementById("PriorityUpdate").innerHTML = PriorityToUpdate;
-    document.getElementById("TargetDateUpdate").innerHTML = TargetDateToUpdate;
-    document.getElementById("ActualDateUpdate").innerHTML = ActualDateToUpdate;
+    document.getElementById("AssignedEmployeeUpdate").value = EmpAssignedToUpdate;
+    document.getElementById("FoundByUpdate").value = FoundByToUpdate;
+    document.getElementById("DateFoundUpdate").value = DateFoundToUpdate;
+    document.getElementById("StatusUpdate").value = StatusToUpdate;
+    document.getElementById("PriorityUpdate").value = PriorityToUpdate;
+    document.getElementById("TargetDateUpdate").value = TargetDateToUpdate;
+    document.getElementById("ActualDateUpdate").value = ActualDateToUpdate;
     document.getElementById("ResolutionSummaryUpdate").innerHTML = ResolutionSummaryToUpdate;
     
 }
