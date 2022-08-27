@@ -245,7 +245,7 @@ function projectsAVGChart()
         maintainAspectRatio: false , plugins:{legend:{labels:{color:"black"}}, title:{color:'black',display:true,text:'Overall Project Bug Priority'}}}};
       return config;
 }
-
+//svsvsfvdfvdfv
 
 function NewThisProjectChart()
 {
