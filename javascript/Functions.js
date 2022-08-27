@@ -44,20 +44,23 @@ return numbersOnlykeyList;
 function EmployeeList()
 {
   let numberList =NumbersKeyList();
+  //console.log(numberList);
   let employees =[];
-  for(i = 0;i<NumbersKeyList.length;i++)
+  for(i = 0;i<numberList.length;i++)
   {
     let currOBJ = JSON.parse(localStorage.getItem(parseInt(numberList[i])));
+    //console.log(currOBJ);
     if (currOBJ.ProjectType == "Employee")
     {
-        employees.push(numberList[i]);
+        employees.push(NumbersKeyList[i]);
     }
   }
   employees.sort();
+  console.log("The Employees" + employees);
   return employees;
 
 }
-
+//console.log("The emp" + EmployeeList());
 function BugList()
 {
     let numberList =NumbersKeyList();
