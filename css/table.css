@@ -34,7 +34,7 @@
 .three-col{
     padding: 1%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr) 0.5fr;
     background-color: #999f9f;
 }
 .padding5{
@@ -62,3 +62,4 @@
     margin-top: 0px;
     margin-left: +3px;
 }
+
