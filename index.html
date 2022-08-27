@@ -158,7 +158,7 @@
                     <h1>Projects</h1>
                 </div>
                 <div class="table-wrapper">
-                    <div class="three-col border size padding5" id="ProjectList">
+                    <div class="four-col border  padding" id="ProjectList">
                         <div class="table-header">
                             <h4>Project ID</h4>
                         </div>
@@ -174,18 +174,9 @@
 
                         </div>
                     </div>
-                    <div class="ChartGrid">
-<div class="ChartContainer">
-                        <canvas style="width:100%;height:100%;" id="ProjectsChart"></canvas>
-                      </div>
-                      <div class="ChartContainer">
-                        <canvas style="width:100%;height:100%;" id="ThisProjectChart"></canvas>
-                      </div>
-
-                    </div>
-                    
-                  
                 </div> 
+                
+                
             </div>
             <div class="hide" id="Ticket">
                 <div class="content-header center">
@@ -318,7 +309,7 @@
                     <h1>Bugs</h1>
                 </div>
                 <div class="table-wrapper margin-right">
-                    <div class="twelve-col-grid size " id="bugListWrapper">
+                    <div class="twelve-col-grid " id="bugListWrapper">
                         <div class="table-header">
                             <h4>Bug ID</h4>
                         </div>
@@ -355,6 +346,11 @@
                         <div class="table-header">
                             <h4>Resolution Summary</h4>
                         </div>
+                    </div>
+                </div>
+                <div class="ChartGrid">
+                    <div class="ChartContainer">
+                        <canvas style="width:100%;height:100%;color: black;" id="ProjectsChart"></canvas>
                     </div>
                 </div> 
             </div>
@@ -465,7 +461,7 @@
             <h1>Project Name</h1>
         </div>
         <div class="table-wrapper margin-right">
-            <div class="project-info-twelve-col-grid size " id="ProjectInfoWrapper">
+            <div class="project-info-twelve-col-grid  " id="ProjectInfoWrapper">
                 <div class="table-header Border">
                     <h4>Bug Id</h4>
                 </div>
@@ -502,9 +498,14 @@
                 <div class="table-header Border">
                     <h4>Resolution Summary</h4>
                 </div>
-                
             </div>
         </div> 
+        <div class="ChartGrid">
+            <div class="ChartContainer">
+                <canvas style="width:100%;height:100%;color: black;" id="ThisProjectChart"></canvas>
+            </div>
+        </div>
+
     </div>
     <script src="LoadPopulate.js"></script>
     <script src="Chart.js"></script>
