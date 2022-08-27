@@ -307,7 +307,6 @@ function PopulatePage()
 {
     document.getElementById("ProjectIdTicketAdd").innerHTML = "";
     document.getElementById("AssignedEmployeeAdd").innerHTML = "";
-  //  let populatekeyList =[];
     let now = new Date();
     let day = ("0" + now.getDate()).slice(-2);
     let month = ("0" + (now.getMonth() + 1)).slice(-2);
@@ -321,42 +320,19 @@ function PopulatePage()
 
  document.getElementById("ActualDateAdd").value = today;
 
-
-
-
-
-/*
-    for( key in localStorage)
-    {
-       
-        populatekeyList.push(key);
-    }
-     populatekeyList.sort();
-
-
- let numbersOnlykeyList =[];
-for(i=0 ; i <populatekeyList.length;i++)
-{
-  if(isNaN(populatekeyList[i]) == false)
-  {
-    numbersOnlykeyList.push(populatekeyList[i]);
-  }
-}
-*/
  numbersOnlykeyList = NumbersKeyList();
- //console.log(numbersOnlykeyList);
-// console.log("Populate numbers only keylist"+numbersOnlykeyList)
+
    for(number in numbersOnlykeyList)
     {
     
       
         try
         { 
-     //   console.log(numbersOnlykeyList[number])
+
         
           let currentOBJ = JSON.parse(localStorage.getItem(parseInt(numbersOnlykeyList[number])));
             let currentType = currentOBJ.ProjectType;
-     //      console.log(currentType)
+
         if(currentType == "Project")
         {
           document.getElementById("ProjectIdTicketAdd").innerHTML += "<option value='"+currentOBJ.ProjectID+"'>"+currentOBJ.ProjectID+"</div>";
@@ -373,8 +349,6 @@ for(i=0 ; i <populatekeyList.length;i++)
         }
         else if(currentType == "Bug")
         {
-        //  console.log("bug")
-       //     console.log(currentOBJ)
 
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugId+"</h4></div>";
           document.getElementById("bugListWrapper").innerHTML += "<div class='table-header'><h4>"+currentOBJ.BugName+"</h4></div>";
