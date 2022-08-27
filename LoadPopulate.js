@@ -340,7 +340,7 @@ function PopulatePage()
              
              document.getElementById("ProjectList").innerHTML += "<div class='projectIDhover' onclick='showProject("+currentOBJ.ProjectID+")'>" 
              + currentOBJ.ProjectID +"</div>" +  "<div>"+ currentOBJ.ProjectName +"</div>"    +"<div>"
-             + currentOBJ.ProjectDescription+"</div><div> <button onclick='DeleteProject("+currentOBJ.ProjectID+")'> </button> </div>" ; 
+             + currentOBJ.ProjectDescription+"</div><div> <button onclick='DeleteProject("+currentOBJ.ProjectID+")'>Delete Project "+ currentOBJ.ProjectID+" </button> </div>" ; 
         }
         else if(currentType == "Employee")
         {
