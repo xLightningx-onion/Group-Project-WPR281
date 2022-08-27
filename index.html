@@ -20,8 +20,12 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="AddEmployee.js"></script>
     <script src="AddBug.js"></script>
+
     <script src="./javascript/ShowBug.js"></script>
     <script src="./javascript/ShowProject.js"></script>
+
+    <script src="./javascript/EditBugs.js"></script>
+
     
 
    
@@ -359,7 +363,7 @@
         <div class="bug-content-header">
             <h1 id="BugnameDisplay">Bug Name</h1>
         </div>
-        <div class="bug-content-wrapper">
+        <div class="bug-content-wrapper" >
             <div class="bug-show-two-col">
                 <div class="title Border padding" >
                     <h4>Project Name: </h4>
@@ -448,9 +452,7 @@
                 <div class="noBorder">
                     
                 </div>
-                <div class="noBorder">
-                    <button class="backToBoard" type="button" id="backToBoard" onclick="BackToBoard()">Back</button>
-                    <button class="backToBoard" type="button" id="backToBoard" onclick="BackToBoard()">Back</button>
+                <div class="noBorder" id="bug-button-wrapper">
                     <div class="clearBug noBorder"></div>
                 </div>
             </div>
@@ -514,43 +516,48 @@
             <div class="input-wrapper">
                 <table>
                     <tr>
-                      <td><label for="ProjectIdTicketAdd">Project ID: </label></td>
+                      <td>Project ID:</td>
                       <td>
-                        <select for="projectID" name="ProjectIdTicketAdd" id="ProjectIdTicketAdd">
-                         </select>
+                        <p id="ProjectIdTicketUpdate"></p>
                       </td>  
                     </tr>
                     <tr>
-                        <td><label for="BugNameAdd">Bug Name: </label></td>
-                        <td><input type="text" name="BugNameAdd" id="BugNameAdd"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="BugShortDescAdd">Short Description: </label></td>
-                        <td><textarea name="BugShortDescAdd" id="BugShortDescAdd" cols="22" rows="5"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td><label for="BugLongDescAdd">Long Description: </label></td>
-                        <td><textarea name="BugLongDescAdd" id="BugLongDescAdd" cols="22" rows="10"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td><label for="AssignedEmployee">Employee Assigned: </label></td>
+                        <td>Bug ID:</td>
                         <td>
-                            <select name="AssignedEmployee" id="AssignedEmployeeAdd">
+                          <p id="BugIdTicketUpdate"></p>
+                        </td>  
+                      </tr>
+                    <tr>
+                        <td><label for="BugNameUpdate">Bug Name: </label></td>
+                        <td><input type="text" name="BugNameUpdate" id="BugNameUpdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="BugShortDescUpdate">Short Description: </label></td>
+                        <td><textarea name="BugShortDescUpdate" id="BugShortDescUpdate" cols="22" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="BugLongDescUpdate">Long Description: </label></td>
+                        <td><textarea name="BugLongDescUpdate" id="BugLongDescUpdate" cols="22" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="AssignedEmployeeUpdate">Employee Assigned: </label></td>
+                        <td>
+                            <select name="AssignedEmployeeUpdate" id="AssignedEmployeeUpdate">
                             
                             </select>
                             </td>
                     </tr>
                     <tr>
-                        <td><label for="FoundByAdd"></label>Found By: </td>
-                        <td><input type="text" name="FoundByAdd" id="FoundByAdd"></td>
+                        <td><label for="FoundByUpdate"></label>Found By: </td>
+                        <td><input type="text" name="FoundByUpdate" id="FoundByUpdate"></td>
                     </tr>
                     <tr>
-                        <td><label for="DateFoundAdd">Date Found:</label></td>
-                        <td><input type="date" name="DateFoundAdd" id="DateFoundAdd"></td>
+                        <td><label for="DateFoundUpdate">Date Found:</label></td>
+                        <td><input type="date" name="DateFoundUpdate" id="DateFoundUpdate"></td>
                     </tr>
                     <tr>
-                        <td><label for="StatusAdd">Status: </label></td>
-                        <td><select name="StatusAdd" id="StatusAdd">
+                        <td><label for="StatusUpdate">Status: </label></td>
+                        <td><select name="StatusUpdate" id="StatusUpdate">
 
                             <option value="todo">To Do</option>
                             <option value="progress">In Progress</option>
@@ -561,24 +568,24 @@
                         </select></td>
                     </tr>
                     <tr>
-                        <td><label for="PriorityAdd">Priority: </label></td>
-                        <td><select name="PriorityAdd" id="PriorityAdd">
+                        <td><label for="PriorityUpdate">Priority: </label></td>
+                        <td><select name="PriorityUpdate" id="PriorityUpdate">
                             <option value="High">High</option>
                             <option value="Medium">Medium</option>
                             <option value="Low">Low</option>
                         </select></td>
                     </tr>
                     <tr>
-                        <td><label for="TargetDateAdd">Target Date: </label></td>
-                        <td><input type="date" name="TargetDateAdd" id="TargetDateAdd"></td>
+                        <td><label for="TargetDateUpdate">Target Date: </label></td>
+                        <td><input type="date" name="TargetDateUpdate" id="TargetDateUpdate"></td>
                     </tr>
                     <tr>
-                        <td><label for="ActualDateAdd">Actual Date:</label></td>
-                        <td><input type="date" name="ActualDateAdd" id="ActualDateAdd"></td>
+                        <td><label for="ActualDateUpdate">Actual Date:</label></td>
+                        <td><input type="date" name="ActualDateUpdate" id="ActualDateUpdate"></td>
                     </tr>
                     <tr>
-                        <td><label for="ResolutionSummaryAdd">Resolution Summary: </label></td>
-                        <td><textarea name="ResolutionSummaryAdd" id="ResolutionSummaryAdd" cols="22" rows="5"></textarea></td>
+                        <td><label for="ResolutionSummaryUpdate">Resolution Summary: </label></td>
+                        <td><textarea name="ResolutionSummaryUpdate" id="ResolutionSummaryUpdate" cols="22" rows="5"></textarea></td>
                     </tr>
                 </table>
                 <div class="three-col-grid">
