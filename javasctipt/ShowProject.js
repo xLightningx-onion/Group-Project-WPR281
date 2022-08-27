@@ -26,7 +26,7 @@ function showProject(projectID){
     {
         currentOBJ = JSON.parse(localStorage.getItem(BugArray[i]));
         if(currentOBJ.ProjectId == projectIdToDisplay){
-            document.getElementById("ProjectInfoWrapper").innerHTML += "<div class='Border padding'><h4>"+currentOBJ.BugId+"</h4></div>";
+            document.getElementById("ProjectInfoWrapper").innerHTML += "<div class='Border padding projectIDhover' onclick='ShowBugPage("+currentOBJ.BugId+")'><h4>"+currentOBJ.BugId+"</h4></div>";
             document.getElementById("ProjectInfoWrapper").innerHTML += "<div class='Border padding'><h4>"+currentOBJ.BugName+"</h4></div>";
             document.getElementById("ProjectInfoWrapper").innerHTML += "<div class='Border padding'><h4>"+currentOBJ.BugShortDesc+"</h4></div>";
             document.getElementById("ProjectInfoWrapper").innerHTML += "<div class='Border padding'><h4>"+currentOBJ.BugLongDesc+"</h4></div>";
