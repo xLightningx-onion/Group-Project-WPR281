@@ -130,7 +130,7 @@ console.log(ProjectID)
   mediumCount = (mediumCount/bugs.length)*100;
   highCount = (highCount/bugs.length)*100;
 
-  let labels = ['High Priority','Medium Priority','Low Priority',];
+  let labels = ['High Priority(%)','Medium Priority(%)','Low Priority(%)',];
   let data = {
               labels: labels,
                datasets: [{label: 'My First dataset',
@@ -141,9 +141,12 @@ console.log(ProjectID)
                                          'rgba(54, 162, 235, 1)',
                                           'rgba(255, 206, 86, 1)'],
                              data: [highCount,mediumCount,lowCount],
+                             hoverOffset:10,
+                             weight:100
                           }]
              };
-  let config = {type: 'pie',data: data,options: {}};
+  let config = {type: 'doughnut',data: data,options: {responsive: true,
+    maintainAspectRatio: false, plugins:{ title:{display:true,text:'Current Project Bug Priority'}}}};
   return config;
 }
 
@@ -179,7 +182,7 @@ function projectsAVGChart()
     highCount = (highCount/bugs.length)*100;
 
    
-    let labels = ['High Priority','Medium Priority','Low Priority',];
+    let labels = ['High Priority(%)','Medium Priority(%)','Low Priority(%)',];
       let data = {
                   labels: labels,
                    datasets: [{label: 'My First dataset',
@@ -190,8 +193,11 @@ function projectsAVGChart()
                                              'rgba(54, 162, 235, 1)',
                                               'rgba(255, 206, 86, 1)'],
                                  data: [highCount,mediumCount,lowCount],
+                                 hoverOffset:10,
+                                 weight:100
                               }]
                  };
-      let config = {type: 'pie',data: data,options: {}};
+      let config = {type: 'doughnut',data: data,options: {responsive: true,
+        maintainAspectRatio: false , plugins:{ title:{display:true,text:'Overall Bug Priority'}}}};
       return config;
 }
