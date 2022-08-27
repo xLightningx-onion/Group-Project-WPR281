@@ -53,7 +53,6 @@ function showProject(projectID){
             document.getElementById("ProjectInfoWrapper").innerHTML += "<div class='noBorder'><h4></h4></div>";
             document.getElementById("ProjectInfoWrapper").innerHTML += "<div class='noBorder'><button class='backToBoard' type='button' id='backToBoard' onclick='BackToProject()'>Back</button></div>"; 
         
-    //console.log(BugArray);
 }
 function BackToProject(){
     document.getElementById("ProjectInfo").className = "hide";

@@ -1,7 +1,5 @@
 function ShowBugPage(BugIDinput){
     let BugIdToShow = BugIDinput;
-    let BugArr=[];
-    let NotInternalStorage=[];
     let ItsABug=[];
     let ItsAProject=[];
     let ProjectIdToShow = 0;
@@ -24,54 +22,18 @@ function ShowBugPage(BugIDinput){
     document.getElementById("ShowBugPage").className = "content";
     document.getElementById("Board").className = "hide";
     document.getElementById("2").className = "";
-    //console.log("The bug id: " + BugIdToShow)
 
-    //find bugs
-    for (key in localStorage)
-    {
-        BugArr.push(key);
-    }
-    BugArr.sort();
-    //console.log(BugArr);
-    for(let i=0;i<=BugArr.length;i++)
-    {
-        if(isFinite(BugArr[i])){
-            NotInternalStorage.push(BugArr[i]);
-        }
+    ItsABug = BugList();
 
-    }
-    for(let i=0;i<NotInternalStorage.length;i++)
-    {
-        let currentOBJ=JSON.parse(localStorage.getItem(NotInternalStorage[i]));
-        let currentType=currentOBJ.ProjectType;
+    ItsAProject = ProjectList();
 
-        if( currentType  != "Employee" && currentType != "Project"){
-            ItsABug.push(NotInternalStorage[i]);
-            //console.log(NotInternalStorage[i])
-        }
-    }
-    //finding projects
-    for(let i=0;i<NotInternalStorage.length;i++)
-    {
-        let currentOBJ=JSON.parse(localStorage.getItem(NotInternalStorage[i]));
-        let currentType=currentOBJ.ProjectType;
-
-        if( currentType  != "Employee" && currentType != "Bug"){
-            ItsAProject.push(NotInternalStorage[i]);
-            //console.log("Its a project" +NotInternalStorage[i])
-        }
-    }
     //getting bug info
     for(i=0; i<ItsABug.length;i++)
     {
         currentOBJ = JSON.parse(localStorage.getItem(ItsABug[i]));
-        //console.log(currentOBJ);
         if(currentOBJ.BugId == BugIdToShow){
             ProjectIdToShow = currentOBJ.ProjectId;
-            //console.log("does this one work?");
-            //console.log("project id: " + ProjectIdToShow);
             BugNameToShow = currentOBJ.BugName;
-            //console.log(BugNameToShow);
             ShortDescToShow = currentOBJ.BugShortDesc;
             LongDescToShow = currentOBJ.BugLongDesc;
             EmpAssignedToShow = currentOBJ.BugAssignedEmployee;
@@ -89,7 +51,6 @@ function ShowBugPage(BugIDinput){
         currentOBJ = JSON.parse(localStorage.getItem(ItsAProject[i]));
         if(currentOBJ.ProjectID == ProjectIdToShow){
             ProjectNameToShow = currentOBJ.ProjectName;
-            //console.log("project name: " + ProjectNameToShow);
         }
     }
     //show info on page
