@@ -1,4 +1,8 @@
 function showProject(projectID){
+  
+    NewThisProjectChart();
+    ThisProjectChart = new Chart(document.getElementById('ThisProjectChart'),ThisProjectAVGChart(projectID));
+
     let projectIdToDisplay = projectID;
     let BugArray = [];
     document.getElementById("ProjectInfo").className = "content";
@@ -58,4 +62,23 @@ function BackToProject(){
     document.getElementById("ProjectInfo").className = "hide";
     document.getElementById("Projects").className = "content";
     document.getElementById("1").className = "active";
+    document.getElementById("ProjectList").innerHTML += "";
+    projectsList = ProjectList();
+
+
+    /*
+    for(i=0;i<projects.length;i++)
+    {
+        console.log("For loop running");
+     let currentOBJ = JSON.parse(localStorage.getItem(projects[i]));
+     document.getElementById("ProjectList").innerHTML += "<div class='projectIDhover' onclick='showProject("+currentOBJ.ProjectID+")'>" 
+     + currentOBJ.ProjectID +"</div>" +  "<div>"+ currentOBJ.ProjectName +"</div>"    +"<div>"
+     + currentOBJ.ProjectDescription+"</div><div> <button onclick='DeleteProject("+currentOBJ.ProjectID+")'>Delete Project "+ currentOBJ.ProjectID+" </button> </div>" ; 
+
+
+    }
+*/
+
+   
+
 }
