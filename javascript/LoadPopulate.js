@@ -202,7 +202,2335 @@ function Populate()
                        BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
                      ProjectType:ProjectNewType};
                        localStorage.setItem(BugID,JSON.stringify(addBug));
+                        
+                       ProjectNewPriority="Medium";
+                       BugID = 27;
+                       BugProjectNewID = 2;
+                         BugNewName = 'CSSBug';
+                        BugNewShortDesc = 'CSS does not display correctly';
+                          BugNewLongDesc = 'Hovers in the wrong places ';
+                           BugNewAssignedEmployee = 'KareN99';
+                         BugNewFoundBy ="Anon Caller";
+                          BugNewDateFound = "2022-08-21";
+                        BugNewStatusValue = "done";
+                    
+                          BugNewTargetDate ="2022-09-20";
+                          BugNewActualDate ="2022-11-15";
+                        BugNewResolutionSummary ="This bug has been added as a test";
+                        ProjectNewType = "Bug";
+                        
+                         addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                          BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                          BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                          BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                          ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                          BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                        ProjectType:ProjectNewType};
+                          localStorage.setItem(BugID,JSON.stringify(addBug));
 
+                          ProjectNewPriority="Low";
+                          BugID = 28;
+                          BugProjectNewID = 3;
+                            BugNewName = 'CSSBug';
+                           BugNewShortDesc = 'CSS does not display correctly';
+                             BugNewLongDesc = 'Hovers in the wrong places ';
+                              BugNewAssignedEmployee = 'KareN99';
+                            BugNewFoundBy ="Anon Caller";
+                             BugNewDateFound = "2022-08-21";
+                           BugNewStatusValue = "progress";
+                       
+                             BugNewTargetDate ="2022-09-20";
+                             BugNewActualDate ="2022-11-15";
+                           BugNewResolutionSummary ="This bug has been added as a test";
+                           ProjectNewType = "Bug";
+                           
+                            addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                             BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                             BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                             BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                             ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                             BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                           ProjectType:ProjectNewType};
+                             localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                             ProjectNewPriority="High";
+                             BugID = 29;
+                             BugProjectNewID = 5;
+                               BugNewName = 'CSSBug';
+                              BugNewShortDesc = 'CSS does not display correctly';
+                                BugNewLongDesc = 'Hovers in the wrong places ';
+                                 BugNewAssignedEmployee = 'KareN99';
+                               BugNewFoundBy ="Anon Caller";
+                                BugNewDateFound = "2022-08-21";
+                              BugNewStatusValue = "review";
+                          
+                                BugNewTargetDate ="2022-09-20";
+                                BugNewActualDate ="2022-11-15";
+                              BugNewResolutionSummary ="This bug has been added as a test";
+                              ProjectNewType = "Bug";
+                              
+                               addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                              ProjectType:ProjectNewType};
+                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                ProjectNewPriority="Medium";
+                                BugID = 30;
+                                BugProjectNewID = 4;
+                                  BugNewName = 'CSSBug';
+                                 BugNewShortDesc = 'CSS does not display correctly';
+                                   BugNewLongDesc = 'Hovers in the wrong places ';
+                                    BugNewAssignedEmployee = 'KareN99';
+                                  BugNewFoundBy ="Anon Caller";
+                                   BugNewDateFound = "2022-08-21";
+                                 BugNewStatusValue = "done";
+                             
+                                   BugNewTargetDate ="2022-09-20";
+                                   BugNewActualDate ="2022-11-15";
+                                 BugNewResolutionSummary ="This bug has been added as a test";
+                                 ProjectNewType = "Bug";
+                                 
+                                  addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                   BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                   BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                   BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                   ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                   BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                 ProjectType:ProjectNewType};
+                                   localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                   ProjectNewPriority="Low";
+                                   BugID = 31;
+                                   BugProjectNewID = 1;
+                                     BugNewName = 'CSSBug';
+                                    BugNewShortDesc = 'CSS does not display correctly';
+                                      BugNewLongDesc = 'Hovers in the wrong places ';
+                                       BugNewAssignedEmployee = 'JohanJ99';
+                                     BugNewFoundBy ="Anon Caller";
+                                      BugNewDateFound = "2022-08-30";
+                                    BugNewStatusValue = "done";
+                                
+                                      BugNewTargetDate ="2022-10-17";
+                                      BugNewActualDate ="2022-11-15";
+                                    BugNewResolutionSummary ="This bug has been added as a test";
+                                    ProjectNewType = "Bug";
+                                    
+                                     addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                      BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                      BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                      BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                      ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                      BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                    ProjectType:ProjectNewType};
+                                      localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                      ProjectNewPriority="High";
+                                   BugID = 32;
+                                   BugProjectNewID = 1;
+                                     BugNewName = 'CSSBug';
+                                    BugNewShortDesc = 'CSS does not display correctly';
+                                      BugNewLongDesc = 'Hovers in the wrong places ';
+                                       BugNewAssignedEmployee = 'JohanJ99';
+                                     BugNewFoundBy ="Anon Caller";
+                                      BugNewDateFound = "2022-09-15";
+                                    BugNewStatusValue = "todo";
+                                
+                                      BugNewTargetDate ="2022-10-17";
+                                      BugNewActualDate ="2022-11-15";
+                                    BugNewResolutionSummary ="This bug has been added as a test";
+                                    ProjectNewType = "Bug";
+                                    
+                                     addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                      BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                      BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                      BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                      ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                      BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                    ProjectType:ProjectNewType};
+                                      localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                      ProjectNewPriority="Medium";
+                                   BugID = 33;
+                                   BugProjectNewID = 4;
+                                     BugNewName = 'CSSBug';
+                                    BugNewShortDesc = 'CSS does not display correctly';
+                                      BugNewLongDesc = 'Hovers in the wrong places ';
+                                       BugNewAssignedEmployee = 'JohanJ99';
+                                     BugNewFoundBy ="Anon Caller";
+                                      BugNewDateFound = "2022-09-05";
+                                    BugNewStatusValue = "progress";
+                                
+                                      BugNewTargetDate ="2022-10-25";
+                                      BugNewActualDate ="2022-11-10";
+                                    BugNewResolutionSummary ="This bug has been added as a test";
+                                    ProjectNewType = "Bug";
+                                    
+                                     addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                      BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                      BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                      BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                      ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                      BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                    ProjectType:ProjectNewType};
+                                      localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                      ProjectNewPriority="Low";
+                                   BugID = 34;
+                                   BugProjectNewID = 2;
+                                     BugNewName = 'CSSBug';
+                                    BugNewShortDesc = 'CSS does not display correctly';
+                                      BugNewLongDesc = 'Hovers in the wrong places ';
+                                       BugNewAssignedEmployee = 'JohanJ99';
+                                     BugNewFoundBy ="Anon Caller";
+                                      BugNewDateFound = "2022-09-15";
+                                    BugNewStatusValue = "review";
+                                
+                                      BugNewTargetDate ="2022-10-25";
+                                      BugNewActualDate ="2022-11-15";
+                                    BugNewResolutionSummary ="This bug has been added as a test";
+                                    ProjectNewType = "Bug";
+                                    
+                                     addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                      BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                      BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                      BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                      ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                      BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                    ProjectType:ProjectNewType};
+                                      localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                      ProjectNewPriority="High";
+                                   BugID = 35;
+                                   BugProjectNewID = 5;
+                                     BugNewName = 'CSSBug';
+                                    BugNewShortDesc = 'CSS does not display correctly';
+                                      BugNewLongDesc = 'Hovers in the wrong places ';
+                                       BugNewAssignedEmployee = 'JohanJ99';
+                                     BugNewFoundBy ="Anon Caller";
+                                      BugNewDateFound = "2022-09-15";
+                                    BugNewStatusValue = "done";
+                                
+                                      BugNewTargetDate ="2022-10-25";
+                                      BugNewActualDate ="2022-11-15";
+                                    BugNewResolutionSummary ="This bug has been added as a test";
+                                    ProjectNewType = "Bug";
+                                    
+                                     addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                      BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                      BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                      BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                      ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                      BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                    ProjectType:ProjectNewType};
+                                      localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                      ProjectNewPriority="Medium";
+                                   BugID = 36;
+                                   BugProjectNewID = 3;
+                                     BugNewName = 'CSSBug';
+                                    BugNewShortDesc = 'CSS does not display correctly';
+                                      BugNewLongDesc = 'Hovers in the wrong places ';
+                                       BugNewAssignedEmployee = 'JohanJ99';
+                                     BugNewFoundBy ="Anon Caller";
+                                      BugNewDateFound = "2022-09-15";
+                                    BugNewStatusValue = "progress";
+                                
+                                      BugNewTargetDate ="2022-10-25";
+                                      BugNewActualDate ="2022-11-15";
+                                    BugNewResolutionSummary ="This bug has been added as a test";
+                                    ProjectNewType = "Bug";
+                                    
+                                     addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                      BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                      BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                      BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                      ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                      BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                    ProjectType:ProjectNewType};
+                                      localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                      ProjectNewPriority="Low";
+                                   BugID = 37;
+                                   BugProjectNewID = 4;
+                                     BugNewName = 'CSSBug';
+                                    BugNewShortDesc = 'CSS does not display correctly';
+                                      BugNewLongDesc = 'Hovers in the wrong places ';
+                                       BugNewAssignedEmployee = 'JohanJ99';
+                                     BugNewFoundBy ="Anon Caller";
+                                      BugNewDateFound = "2022-09-02";
+                                    BugNewStatusValue = "review";
+                                
+                                      BugNewTargetDate ="2022-10-25";
+                                      BugNewActualDate ="2022-11-10";
+                                    BugNewResolutionSummary ="This bug has been added as a test";
+                                    ProjectNewType = "Bug";
+                                    
+                                     addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                      BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                      BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                      BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                      ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                      BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                    ProjectType:ProjectNewType};
+                                      localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                      ProjectNewPriority="High";
+                                   BugID = 38;
+                                   BugProjectNewID = 1;
+                                     BugNewName = 'CSSBug';
+                                    BugNewShortDesc = 'CSS does not display correctly';
+                                      BugNewLongDesc = 'Hovers in the wrong places ';
+                                       BugNewAssignedEmployee = 'JohanJ99';
+                                     BugNewFoundBy ="Anon Caller";
+                                      BugNewDateFound = "2022-09-15";
+                                    BugNewStatusValue = "done";
+                                
+                                      BugNewTargetDate ="2022-10-25";
+                                      BugNewActualDate ="2022-11-15";
+                                    BugNewResolutionSummary ="This bug has been added as a test";
+                                    ProjectNewType = "Bug";
+                                    
+                                     addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                      BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                      BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                      BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                      ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                      BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                    ProjectType:ProjectNewType};
+                                      localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                      ProjectNewPriority="Medium";
+                                   BugID = 39;
+                                   BugProjectNewID = 5;
+                                     BugNewName = 'CSSBug';
+                                    BugNewShortDesc = 'CSS does not display correctly';
+                                      BugNewLongDesc = 'Hovers in the wrong places ';
+                                       BugNewAssignedEmployee = 'JohanJ99';
+                                     BugNewFoundBy ="Anon Caller";
+                                      BugNewDateFound = "2022-09-02";
+                                    BugNewStatusValue = "progress";
+                                
+                                      BugNewTargetDate ="2022-10-17";
+                                      BugNewActualDate ="2022-11-10";
+                                    BugNewResolutionSummary ="This bug has been added as a test";
+                                    ProjectNewType = "Bug";
+                                    
+                                     addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                      BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                      BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                      BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                      ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                      BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                    ProjectType:ProjectNewType};
+                                      localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                      ProjectNewPriority="Low";
+                                      BugID = 40;
+                                      BugProjectNewID = 1;
+                                        BugNewName = 'CSSBug';
+                                       BugNewShortDesc = 'CSS does not display correctly';
+                                         BugNewLongDesc = 'Hovers in the wrong places ';
+                                          BugNewAssignedEmployee = 'JohanJ99';
+                                        BugNewFoundBy ="Anon Caller";
+                                         BugNewDateFound = "2022-09-02";
+                                       BugNewStatusValue = "review";
+                                   
+                                         BugNewTargetDate ="2022-10-17";
+                                         BugNewActualDate ="2022-11-15";
+                                       BugNewResolutionSummary ="This bug has been added as a test";
+                                       ProjectNewType = "Bug";
+                                       
+                                        addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                         BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                         BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                         BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                         ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                         BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                       ProjectType:ProjectNewType};
+                                         localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                         ProjectNewPriority="High";
+                                         BugID = 41;
+                                         BugProjectNewID = 1;
+                                         BugNewName = 'LogicBug';
+                                         BugNewShortDesc = 'Calculations are failing';
+                                           BugNewLongDesc = 'Math rules are not followed';
+                                            BugNewAssignedEmployee = 'KyleW99';
+                                          BugNewFoundBy ="Anon Caller";
+                                           BugNewDateFound = "2022-08-27";
+                                         BugNewStatusValue = "progress";
+                              
+                                           BugNewTargetDate ="2022-09-23";
+                                           BugNewActualDate ="2022-10-25";
+                                         BugNewResolutionSummary ="This bug has been added as a test";
+                                         ProjectNewType = "Bug";
+                                          
+                                           addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                            BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                            BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                            BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                            ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                            BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                          ProjectType:ProjectNewType};
+                                            localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                            ProjectNewPriority="Medium";
+                                            BugID = 42;
+                                            BugProjectNewID = 1;
+                                              BugNewName = 'CSSBug';
+                                             BugNewShortDesc = 'CSS does not display correctly';
+                                               BugNewLongDesc = 'Hovers in the wrong places ';
+                                                BugNewAssignedEmployee = 'KareN99';
+                                              BugNewFoundBy ="Anon Caller";
+                                               BugNewDateFound = "2022-08-30";
+                                             BugNewStatusValue = "review";
+                                         
+                                               BugNewTargetDate ="2022-10-17";
+                                               BugNewActualDate ="2022-11-15";
+                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                             ProjectNewType = "Bug";
+                                             
+                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                               BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                               BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                               BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                               ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                               BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                             ProjectType:ProjectNewType};
+                                               localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                               ProjectNewPriority="Low";
+                                               BugID = 43;
+                                               BugProjectNewID = 1;
+                                               BugNewName = 'LogicBug';
+                                               BugNewShortDesc = 'Calculations are failing';
+                                                 BugNewLongDesc = 'Math rules are not followed';
+                                                  BugNewAssignedEmployee = 'KyleW99';
+                                                BugNewFoundBy ="Anon Caller";
+                                                 BugNewDateFound = "2022-08-27";
+                                               BugNewStatusValue = "progress";
+                                    
+                                                 BugNewTargetDate ="2022-09-23";
+                                                 BugNewActualDate ="2022-10-25";
+                                               BugNewResolutionSummary ="This bug has been added as a test";
+                                               ProjectNewType = "Bug";
+                                                
+                                                 addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                  BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                  BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                  BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                  ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                  BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                ProjectType:ProjectNewType};
+                                                  localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                  ProjectNewPriority="High";
+                                                  BugID = 44;
+                                                  BugProjectNewID = 1;
+                                                  BugNewName = 'LogicBug';
+                                                  BugNewShortDesc = 'Calculations are failing';
+                                                    BugNewLongDesc = 'Math rules are not followed';
+                                                     BugNewAssignedEmployee = 'KyleW99';
+                                                   BugNewFoundBy ="Anon Caller";
+                                                    BugNewDateFound = "2022-08-27";
+                                                  BugNewStatusValue = "todo";
+                                       
+                                                    BugNewTargetDate ="2022-09-23";
+                                                    BugNewActualDate ="2022-10-25";
+                                                  BugNewResolutionSummary ="This bug has been added as a test";
+                                                  ProjectNewType = "Bug";
+                                                   
+                                                    addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                     BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                     BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                     BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                     ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                     BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                   ProjectType:ProjectNewType};
+                                                     localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                     ProjectNewPriority="Medium";
+                                                     BugID = 45;
+                                                     BugProjectNewID = 1;
+                                                       BugNewName = 'CSSBug';
+                                                      BugNewShortDesc = 'CSS does not display correctly';
+                                                        BugNewLongDesc = 'Hovers in the wrong places ';
+                                                         BugNewAssignedEmployee = 'KareN99';
+                                                       BugNewFoundBy ="Anon Caller";
+                                                        BugNewDateFound = "2022-09-02";
+                                                      BugNewStatusValue = "review";
+                                                  
+                                                        BugNewTargetDate ="2022-10-17";
+                                                        BugNewActualDate ="2022-11-15";
+                                                      BugNewResolutionSummary ="This bug has been added as a test";
+                                                      ProjectNewType = "Bug";
+                                                      
+                                                       addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                        BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                        BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                        BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                        ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                        BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                      ProjectType:ProjectNewType};
+                                                        localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                        ProjectNewPriority="Medium";
+                                                        BugID = 46;
+                                                        BugProjectNewID = 1;
+                                                        BugNewName = 'LogicBug';
+                                                        BugNewShortDesc = 'Calculations are failing';
+                                                          BugNewLongDesc = 'Math rules are not followed';
+                                                           BugNewAssignedEmployee = 'KyleW99';
+                                                         BugNewFoundBy ="Anon Caller";
+                                                          BugNewDateFound = "2022-09-02";
+                                                        BugNewStatusValue = "progress";
+                                             
+                                                          BugNewTargetDate ="2022-09-23";
+                                                          BugNewActualDate ="2022-10-25";
+                                                        BugNewResolutionSummary ="This bug has been added as a test";
+                                                        ProjectNewType = "Bug";
+                                                         
+                                                          addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                           BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                           BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                           BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                           ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                           BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                         ProjectType:ProjectNewType};
+                                                           localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                           ProjectNewPriority="Low";
+                                                           BugID = 47;
+                                                           BugProjectNewID = 1;
+                                                             BugNewName = 'CSSBug';
+                                                            BugNewShortDesc = 'CSS does not display correctly';
+                                                              BugNewLongDesc = 'Hovers in the wrong places ';
+                                                               BugNewAssignedEmployee = 'KareN99';
+                                                             BugNewFoundBy ="Anon Caller";
+                                                              BugNewDateFound = "2022-08-30";
+                                                            BugNewStatusValue = "review";
+                                                        
+                                                              BugNewTargetDate ="2022-10-17";
+                                                              BugNewActualDate ="2022-11-15";
+                                                            BugNewResolutionSummary ="This bug has been added as a test";
+                                                            ProjectNewType = "Bug";
+                                                            
+                                                             addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                              BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                              BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                              BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                              ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                              BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                            ProjectType:ProjectNewType};
+                                                              localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                              ProjectNewPriority="High";
+                                                              BugID = 48;
+                                                              BugProjectNewID = 1;
+                                                              BugNewName = 'LogicBug';
+                                                              BugNewShortDesc = 'Calculations are failing';
+                                                                BugNewLongDesc = 'Math rules are not followed';
+                                                                 BugNewAssignedEmployee = 'KyleW99';
+                                                               BugNewFoundBy ="Anon Caller";
+                                                                BugNewDateFound = "2022-09-02";
+                                                              BugNewStatusValue = "review";
+                                                   
+                                                                BugNewTargetDate ="2022-09-23";
+                                                                BugNewActualDate ="2022-10-25";
+                                                              BugNewResolutionSummary ="This bug has been added as a test";
+                                                              ProjectNewType = "Bug";
+                                                               
+                                                                addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                 BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                 BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                 BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                 ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                 BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                               ProjectType:ProjectNewType};
+                                                                 localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                 ProjectNewPriority="Medium";
+                                                                 BugID = 49;
+                                                                 BugProjectNewID = 1;
+                                                                 BugNewName = 'LogicBug';
+                                                                 BugNewShortDesc = 'Calculations are failing';
+                                                                   BugNewLongDesc = 'Math rules are not followed';
+                                                                    BugNewAssignedEmployee = 'KyleW99';
+                                                                  BugNewFoundBy ="Anon Caller";
+                                                                   BugNewDateFound = "2022-08-27";
+                                                                 BugNewStatusValue = "todo";
+                                                      
+                                                                   BugNewTargetDate ="2022-09-23";
+                                                                   BugNewActualDate ="2022-10-25";
+                                                                 BugNewResolutionSummary ="This bug has been added as a test";
+                                                                 ProjectNewType = "Bug";
+                                                                  
+                                                                   addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                    BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                    BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                    BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                    ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                    BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                  ProjectType:ProjectNewType};
+                                                                    localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                    ProjectNewPriority="Medium";
+                                                                    BugID = 50;
+                                                                    BugProjectNewID = 1;
+                                                                      BugNewName = 'CSSBug';
+                                                                     BugNewShortDesc = 'CSS does not display correctly';
+                                                                       BugNewLongDesc = 'Hovers in the wrong places ';
+                                                                        BugNewAssignedEmployee = 'KareN99';
+                                                                      BugNewFoundBy ="Anon Caller";
+                                                                       BugNewDateFound = "2022-08-27";
+                                                                     BugNewStatusValue = "progress";
+                                                                 
+                                                                       BugNewTargetDate ="2022-10-25";
+                                                                       BugNewActualDate ="2022-11-20";
+                                                                     BugNewResolutionSummary ="This bug has been added as a test";
+                                                                     ProjectNewType = "Bug";
+                                                                     
+                                                                      addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                       BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                       BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                       BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                       ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                       BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                     ProjectType:ProjectNewType};
+                                                                       localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                       ProjectNewPriority="Low";
+                                                                       BugID = 51;
+                                                                       BugProjectNewID = 1;
+                                                                         BugNewName = 'CSSBug';
+                                                                        BugNewShortDesc = 'CSS does not display correctly';
+                                                                          BugNewLongDesc = 'Hovers in the wrong places ';
+                                                                           BugNewAssignedEmployee = 'KareN99';
+                                                                         BugNewFoundBy ="Anon Caller";
+                                                                          BugNewDateFound = "2022-08-30";
+                                                                        BugNewStatusValue = "review";
+                                                                    
+                                                                          BugNewTargetDate ="2022-10-17";
+                                                                          BugNewActualDate ="2022-11-15";
+                                                                        BugNewResolutionSummary ="This bug has been added as a test";
+                                                                        ProjectNewType = "Bug";
+                                                                        
+                                                                         addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                          BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                          BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                          BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                          ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                          BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                        ProjectType:ProjectNewType};
+                                                                          localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                          ProjectNewPriority="Low";
+                                                                          BugID = 52;
+                                                                          BugProjectNewID = 1;
+                                                                          BugNewName = 'LogicBug';
+                                                                          BugNewShortDesc = 'Calculations are failing';
+                                                                            BugNewLongDesc = 'Math rules are not followed';
+                                                                             BugNewAssignedEmployee = 'KyleW99';
+                                                                           BugNewFoundBy ="Anon Caller";
+                                                                            BugNewDateFound = "2022-08-27";
+                                                                          BugNewStatusValue = "review";
+                                                               
+                                                                            BugNewTargetDate ="2022-09-23";
+                                                                            BugNewActualDate ="2022-10-25";
+                                                                          BugNewResolutionSummary ="This bug has been added as a test";
+                                                                          ProjectNewType = "Bug";
+                                                                           
+                                                                            addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                             BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                             BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                             BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                             ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                             BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                           ProjectType:ProjectNewType};
+                                                                             localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                             ProjectNewPriority="Medium";
+                                                                             BugID = 53;
+                                                                             BugProjectNewID = 1;
+                                                                             BugNewName = 'LogicBug';
+                                                                             BugNewShortDesc = 'Calculations are failing';
+                                                                               BugNewLongDesc = 'Math rules are not followed';
+                                                                                BugNewAssignedEmployee = 'KyleW99';
+                                                                              BugNewFoundBy ="Anon Caller";
+                                                                               BugNewDateFound = "2022-08-27";
+                                                                             BugNewStatusValue = "progress";
+                                                                  
+                                                                               BugNewTargetDate ="2022-09-23";
+                                                                               BugNewActualDate ="2022-10-25";
+                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                             ProjectNewType = "Bug";
+                                                                              
+                                                                               addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                              ProjectType:ProjectNewType};
+                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                ProjectNewPriority="Low";
+                                                                                BugID = 54;
+                                                                                BugProjectNewID = 1;
+                                                                                  BugNewName = 'CSSBug';
+                                                                                 BugNewShortDesc = 'CSS does not display correctly';
+                                                                                   BugNewLongDesc = 'Hovers in the wrong places ';
+                                                                                    BugNewAssignedEmployee = 'KareN99';
+                                                                                  BugNewFoundBy ="Anon Caller";
+                                                                                   BugNewDateFound = "2022-08-30";
+                                                                                 BugNewStatusValue = "review";
+                                                                             
+                                                                                   BugNewTargetDate ="2022-10-17";
+                                                                                   BugNewActualDate ="2022-11-15";
+                                                                                 BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                 ProjectNewType = "Bug";
+                                                                                 
+                                                                                  addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                   BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                   BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                   BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                   ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                   BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                 ProjectType:ProjectNewType};
+                                                                                   localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                   ProjectNewPriority="Low";
+                                                                                   BugID = 55;
+                                                                                   BugProjectNewID = 4;
+                                                                                     BugNewName = 'ButtonBug';
+                                                                                    BugNewShortDesc = 'Button does funny stuff';
+                                                                                      BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                       BugNewAssignedEmployee = 'LlewS99';
+                                                                                     BugNewFoundBy ="Anon Caller";
+                                                                                      BugNewDateFound = "2022-08-12";
+                                                                                    BugNewStatusValue = "review";
+                                                                                   
+                                                                                      BugNewTargetDate ="2022-09-15";
+                                                                                      BugNewActualDate ="2022-10-15";
+                                                                                    BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                    ProjectNewType = "Bug";
+                                                                                    
+                                                                                     addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                      BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                      BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                      BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                      ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                      BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                    ProjectType:ProjectNewType};
+                                                                                      localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                      ProjectNewPriority="Medium";
+                                                                                      BugID = 56;
+                                                                                      BugProjectNewID = 4;
+                                                                                        BugNewName = 'ButtonBug';
+                                                                                       BugNewShortDesc = 'Button does funny stuff';
+                                                                                         BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                          BugNewAssignedEmployee = 'LlewS99';
+                                                                                        BugNewFoundBy ="Anon Caller";
+                                                                                         BugNewDateFound = "2022-08-12";
+                                                                                       BugNewStatusValue = "review";
+                                                                                      
+                                                                                         BugNewTargetDate ="2022-09-15";
+                                                                                         BugNewActualDate ="2022-10-15";
+                                                                                       BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                       ProjectNewType = "Bug";
+                                                                                       
+                                                                                        addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                         BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                         BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                         BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                         ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                         BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                       ProjectType:ProjectNewType};
+                                                                                         localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                         ProjectNewPriority="Medium";
+                                                                                         BugID = 57;
+                                                                                         BugProjectNewID = 4;
+                                                                                           BugNewName = 'ButtonBug';
+                                                                                          BugNewShortDesc = 'Button does funny stuff';
+                                                                                            BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                             BugNewAssignedEmployee = 'JohanJ99';
+                                                                                           BugNewFoundBy ="Anon Caller";
+                                                                                            BugNewDateFound = "2022-08-12";
+                                                                                          BugNewStatusValue = "review";
+                                                                                         
+                                                                                            BugNewTargetDate ="2022-09-15";
+                                                                                            BugNewActualDate ="2022-10-15";
+                                                                                          BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                          ProjectNewType = "Bug";
+                                                                                          
+                                                                                           addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                            BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                            BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                            BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                            ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                            BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                          ProjectType:ProjectNewType};
+                                                                                            localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                            ProjectNewPriority="Medium";
+                                                                                            BugID = 58;
+                                                                                            BugProjectNewID = 4;
+                                                                                              BugNewName = 'ButtonBug';
+                                                                                             BugNewShortDesc = 'Button does funny stuff';
+                                                                                               BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                BugNewAssignedEmployee = 'JohanJ99';
+                                                                                              BugNewFoundBy ="Anon Caller";
+                                                                                               BugNewDateFound = "2022-08-12";
+                                                                                             BugNewStatusValue = "review";
+                                                                                            
+                                                                                               BugNewTargetDate ="2022-09-15";
+                                                                                               BugNewActualDate ="2022-10-15";
+                                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                             ProjectNewType = "Bug";
+                                                                                             
+                                                                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                               BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                               BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                               BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                               ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                               BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                             ProjectType:ProjectNewType};
+                                                                                               localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                               ProjectNewPriority="Medium";
+                                                                                               BugID = 59;
+                                                                                               BugProjectNewID = 4;
+                                                                                                 BugNewName = 'ButtonBug';
+                                                                                                BugNewShortDesc = 'Button does funny stuff';
+                                                                                                  BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                   BugNewAssignedEmployee = 'KyleW99';
+                                                                                                 BugNewFoundBy ="Anon Caller";
+                                                                                                  BugNewDateFound = "2022-08-12";
+                                                                                                BugNewStatusValue = "review";
+                                                                                               
+                                                                                                  BugNewTargetDate ="2022-09-15";
+                                                                                                  BugNewActualDate ="2022-10-15";
+                                                                                                BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                ProjectNewType = "Bug";
+                                                                                                
+                                                                                                 addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                  BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                  BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                  BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                  ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                  BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                ProjectType:ProjectNewType};
+                                                                                                  localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                  ProjectNewPriority="Medium";
+                                                                                                  BugID = 60;
+                                                                                                  BugProjectNewID = 4;
+                                                                                                    BugNewName = 'ButtonBug';
+                                                                                                   BugNewShortDesc = 'Button does funny stuff';
+                                                                                                     BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                      BugNewAssignedEmployee = 'JohanJ99';
+                                                                                                    BugNewFoundBy ="Anon Caller";
+                                                                                                     BugNewDateFound = "2022-08-12";
+                                                                                                   BugNewStatusValue = "review";
+                                                                                                  
+                                                                                                     BugNewTargetDate ="2022-09-15";
+                                                                                                     BugNewActualDate ="2022-10-15";
+                                                                                                   BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                   ProjectNewType = "Bug";
+                                                                                                   
+                                                                                                    addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                     BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                     BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                     BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                     ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                     BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                   ProjectType:ProjectNewType};
+                                                                                                     localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                     ProjectNewPriority="Medium";
+                                                                                                     BugID = 61;
+                                                                                                     BugProjectNewID = 4;
+                                                                                                       BugNewName = 'ButtonBug';
+                                                                                                      BugNewShortDesc = 'Button does funny stuff';
+                                                                                                        BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                         BugNewAssignedEmployee = 'LlewS99';
+                                                                                                       BugNewFoundBy ="Anon Caller";
+                                                                                                        BugNewDateFound = "2022-08-12";
+                                                                                                      BugNewStatusValue = "review";
+                                                                                                     
+                                                                                                        BugNewTargetDate ="2022-09-15";
+                                                                                                        BugNewActualDate ="2022-10-15";
+                                                                                                      BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                      ProjectNewType = "Bug";
+                                                                                                      
+                                                                                                       addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                        BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                        BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                        BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                        ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                        BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                      ProjectType:ProjectNewType};
+                                                                                                        localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                        ProjectNewPriority="Medium";
+                                                                                                        BugID = 62;
+                                                                                                        BugProjectNewID = 4;
+                                                                                                          BugNewName = 'ButtonBug';
+                                                                                                         BugNewShortDesc = 'Button does funny stuff';
+                                                                                                           BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                            BugNewAssignedEmployee = 'KyleW99';
+                                                                                                          BugNewFoundBy ="Anon Caller";
+                                                                                                           BugNewDateFound = "2022-08-12";
+                                                                                                         BugNewStatusValue = "review";
+                                                                                                        
+                                                                                                           BugNewTargetDate ="2022-09-15";
+                                                                                                           BugNewActualDate ="2022-10-15";
+                                                                                                         BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                         ProjectNewType = "Bug";
+                                                                                                         
+                                                                                                          addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                           BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                           BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                           BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                           ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                           BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                         ProjectType:ProjectNewType};
+                                                                                                           localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                           ProjectNewPriority="Medium";
+                                                                                                           BugID = 63;
+                                                                                                           BugProjectNewID = 4;
+                                                                                                           BugNewName = 'TextBug';
+                                                                                                           BugNewShortDesc = 'Text does funny stuff';
+                                                                                                             BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                              BugNewAssignedEmployee = 'KyleW99';
+                                                                                                            BugNewFoundBy ="Anon Caller";
+                                                                                                             BugNewDateFound = "2022-08-12";
+                                                                                                           BugNewStatusValue = "progress";
+                                                                                                          
+                                                                                                             BugNewTargetDate ="2022-09-15";
+                                                                                                             BugNewActualDate ="2022-10-15";
+                                                                                                           BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                           ProjectNewType = "Bug";
+                                                                                                           
+                                                                                                            
+                                                                                                             addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                              BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                              BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                              BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                              ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                              BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                            ProjectType:ProjectNewType};
+                                                                                                              localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                              ProjectNewPriority="Low";
+                                                                                                              BugID = 64;
+                                                                                                              BugProjectNewID = 4;
+                                                                                                                BugNewName = 'ButtonBug';
+                                                                                                               BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                 BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                  BugNewAssignedEmployee = 'LlewS99';
+                                                                                                                BugNewFoundBy ="Anon Caller";
+                                                                                                                 BugNewDateFound = "2022-08-21";
+                                                                                                               BugNewStatusValue = "todo";
+                                                                                                              
+                                                                                                                 BugNewTargetDate ="2022-09-25";
+                                                                                                                 BugNewActualDate ="2022-10-15";
+                                                                                                               BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                               ProjectNewType = "Bug";
+                                                                                                               
+                                                                                                                addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                 BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                 BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                 BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                 ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                 BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                               ProjectType:ProjectNewType};
+                                                                                                                 localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                 ProjectNewPriority="Medium";
+                                                                                                                 BugID = 65;
+                                                                                                                 BugProjectNewID = 4;
+                                                                                                                   BugNewName = 'ButtonBug';
+                                                                                                                  BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                    BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                     BugNewAssignedEmployee = 'JohanJ99';
+                                                                                                                   BugNewFoundBy ="Anon Caller";
+                                                                                                                    BugNewDateFound = "2022-08-21";
+                                                                                                                  BugNewStatusValue = "review";
+                                                                                                                 
+                                                                                                                    BugNewTargetDate ="2022-09-25";
+                                                                                                                    BugNewActualDate ="2022-10-15";
+                                                                                                                  BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                  ProjectNewType = "Bug";
+                                                                                                                  
+                                                                                                                   addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                    BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                    BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                    BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                    ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                    BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                  ProjectType:ProjectNewType};
+                                                                                                                    localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                    ProjectNewPriority="High";
+                                                                                                                    BugID = 66;
+                                                                                                                    BugProjectNewID = 4;
+                                                                                                                    BugNewName = 'TextBug';
+                                                                                                                    BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                      BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                       BugNewAssignedEmployee = 'JohanJ99';
+                                                                                                                     BugNewFoundBy ="Anon Caller";
+                                                                                                                      BugNewDateFound = "2022-08-21";
+                                                                                                                    BugNewStatusValue = "progress";
+                                                                                                                   
+                                                                                                                      BugNewTargetDate ="2022-09-25";
+                                                                                                                      BugNewActualDate ="2022-10-15";
+                                                                                                                    BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                    ProjectNewType = "Bug";
+                                                                                                                    
+                                                                                                                     
+                                                                                                                      addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                       BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                       BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                       BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                       ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                       BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                     ProjectType:ProjectNewType};
+                                                                                                                       localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                       ProjectNewPriority="Medium";
+                                                                                                                       BugID = 67;
+                                                                                                                       BugProjectNewID = 4;
+                                                                                                                         BugNewName = 'ButtonBug';
+                                                                                                                        BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                          BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                           BugNewAssignedEmployee = 'LlewS99';
+                                                                                                                         BugNewFoundBy ="Anon Caller";
+                                                                                                                          BugNewDateFound = "2022-08-01";
+                                                                                                                        BugNewStatusValue = "done";
+                                                                                                                       
+                                                                                                                          BugNewTargetDate ="2022-09-12";
+                                                                                                                          BugNewActualDate ="2022-10-15";
+                                                                                                                        BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                        ProjectNewType = "Bug";
+                                                                                                                        
+                                                                                                                         addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                          BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                          BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                          BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                          ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                          BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                        ProjectType:ProjectNewType};
+                                                                                                                          localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                          ProjectNewPriority="Medium";
+                                                                                                                          BugID = 68;
+                                                                                                                          BugProjectNewID = 4;
+                                                                                                                            BugNewName = 'ButtonBug';
+                                                                                                                           BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                             BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                              BugNewAssignedEmployee = 'LlewS99';
+                                                                                                                            BugNewFoundBy ="Anon Caller";
+                                                                                                                             BugNewDateFound = "2022-08-01";
+                                                                                                                           BugNewStatusValue = "review";
+                                                                                                                          
+                                                                                                                             BugNewTargetDate ="2022-09-15";
+                                                                                                                             BugNewActualDate ="2022-10-15";
+                                                                                                                           BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                           ProjectNewType = "Bug";
+                                                                                                                           
+                                                                                                                            addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                             BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                             BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                             BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                             ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                             BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                           ProjectType:ProjectNewType};
+                                                                                                                             localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                             ProjectNewPriority="Low";
+                                                                                                                             BugID = 69;
+                                                                                                                             BugProjectNewID = 4;
+                                                                                                                             BugNewName = 'TextBug';
+                                                                                                                             BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                               BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                              BugNewFoundBy ="Anon Caller";
+                                                                                                                               BugNewDateFound = "2022-08-12";
+                                                                                                                             BugNewStatusValue = "done";
+                                                                                                                            
+                                                                                                                               BugNewTargetDate ="2022-09-15";
+                                                                                                                               BugNewActualDate ="2022-10-15";
+                                                                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                             ProjectNewType = "Bug";
+                                                                                                                             
+                                                                                                                              
+                                                                                                                               addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                ProjectNewPriority="Medium";
+                                                                                                                                BugID = 70;
+                                                                                                                                BugProjectNewID = 4;
+                                                                                                                                  BugNewName = 'ButtonBug';
+                                                                                                                                 BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                                   BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                    BugNewAssignedEmployee = 'LlewS99';
+                                                                                                                                  BugNewFoundBy ="Anon Caller";
+                                                                                                                                   BugNewDateFound = "2022-08-12";
+                                                                                                                                 BugNewStatusValue = "todo";
+                                                                                                                                
+                                                                                                                                   BugNewTargetDate ="2022-09-15";
+                                                                                                                                   BugNewActualDate ="2022-10-15";
+                                                                                                                                 BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                 ProjectNewType = "Bug";
+                                                                                                                                 
+                                                                                                                                  addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                   BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                   BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                   BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                   ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                   BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                 ProjectType:ProjectNewType};
+                                                                                                                                   localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                   ProjectNewPriority="High";
+                                                                                                                                   BugID = 71;
+                                                                                                                                   BugProjectNewID = 3;
+                                                                                                                                     BugNewName = 'TextBug';
+                                                                                                                                    BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                                      BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                       BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                     BugNewFoundBy ="Anon Caller";
+                                                                                                                                      BugNewDateFound = "2022-08-24";
+                                                                                                                                    BugNewStatusValue = "progress";
+                                                                                                                                   
+                                                                                                                                      BugNewTargetDate ="2022-10-15";
+                                                                                                                                      BugNewActualDate ="2022-11-15";
+                                                                                                                                    BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                    ProjectNewType = "Bug";
+                                                                                                                                    
+                                                                                                                                     addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                      BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                      BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                      BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                      ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                      BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                    ProjectType:ProjectNewType};
+                                                                                                                                      localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                      ProjectNewPriority="Low";
+                                                                                                                                      BugID = 72;
+                                                                                                                                      BugProjectNewID = 3;
+                                                                                                                                        BugNewName = 'TextBug';
+                                                                                                                                       BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                                         BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                          BugNewAssignedEmployee = 'JohanJ99';
+                                                                                                                                        BugNewFoundBy ="Anon Caller";
+                                                                                                                                        BugNewDateFound = "2022-08-24";
+                                                                                                                                        BugNewStatusValue = "done";
+                                                                                                                                       
+                                                                                                                                          BugNewTargetDate ="2022-10-15";
+                                                                                                                                          BugNewActualDate ="2022-11-15";
+                                                                                                                                       BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                       ProjectNewType = "Bug";
+                                                                                                                                       
+                                                                                                                                        addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                         BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                         BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                         BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                         ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                         BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                       ProjectType:ProjectNewType};
+                                                                                                                                         localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                         ProjectNewPriority="Medium";
+                                                                                                                                         BugID = 73;
+                                                                                                                                         BugProjectNewID = 3;
+                                                                                                                                           BugNewName = 'TextBug';
+                                                                                                                                          BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                                            BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                             BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                           BugNewFoundBy ="Anon Caller";
+                                                                                                                                            BugNewDateFound = "2022-08-12";
+                                                                                                                                          BugNewStatusValue = "progress";
+                                                                                                                                         
+                                                                                                                                            BugNewTargetDate ="2022-09-15";
+                                                                                                                                            BugNewActualDate ="2022-10-15";
+                                                                                                                                          BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                          ProjectNewType = "Bug";
+                                                                                                                                          
+                                                                                                                                           addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                            BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                            BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                            BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                            ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                            BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                          ProjectType:ProjectNewType};
+                                                                                                                                            localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                            ProjectNewPriority="High";
+                                                                                                                                            BugID = 74;
+                                                                                                                                            BugProjectNewID = 3;
+                                                                                                                                            BugNewName = 'ButtonBug';
+                                                                                                                                            BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                                              BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                               BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                             BugNewFoundBy ="Anon Caller";
+                                                                                                                                             BugNewDateFound = "2022-08-24";
+                                                                                                                                             BugNewStatusValue = "review";
+                                                                                                                                            
+                                                                                                                                               BugNewTargetDate ="2022-10-15";
+                                                                                                                                               BugNewActualDate ="2022-11-15";
+                                                                                                                                            BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                            ProjectNewType = "Bug";
+                                                                                                                                             
+                                                                                                                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                               BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                               BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                               BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                               ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                               BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                             ProjectType:ProjectNewType};
+                                                                                                                                               localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                               ProjectNewPriority="High";
+                                                                                                                                               BugID = 75;
+                                                                                                                                               BugProjectNewID = 3;
+                                                                                                                                                 BugNewName = 'TextBug';
+                                                                                                                                                BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                                                  BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                   BugNewAssignedEmployee = 'LlewS99';
+                                                                                                                                                 BugNewFoundBy ="Anon Caller";
+                                                                                                                                                  BugNewDateFound = "2022-08-12";
+                                                                                                                                                BugNewStatusValue = "progress";
+                                                                                                                                               
+                                                                                                                                                  BugNewTargetDate ="2022-09-15";
+                                                                                                                                                  BugNewActualDate ="2022-10-15";
+                                                                                                                                                BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                ProjectNewType = "Bug";
+                                                                                                                                                
+                                                                                                                                                 addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                  BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                  BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                  BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                  ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                  BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                ProjectType:ProjectNewType};
+                                                                                                                                                  localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                  ProjectNewPriority="Medium";
+                                                                                                                                                  BugID = 76;
+                                                                                                                                                  BugProjectNewID = 3;
+                                                                                                                                                    BugNewName = 'TextBug';
+                                                                                                                                                   BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                                                     BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                      BugNewAssignedEmployee = 'JohanJ99';
+                                                                                                                                                    BugNewFoundBy ="Anon Caller";
+                                                                                                                                                    BugNewDateFound = "2022-08-24";
+                                                                                                                                                    BugNewStatusValue = "todo";
+                                                                                                                                                   
+                                                                                                                                                      BugNewTargetDate ="2022-10-15";
+                                                                                                                                                      BugNewActualDate ="2022-11-15";
+                                                                                                                                                   BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                   ProjectNewType = "Bug";
+                                                                                                                                                   
+                                                                                                                                                    addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                     BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                     BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                     BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                     ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                     BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                   ProjectType:ProjectNewType};
+                                                                                                                                                     localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                     ProjectNewPriority="High";
+                                                                                                                                                     BugID = 77;
+                                                                                                                                                     BugProjectNewID = 3;
+                                                                                                                                                     BugNewName = 'ButtonBug';
+                                                                                                                                                     BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                                                       BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                        BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                      BugNewFoundBy ="Anon Caller";
+                                                                                                                                                       BugNewDateFound = "2022-08-12";
+                                                                                                                                                     BugNewStatusValue = "progress";
+                                                                                                                                                    
+                                                                                                                                                       BugNewTargetDate ="2022-09-15";
+                                                                                                                                                       BugNewActualDate ="2022-10-15";
+                                                                                                                                                     BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                     ProjectNewType = "Bug";
+                                                                                                                                                      
+                                                                                                                                                       addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                        BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                        BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                        BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                        ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                        BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                      ProjectType:ProjectNewType};
+                                                                                                                                                        localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                        ProjectNewPriority="Low";
+                                                                                                                                                        BugID = 78;
+                                                                                                                                                        BugProjectNewID = 3;
+                                                                                                                                                          BugNewName = 'TextBug';
+                                                                                                                                                         BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                                                           BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                            BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                          BugNewFoundBy ="Anon Caller";
+                                                                                                                                                          BugNewDateFound = "2022-08-24";
+                                                                                                                                                          BugNewStatusValue = "progress";
+                                                                                                                                                         
+                                                                                                                                                            BugNewTargetDate ="2022-10-15";
+                                                                                                                                                            BugNewActualDate ="2022-11-15";
+                                                                                                                                                         BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                         ProjectNewType = "Bug";
+                                                                                                                                                         
+                                                                                                                                                          addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                           BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                           BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                           BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                           ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                           BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                         ProjectType:ProjectNewType};
+                                                                                                                                                           localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                           ProjectNewPriority="Medium";
+                                                                                                                                                           BugID = 79;
+                                                                                                                                                           BugProjectNewID = 3;
+                                                                                                                                                             BugNewName = 'TextBug';
+                                                                                                                                                             BugNewName = 'ButtonBug';
+                                                                                                                                                             BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                                                               BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                              BugNewFoundBy ="Anon Caller";
+                                                                                                                                                               BugNewDateFound = "2022-08-12";
+                                                                                                                                                             BugNewStatusValue = "review";
+                                                                                                                                                            
+                                                                                                                                                               BugNewTargetDate ="2022-09-15";
+                                                                                                                                                               BugNewActualDate ="2022-10-15";
+                                                                                                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                             ProjectNewType = "Bug";
+                                                                                                                                                            
+                                                                                                                                                             addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                              BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                              BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                              BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                              ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                              BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                            ProjectType:ProjectNewType};
+                                                                                                                                                              localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                              ProjectNewPriority="High";
+                                                                                                                                                              BugID = 80;
+                                                                                                                                                              BugProjectNewID = 3;
+                                                                                                                                                                BugNewName = 'TextBug';
+                                                                                                                                                               BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                                                                 BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                  BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                                BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                BugNewDateFound = "2022-08-24";
+                                                                                                                                                                BugNewStatusValue = "progress";
+                                                                                                                                                               
+                                                                                                                                                                  BugNewTargetDate ="2022-10-15";
+                                                                                                                                                                  BugNewActualDate ="2022-11-15";
+                                                                                                                                                               BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                               ProjectNewType = "Bug";
+                                                                                                                                                               
+                                                                                                                                                                addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                 BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                 BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                 BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                 ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                 BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                               ProjectType:ProjectNewType};
+                                                                                                                                                                 localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                 ProjectNewPriority="Low";
+                                                                                                                                                                 BugID = 81;
+                                                                                                                                                                 BugProjectNewID = 3;
+                                                                                                                                                                 BugNewName = 'ButtonBug';
+                                                                                                                                                                 BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                                                                   BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                    BugNewAssignedEmployee = 'LlewS99';
+                                                                                                                                                                  BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                   BugNewDateFound = "2022-08-12";
+                                                                                                                                                                 BugNewStatusValue = "review";
+                                                                                                                                                                
+                                                                                                                                                                   BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                   BugNewActualDate ="2022-10-15";
+                                                                                                                                                                 BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                 ProjectNewType = "Bug";
+                                                                                                                                                                  
+                                                                                                                                                                   addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                    BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                    BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                    BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                    ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                    BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                  ProjectType:ProjectNewType};
+                                                                                                                                                                    localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                    ProjectNewPriority="Medium";
+                                                                                                                                                                    BugID = 82;
+                                                                                                                                                                    BugProjectNewID = 3;
+                                                                                                                                                                      BugNewName = 'TextBug';
+                                                                                                                                                                     BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                                                                       BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                        BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                                      BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                      BugNewDateFound = "2022-08-24";
+                                                                                                                                                                      BugNewStatusValue = "progress";
+                                                                                                                                                                     
+                                                                                                                                                                        BugNewTargetDate ="2022-10-15";
+                                                                                                                                                                        BugNewActualDate ="2022-11-15";
+                                                                                                                                                                     BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                     ProjectNewType = "Bug";
+                                                                                                                                                                     
+                                                                                                                                                                      addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                       BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                       BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                       BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                       ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                       BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                     ProjectType:ProjectNewType};
+                                                                                                                                                                       localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                       ProjectNewPriority="High";
+                                                                                                                                                                       BugID = 83;
+                                                                                                                                                                       BugProjectNewID = 3;
+                                                                                                                                                                         BugNewName = 'TextBug';
+                                                                                                                                                                        BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                                                                          BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                           BugNewAssignedEmployee = 'LlewS99';
+                                                                                                                                                                         BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                          BugNewDateFound = "2022-08-12";
+                                                                                                                                                                        BugNewStatusValue = "review";
+                                                                                                                                                                       
+                                                                                                                                                                          BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                          BugNewActualDate ="2022-10-15";
+                                                                                                                                                                        BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                        ProjectNewType = "Bug";
+                                                                                                                                                                        
+                                                                                                                                                                         addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                          BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                          BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                          BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                          ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                          BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                        ProjectType:ProjectNewType};
+                                                                                                                                                                          localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                          ProjectNewPriority="Low";
+                                                                                                                                                                          BugID = 84;
+                                                                                                                                                                          BugProjectNewID = 3;
+                                                                                                                                                                          BugNewName = 'TextBug';
+                                                                                                                                                                          BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                                                                            BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                             BugNewAssignedEmployee = 'JohanJ99';
+                                                                                                                                                                           BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                           BugNewDateFound = "2022-08-24";
+                                                                                                                                                                           BugNewStatusValue = "todo";
+                                                                                                                                                                          
+                                                                                                                                                                             BugNewTargetDate ="2022-10-15";
+                                                                                                                                                                             BugNewActualDate ="2022-11-15";
+                                                                                                                                                                          BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                          ProjectNewType = "Bug";
+                                                                                                                                                                          
+                                                                                                                                                                            addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                             BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                             BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                             BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                             ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                             BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                           ProjectType:ProjectNewType};
+                                                                                                                                                                             localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                             ProjectNewPriority="High";
+                                                                                                                                                                             BugID = 85;
+                                                                                                                                                                             BugProjectNewID = 3;
+                                                                                                                                                                               BugNewName = 'TextBug';
+                                                                                                                                                                              BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                                                                                BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                 BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                                               BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                BugNewDateFound = "2022-08-12";
+                                                                                                                                                                              BugNewStatusValue = "done";
+                                                                                                                                                                             
+                                                                                                                                                                                BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                BugNewActualDate ="2022-10-15";
+                                                                                                                                                                              BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                              ProjectNewType = "Bug";
+                                                                                                                                                                              
+                                                                                                                                                                               addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                ProjectNewPriority="High";
+                                                                                                                                                                                BugID = 86;
+                                                                                                                                                                                BugProjectNewID = 3;
+                                                                                                                                                                                  BugNewName = 'TextBug';
+                                                                                                                                                                                 BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                                                                                   BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                    BugNewAssignedEmployee = 'LlewS99';
+                                                                                                                                                                                  BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                   BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                 BugNewStatusValue = "review";
+                                                                                                                                                                                
+                                                                                                                                                                                   BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                   BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                 BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                 ProjectNewType = "Bug";
+                                                                                                                                                                                 
+                                                                                                                                                                                  addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                   BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                   BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                   BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                   ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                   BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                 ProjectType:ProjectNewType};
+                                                                                                                                                                                   localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                   ProjectNewPriority="High";
+                                                                                                                                                                                   BugID = 87;
+                                                                                                                                                                                   BugProjectNewID = 3;
+                                                                                                                                                                                     BugNewName = 'TextBug';
+                                                                                                                                                                                    BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                                                                                      BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                       BugNewAssignedEmployee = 'JohanJ99';
+                                                                                                                                                                                     BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                      BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                    BugNewStatusValue = "todo";
+                                                                                                                                                                                   
+                                                                                                                                                                                      BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                      BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                    BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                    ProjectNewType = "Bug";
+                                                                                                                                                                                    
+                                                                                                                                                                                     addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                      BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                      BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                     BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                      ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                      BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                    ProjectType:ProjectNewType};
+                                                                                                                                                                                      localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                      ProjectNewPriority="Low";
+                                                                                                                                                                                      BugID = 88;
+                                                                                                                                                                                      BugProjectNewID = 2;
+                                                                                                                                                                                        BugNewName = 'ButtonBug';
+                                                                                                                                                                                       BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                                                                                         BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                          BugNewAssignedEmployee = 'JohanJ99';
+                                                                                                                                                                                        BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                         BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                       BugNewStatusValue = "review";
+                                                                                                                                                                                   
+                                                                                                                                                                                         BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                         BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                       BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                       ProjectNewType = "Bug";
+
+                                                                                                                                                                                       addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                        BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                        BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                        BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                        ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                        BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                      ProjectType:ProjectNewType};
+                                                                                                                                                                                        localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                       ProjectNewPriority="Medium";
+                                                                                                                                                                                       BugID = 89;
+                                                                                                                                                                                       BugProjectNewID = 2;
+                                                                                                                                                                                         BugNewName = 'ButtonBug';
+                                                                                                                                                                                        BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                                                                                          BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                           BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                                                         BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                          BugNewDateFound = "2022-08-05";
+                                                                                                                                                                                        BugNewStatusValue = "done";
+                                                                                                                                                                                    
+                                                                                                                                                                                          BugNewTargetDate ="2022-09-25";
+                                                                                                                                                                                          BugNewActualDate ="2022-10-05";
+                                                                                                                                                                                        BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                        ProjectNewType = "Bug";
+
+                                                                                                                                                                                        addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                          BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                          BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                          BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                          ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                          BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                        ProjectType:ProjectNewType};
+                                                                                                                                                                                          localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                        ProjectNewPriority="High";
+                                                                                                                                                                                        BugID = 90;
+                                                                                                                                                                                        BugProjectNewID = 2;
+                                                                                                                                                                                        BugNewName = 'TextBug';
+                                                                                                                                                                                        BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                                                                                          BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                           BugNewAssignedEmployee = 'JohanJ99';
+                                                                                                                                                                                         BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                          BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                        BugNewStatusValue = "todo";
+                                                                                                                                                                                       
+                                                                                                                                                                                          BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                          BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                        BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                        ProjectNewType = "Bug";
+
+                                                                                                                                                                                         addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                          BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                          BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                          BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                          ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                          BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                        ProjectType:ProjectNewType};
+                                                                                                                                                                                          localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                         ProjectNewPriority="High";
+                                                                                                                                                                                         BugID = 91;
+                                                                                                                                                                                         BugProjectNewID = 2;
+                                                                                                                                                                                           BugNewName = 'ButtonBug';
+                                                                                                                                                                                          BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                                                                                            BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                            BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                                                         BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                          BugNewDateFound = "2022-08-05";
+                                                                                                                                                                                        BugNewStatusValue = "progress";
+                                                                                                                                                                                    
+                                                                                                                                                                                          BugNewTargetDate ="2022-09-25";
+                                                                                                                                                                                          BugNewActualDate ="2022-10-05";
+                                                                                                                                                                                          BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                          ProjectNewType = "Bug";
+
+                                                                                                                                                                                          addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                            BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                            BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                            BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                            ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                            BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                          ProjectType:ProjectNewType};
+                                                                                                                                                                                            localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                          ProjectNewPriority="Low";
+                                                                                                                                                                                          BugID = 92;
+                                                                                                                                                                                          BugProjectNewID = 2;
+                                                                                                                                                                                          BugNewName = 'TextBug';
+                                                                                                                                                                                          BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                                                                                            BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                             BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                                                           BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                            BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                          BugNewStatusValue = "todo";
+                                                                                                                                                                                         
+                                                                                                                                                                                            BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                            BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                          BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                          ProjectNewType = "Bug";
+
+                                                                                                                                                                                           addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                            BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                            BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                            BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                            ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                            BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                          ProjectType:ProjectNewType};
+                                                                                                                                                                                            localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                           ProjectNewPriority="Medium";
+                                                                                                                                                                                           BugID = 93;
+                                                                                                                                                                                           BugProjectNewID = 2;
+                                                                                                                                                                                             BugNewName = 'ButtonBug';
+                                                                                                                                                                                            BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                                                                                              BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                               BugNewAssignedEmployee = 'LlewS99';
+                                                                                                                                                                                             BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                              BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                            BugNewStatusValue = "done";
+                                                                                                                                                                                        
+                                                                                                                                                                                              BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                              BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                            BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                            ProjectNewType = "Bug";
+
+                                                                                                                                                                                            addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                              BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                              BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                              BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                              ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                              BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                            ProjectType:ProjectNewType};
+                                                                                                                                                                                              localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                            ProjectNewPriority="High";
+                                                                                                                                                                                            BugID = 94;
+                                                                                                                                                                                            BugProjectNewID = 2;
+                                                                                                                                                                                              BugNewName = 'ButtonBug';
+                                                                                                                                                                                             BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                                                                                               BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                               BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                                                               BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                BugNewDateFound = "2022-08-05";
+                                                                                                                                                                                              BugNewStatusValue = "progress";
+                                                                                                                                                                                          
+                                                                                                                                                                                                BugNewTargetDate ="2022-09-25";
+                                                                                                                                                                                                BugNewActualDate ="2022-10-05";
+                                                                                                                                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                             ProjectNewType = "Bug";
+
+                                                                                                                                                                                             addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                              BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                              BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                              BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                              ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                              BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                            ProjectType:ProjectNewType};
+                                                                                                                                                                                              localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                             ProjectNewPriority="Low";
+                                                                                                                                                                                             BugID = 95;
+                                                                                                                                                                                             BugProjectNewID = 2;
+                                                                                                                                                                                             BugNewName = 'DisplayBug';
+                                                                                                                                                                                             BugNewShortDesc = 'User is seeing incorrect output';
+                                                                                                                                                                                               BugNewLongDesc = 'The word order is mixed up';
+                                                                                                                                                                                                BugNewAssignedEmployee = 'LlewS99';
+                                                                                                                                                                                              BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                               BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                             BugNewStatusValue = "todo";
+                                                                                                                                                                                         
+                                                                                                                                                                                               BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                               BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                             ProjectNewType = "Bug";
+
+                                                                                                                                                                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                              ProjectNewPriority="Medium";
+                                                                                                                                                                                              BugID = 96;
+                                                                                                                                                                                              BugProjectNewID = 2;
+                                                                                                                                                                                                BugNewName = 'ButtonBug';
+                                                                                                                                                                                               BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                                                                                                 BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                                  BugNewAssignedEmployee = 'LlewS99';
+                                                                                                                                                                                                BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                 BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                               BugNewStatusValue = "todo";
+                                                                                                                                                                                           
+                                                                                                                                                                                                 BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                                 BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                               BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                               ProjectNewType = "Bug";
+
+                                                                                                                                                                                               addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                               ProjectNewPriority="High";
+                                                                                                                                                                                               BugID = 97;
+                                                                                                                                                                                               BugProjectNewID = 2;
+                                                                                                                                                                                               BugNewName = 'DisplayBug';
+                                                                                                                                                                                               BugNewShortDesc = 'User is seeing incorrect output';
+                                                                                                                                                                                                 BugNewLongDesc = 'The word order is mixed up';
+                                                                                                                                                                                                  BugNewAssignedEmployee = 'LlewS99';
+                                                                                                                                                                                                BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                 BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                               BugNewStatusValue = "todo";
+                                                                                                                                                                                           
+                                                                                                                                                                                                 BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                                 BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                               BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                               ProjectNewType = "Bug";
+
+                                                                                                                                                                                                addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                  BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                  BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                  BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                  ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                  BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                ProjectType:ProjectNewType};
+                                                                                                                                                                                                  localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                ProjectNewPriority="Low";
+                                                                                                                                                                                                BugID = 98;
+                                                                                                                                                                                                BugProjectNewID = 2;
+                                                                                                                                                                                                  BugNewName = 'ButtonBug';
+                                                                                                                                                                                                 BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                                                                                                   BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                                   BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                                                                   BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                    BugNewDateFound = "2022-08-05";
+                                                                                                                                                                                                  BugNewStatusValue = "done";
+                                                                                                                                                                                              
+                                                                                                                                                                                                    BugNewTargetDate ="2022-09-25";
+                                                                                                                                                                                                    BugNewActualDate ="2022-10-05";
+                                                                                                                                                                                                 BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                 ProjectNewType = "Bug";
+
+                                                                                                                                                                                                 addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                  BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                  BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                  BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                  ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                  BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                ProjectType:ProjectNewType};
+                                                                                                                                                                                                  localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                 ProjectNewPriority="High";
+                                                                                                                                                                                                 BugID = 99;
+                                                                                                                                                                                                 BugProjectNewID = 2;
+                                                                                                                                                                                                 BugNewName = 'DisplayBug';
+                                                                                                                                                                                                 BugNewShortDesc = 'User is seeing incorrect output';
+                                                                                                                                                                                                   BugNewLongDesc = 'The word order is mixed up';
+                                                                                                                                                                                                    BugNewAssignedEmployee = 'LlewS99';
+                                                                                                                                                                                                  BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                   BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                                 BugNewStatusValue = "todo";
+                                                                                                                                                                                             
+                                                                                                                                                                                                   BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                                   BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                                 BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                 ProjectNewType = "Bug";
+
+                                                                                                                                                                                                  addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                    BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                    BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                    BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                    ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                    BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                  ProjectType:ProjectNewType};
+                                                                                                                                                                                                    localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                  ProjectNewPriority="Low";
+                                                                                                                                                                                                  BugID = 100;
+                                                                                                                                                                                                  BugProjectNewID = 2;
+                                                                                                                                                                                                    BugNewName = 'DisplayBug';
+                                                                                                                                                                                                   BugNewShortDesc = 'User is seeing incorrect output';
+                                                                                                                                                                                                     BugNewLongDesc = 'The word order is mixed up';
+                                                                                                                                                                                                      BugNewAssignedEmployee = 'LlewS99';
+                                                                                                                                                                                                    BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                     BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                                   BugNewStatusValue = "progress";
+                                                                                                                                                                                               
+                                                                                                                                                                                                     BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                                     BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                                   BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                   ProjectNewType = "Bug";
+
+                                                                                                                                                                                                   addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                    BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                    BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                    BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                    ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                    BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                  ProjectType:ProjectNewType};
+                                                                                                                                                                                                    localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                   ProjectNewPriority="High";
+                                                                                                                                                                                                   BugID = 101;
+                                                                                                                                                                                                   BugProjectNewID = 2;
+                                                                                                                                                                                                     BugNewName = 'ButtonBug';
+                                                                                                                                                                                                    BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                                                                                                      BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                                      BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                                                                      BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                       BugNewDateFound = "2022-08-05";
+                                                                                                                                                                                                     BugNewStatusValue = "done";
+                                                                                                                                                                                                 
+                                                                                                                                                                                                       BugNewTargetDate ="2022-09-25";
+                                                                                                                                                                                                       BugNewActualDate ="2022-10-05";
+                                                                                                                                                                                                    BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                    ProjectNewType = "Bug";
+
+                                                                                                                                                                                                    addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                      BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                      BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                      BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                      ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                      BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                    ProjectType:ProjectNewType};
+                                                                                                                                                                                                      localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                     ProjectNewPriority="Medium";
+                                                                                                                                                                                                     BugID = 102;
+                                                                                                                                                                                                     BugProjectNewID = 2;
+                                                                                                                                                                                                       BugNewName = 'ButtonBug';
+                                                                                                                                                                                                      BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                                                                                                        BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                                         BugNewAssignedEmployee = 'LlewS99';
+                                                                                                                                                                                                       BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                        BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                                      BugNewStatusValue = "progress";
+                                                                                                                                                                                                  
+                                                                                                                                                                                                        BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                                        BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                                      BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                      ProjectNewType = "Bug";
+
+                                                                                                                                                                                                      addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                        BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                        BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                        BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                        ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                        BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                      ProjectType:ProjectNewType};
+                                                                                                                                                                                                        localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                      ProjectNewPriority="Low";
+                                                                                                                                                                                                      BugID = 103;
+                                                                                                                                                                                                      BugProjectNewID = 2;
+                                                                                                                                                                                                        BugNewName = 'ButtonBug';
+                                                                                                                                                                                                       BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                                                                                                         BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                                          BugNewAssignedEmployee = 'LlewS99';
+                                                                                                                                                                                                        BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                         BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                                       BugNewStatusValue = "review";
+                                                                                                                                                                                                   
+                                                                                                                                                                                                         BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                                         BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                                       BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                       ProjectNewType = "Bug";
+
+                                                                                                                                                                                                       addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                        BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                        BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                        BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                        ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                        BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                      ProjectType:ProjectNewType};
+                                                                                                                                                                                                        localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                       ProjectNewPriority="High";
+                                                                                                                                                                                                       BugID = 104;
+                                                                                                                                                                                                       BugProjectNewID = 2;
+                                                                                                                                                                                                       BugNewName = 'DisplayBug';
+                                                                                                                                                                                                       BugNewShortDesc = 'User is seeing incorrect output';
+                                                                                                                                                                                                         BugNewLongDesc = 'The word order is mixed up';
+                                                                                                                                                                                                          BugNewAssignedEmployee = 'KareN99';
+                                                                                                                                                                                                        BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                         BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                                       BugNewStatusValue = "todo";
+                                                                                                                                                                                                   
+                                                                                                                                                                                                         BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                                         BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                                       BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                       ProjectNewType = "Bug";
+
+                                                                                                                                                                                                        addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                          BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                          BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                          BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                          ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                          BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                        ProjectType:ProjectNewType};
+                                                                                                                                                                                                          localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                          ProjectNewPriority="Low";
+                                                                                                                                                                                                          BugID = 105;
+                                                                                                                                                                                                          BugProjectNewID = 5;
+                                                                                                                                                                                                          BugNewName = 'DisplayBug';
+                                                                                                                                                                                                          BugNewShortDesc = 'User is seeing incorrect output';
+                                                                                                                                                                                                            BugNewLongDesc = 'The word order is mixed up';
+                                                                                                                                                                                                             BugNewAssignedEmployee = 'KareN99';
+                                                                                                                                                                                                           BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                            BugNewDateFound = "2022-09-25";
+                                                                                                                                                                                                          BugNewStatusValue = "progress";
+                                                                                                                                                                                                      
+                                                                                                                                                                                                            BugNewTargetDate ="2022-10-09";
+                                                                                                                                                                                                            BugNewActualDate ="2022-11-19";
+                                                                                                                                                                                                          BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                          ProjectNewType = "Bug";
+   
+                                                                                                                                                                                                           addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                             BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                             BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                             BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                             ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                             BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                           ProjectType:ProjectNewType};
+                                                                                                                                                                                                             localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                             ProjectNewPriority="Medium";
+                                                                                                                                                                                                             BugID = 106;
+                                                                                                                                                                                                             BugProjectNewID = 5;
+                                                                                                                                                                                                             BugNewName = 'DisplayBug';
+                                                                                                                                                                                                             BugNewShortDesc = 'User is seeing incorrect output';
+                                                                                                                                                                                                               BugNewLongDesc = 'The word order is mixed up';
+                                                                                                                                                                                                                BugNewAssignedEmployee = 'KareN99';
+                                                                                                                                                                                                              BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                               BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                                             BugNewStatusValue = "todo";
+                                                                                                                                                                                                         
+                                                                                                                                                                                                               BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                                               BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                             ProjectNewType = "Bug";
+      
+                                                                                                                                                                                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                                ProjectNewPriority="Low";
+                                                                                                                                                                                                             BugID = 107;
+                                                                                                                                                                                                             BugProjectNewID = 5;
+                                                                                                                                                                                                             BugNewName = 'LogicBug';
+                                                                                                                                                                                                             BugNewShortDesc = 'Calculations are failing';
+                                                                                                                                                                                                               BugNewLongDesc = 'Math rules are not followed';
+                                                                                                                                                                                                                BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                                                                              BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                              BugNewDateFound = "2022-09-25";
+                                                                                                                                                                                                              BugNewStatusValue = "done";
+                                                                                                                                                                                                          
+                                                                                                                                                                                                                BugNewTargetDate ="2022-10-09";
+                                                                                                                                                                                                                BugNewActualDate ="2022-11-19";
+                                                                                                                                                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                             ProjectNewType = "Bug";
+      
+                                                                                                                                                                                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                                ProjectNewPriority="Medium";
+                                                                                                                                                                                                             BugID = 108;
+                                                                                                                                                                                                             BugProjectNewID = 5;
+                                                                                                                                                                                                             BugNewName = 'DisplayBug';
+                                                                                                                                                                                                             BugNewShortDesc = 'User is seeing incorrect output';
+                                                                                                                                                                                                               BugNewLongDesc = 'The word order is mixed up';
+                                                                                                                                                                                                                BugNewAssignedEmployee = 'KareN99';
+                                                                                                                                                                                                              BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                               BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                                             BugNewStatusValue = "review";
+                                                                                                                                                                                                         
+                                                                                                                                                                                                               BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                                               BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                             ProjectNewType = "Bug";
+      
+                                                                                                                                                                                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                                ProjectNewPriority="High";
+                                                                                                                                                                                                             BugID = 109;
+                                                                                                                                                                                                             BugProjectNewID = 5;
+                                                                                                                                                                                                             BugNewName = 'LogicBug';
+                                                                                                                                                                                                             BugNewShortDesc = 'Calculations are failing';
+                                                                                                                                                                                                               BugNewLongDesc = 'Math rules are not followed';
+                                                                                                                                                                                                                BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                                                                              BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                              BugNewDateFound = "2022-09-25";
+                                                                                                                                                                                                              BugNewStatusValue = "todo";
+                                                                                                                                                                                                          
+                                                                                                                                                                                                                BugNewTargetDate ="2022-10-09";
+                                                                                                                                                                                                                BugNewActualDate ="2022-11-19";
+                                                                                                                                                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                             ProjectNewType = "Bug";
+      
+                                                                                                                                                                                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                                ProjectNewPriority="Low";
+                                                                                                                                                                                                             BugID = 110;
+                                                                                                                                                                                                             BugProjectNewID = 5;
+                                                                                                                                                                                                             BugNewName = 'DisplayBug';
+                                                                                                                                                                                                             BugNewShortDesc = 'User is seeing incorrect output';
+                                                                                                                                                                                                               BugNewLongDesc = 'The word order is mixed up';
+                                                                                                                                                                                                                BugNewAssignedEmployee = 'KareN99';
+                                                                                                                                                                                                              BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                               BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                                             BugNewStatusValue = "progress";
+                                                                                                                                                                                                         
+                                                                                                                                                                                                               BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                                               BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                             ProjectNewType = "Bug";
+      
+                                                                                                                                                                                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                                ProjectNewPriority="High";
+                                                                                                                                                                                                             BugID = 111;
+                                                                                                                                                                                                             BugProjectNewID = 5;
+                                                                                                                                                                                                             BugNewName = 'LogicBug';
+                                                                                                                                                                                                             BugNewShortDesc = 'Calculations are failing';
+                                                                                                                                                                                                               BugNewLongDesc = 'Math rules are not followed';
+                                                                                                                                                                                                                BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                                                                              BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                              BugNewDateFound = "2022-09-25";
+                                                                                                                                                                                                              BugNewStatusValue = "review";
+                                                                                                                                                                                                          
+                                                                                                                                                                                                                BugNewTargetDate ="2022-10-09";
+                                                                                                                                                                                                                BugNewActualDate ="2022-11-19";
+                                                                                                                                                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                             ProjectNewType = "Bug";
+      
+                                                                                                                                                                                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                                ProjectNewPriority="Medium";
+                                                                                                                                                                                                             BugID = 112;
+                                                                                                                                                                                                             BugProjectNewID = 5;
+                                                                                                                                                                                                             BugNewName = 'TextBug';
+                                                                                                                                                                                                             BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                                                                                                               BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                                                BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                                                                              BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                               BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                                             BugNewStatusValue = "progress";
+                                                                                                                                                                                                            
+                                                                                                                                                                                                               BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                                               BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                             ProjectNewType = "Bug";
+      
+                                                                                                                                                                                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                                ProjectNewPriority="Low";
+                                                                                                                                                                                                             BugID = 113;
+                                                                                                                                                                                                             BugProjectNewID = 5;
+                                                                                                                                                                                                             BugNewName = 'DisplayBug';
+                                                                                                                                                                                                             BugNewShortDesc = 'User is seeing incorrect output';
+                                                                                                                                                                                                               BugNewLongDesc = 'The word order is mixed up';
+                                                                                                                                                                                                                BugNewAssignedEmployee = 'KareN99';
+                                                                                                                                                                                                              BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                              BugNewDateFound = "2022-09-25";
+                                                                                                                                                                                                              BugNewStatusValue = "done";
+                                                                                                                                                                                                          
+                                                                                                                                                                                                                BugNewTargetDate ="2022-10-09";
+                                                                                                                                                                                                                BugNewActualDate ="2022-11-19";
+                                                                                                                                                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                             ProjectNewType = "Bug";
+      
+                                                                                                                                                                                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                                ProjectNewPriority="Medium";
+                                                                                                                                                                                                             BugID = 114;
+                                                                                                                                                                                                             BugProjectNewID = 5;
+                                                                                                                                                                                                             BugNewName = 'CSSBug';
+                                                                                                                                                                                                              BugNewShortDesc = 'CSS does not display correctly';
+                                                                                                                                                                                                                BugNewLongDesc = 'Hovers in the wrong places ';
+                                                                                                                                                                                                                  BugNewAssignedEmployee = 'KareN99';
+                                                                                                                                                                                                                BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                                BugNewDateFound = "2022-08-30";
+                                                                                                                                                                                                              BugNewStatusValue = "review";
+                                                                                                                                                                                                          
+                                                                                                                                                                                                                BugNewTargetDate ="2022-10-17";
+                                                                                                                                                                                                                BugNewActualDate ="2022-11-15";
+                                                                                                                                                                                                              BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                              ProjectNewType = "Bug";
+      
+                                                                                                                                                                                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                                ProjectNewPriority="High";
+                                                                                                                                                                                                             BugID = 115;
+                                                                                                                                                                                                             BugProjectNewID = 5;
+                                                                                                                                                                                                             BugNewName = 'DisplayBug';
+                                                                                                                                                                                                             BugNewShortDesc = 'User is seeing incorrect output';
+                                                                                                                                                                                                               BugNewLongDesc = 'The word order is mixed up';
+                                                                                                                                                                                                                BugNewAssignedEmployee = 'KareN99';
+                                                                                                                                                                                                              BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                              BugNewDateFound = "2022-09-25";
+                                                                                                                                                                                                              BugNewStatusValue = "progress";
+                                                                                                                                                                                                          
+                                                                                                                                                                                                                BugNewTargetDate ="2022-10-09";
+                                                                                                                                                                                                                BugNewActualDate ="2022-11-19";
+                                                                                                                                                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                             ProjectNewType = "Bug";
+      
+                                                                                                                                                                                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                                ProjectNewPriority="Low";
+                                                                                                                                                                                                             BugID = 116;
+                                                                                                                                                                                                             BugProjectNewID = 5;
+                                                                                                                                                                                                             BugNewName = 'CSSBug';
+                                                                                                                                                                                                              BugNewShortDesc = 'CSS does not display correctly';
+                                                                                                                                                                                                                BugNewLongDesc = 'Hovers in the wrong places ';
+                                                                                                                                                                                                                  BugNewAssignedEmployee = 'KareN99';
+                                                                                                                                                                                                                BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                                BugNewDateFound = "2022-08-30";
+                                                                                                                                                                                                              BugNewStatusValue = "todo";
+                                                                                                                                                                                                          
+                                                                                                                                                                                                                BugNewTargetDate ="2022-10-17";
+                                                                                                                                                                                                                BugNewActualDate ="2022-11-15";
+                                                                                                                                                                                                              BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                              ProjectNewType = "Bug";
+      
+                                                                                                                                                                                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                                ProjectNewPriority="Medium";
+                                                                                                                                                                                                             BugID = 117;
+                                                                                                                                                                                                             BugProjectNewID = 5;
+                                                                                                                                                                                                             BugNewName = 'TextBug';
+                                                                                                                                                                                                             BugNewShortDesc = 'Text does funny stuff';
+                                                                                                                                                                                                               BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                                                BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                                                                              BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                              BugNewDateFound = "2022-09-25";
+                                                                                                                                                                                                              BugNewStatusValue = "review";
+                                                                                                                                                                                                          
+                                                                                                                                                                                                                BugNewTargetDate ="2022-10-09";
+                                                                                                                                                                                                                BugNewActualDate ="2022-11-19";
+                                                                                                                                                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                             ProjectNewType = "Bug";
+      
+                                                                                                                                                                                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                                ProjectNewPriority="High";
+                                                                                                                                                                                                             BugID = 118;
+                                                                                                                                                                                                             BugProjectNewID = 5;
+                                                                                                                                                                                                             BugNewName = 'DisplayBug';
+                                                                                                                                                                                                             BugNewShortDesc = 'User is seeing incorrect output';
+                                                                                                                                                                                                               BugNewLongDesc = 'The word order is mixed up';
+                                                                                                                                                                                                                BugNewAssignedEmployee = 'KareN99';
+                                                                                                                                                                                                              BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                               BugNewDateFound = "2022-08-12";
+                                                                                                                                                                                                             BugNewStatusValue = "progress";
+                                                                                                                                                                                                         
+                                                                                                                                                                                                               BugNewTargetDate ="2022-09-15";
+                                                                                                                                                                                                               BugNewActualDate ="2022-10-15";
+                                                                                                                                                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                             ProjectNewType = "Bug";
+      
+                                                                                                                                                                                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
+
+                                                                                                                                                                                                                ProjectNewPriority="Low";
+                                                                                                                                                                                                             BugID = 119;
+                                                                                                                                                                                                             BugProjectNewID = 5;
+                                                                                                                                                                                                             BugNewName = 'ButtonBug';
+                                                                                                                                                                                                             BugNewShortDesc = 'Button does funny stuff';
+                                                                                                                                                                                                               BugNewLongDesc = 'Jumps around like a lunatic';
+                                                                                                                                                                                                                BugNewAssignedEmployee = 'KyleW99';
+                                                                                                                                                                                                              BugNewFoundBy ="Anon Caller";
+                                                                                                                                                                                                              BugNewDateFound = "2022-09-25";
+                                                                                                                                                                                                              BugNewStatusValue = "todo";
+                                                                                                                                                                                                          
+                                                                                                                                                                                                                BugNewTargetDate ="2022-10-09";
+                                                                                                                                                                                                                BugNewActualDate ="2022-11-19";
+                                                                                                                                                                                                             BugNewResolutionSummary ="This bug has been added as a test";
+                                                                                                                                                                                                             ProjectNewType = "Bug";
+      
+                                                                                                                                                                                                              addBug = {BugId:BugID,ProjectId:BugProjectNewID,BugName:BugNewName,
+                                                                                                                                                                                                                BugShortDesc:BugNewShortDesc,BugLongDesc:BugNewLongDesc,
+                                                                                                                                                                                                                BugAssignedEmployee:BugNewAssignedEmployee,BugFoundBy:BugNewFoundBy,
+                                                                                                                                                                                                                BugDateFound:BugNewDateFound,ProjectStatus:BugNewStatusValue,
+                                                                                                                                                                                                                ProjectPriority:ProjectNewPriority,BugTargetDate:BugNewTargetDate,
+                                                                                                                                                                                                                BugActualDate:BugNewActualDate,BugResolutionSummary:BugNewResolutionSummary,
+                                                                                                                                                                                                              ProjectType:ProjectNewType};
+                                                                                                                                                                                                                localStorage.setItem(BugID,JSON.stringify(addBug));
 
        EmployeeNewID = 11;
        EmployeeNewFirstName = "Llewelyn";
