@@ -2573,6 +2573,16 @@ function Populate()
        addEmployeeLoad = {EmployeeID:EmployeeNewID,EmployeeFirstName:EmployeeNewFirstName,EmployeeLastName:EmployeeNewLastName,EmployeeEmail:EmployeeNewEmail,EmployeeUsername:EmployeeNewUsername,EmployeePhoto:EmployeeNewPhoto,ProjectType:ProjectNewType};
        localStorage.setItem(EmployeeNewID,JSON.stringify(addEmployeeLoad));
 
+       EmployeeNewID = 17;
+       EmployeeNewFirstName = "Ricardo";
+       EmployeeNewLastName = "Erasmus";
+       EmployeeNewEmail ="Potato911@gmail.com";
+       EmployeeNewUsername="RicardoE99";
+       EmployeeNewPhoto ="";
+       ProjectNewType ="Employee";
+       addEmployeeLoad = {EmployeeID:EmployeeNewID,EmployeeFirstName:EmployeeNewFirstName,EmployeeLastName:EmployeeNewLastName,EmployeeEmail:EmployeeNewEmail,EmployeeUsername:EmployeeNewUsername,EmployeePhoto:EmployeeNewPhoto,ProjectType:ProjectNewType};
+       localStorage.setItem(EmployeeNewID,JSON.stringify(addEmployeeLoad));
+
    
 ProjectNewPriority="Low";
 ProjectNewStatus = "todo";
