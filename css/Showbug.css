@@ -1,58 +1,56 @@
-.bug-content-wrapper{
-    width: 50%;
-    margin: auto;
-    padding: 1%;
-    border-radius: 5px;
-    background-color: #838888;
+.bug-content-wrapper {
+  width: 50%;
+  margin: auto;
+  padding: 1%;
+  border-radius: 5px;
+  background-color: #838888;
 }
-.bug-show-two-col{
-    padding: 1%;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    background-color: #999f9f;
-    text-align: center;
+.bug-show-two-col {
+  padding: 1%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: #999f9f;
+  text-align: center;
 }
-.bug-show-two-col h4{
-    text-align: center;
+.bug-show-two-col h4 {
+  text-align: center;
 }
 
-.project-info-twelve-col-grid{
-    padding: 1%;
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    background-color: #999f9f;
-    
+.project-info-twelve-col-grid {
+  padding: 1%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #999f9f;
 }
-.bug-show-two-col div{
-    text-align: justify;
+.bug-show-two-col div {
+  text-align: justify;
 }
-.Border{
-    border: 1px solid black;
-    text-align: center;
+.Border {
+  border: 1px solid black;
+  text-align: center;
 }
-.backToBoard{
-    margin-top: 5%;
-    padding: 3%;
-    color: #414342;
-    margin-right: +5px;
-    border-radius: 7px;
-    border-color: #e7ac94;
-    border-width: 1px;
-    background-color: #e7ac94;
-    font-size: 1vw;
-    float: right;
+.backToBoard {
+  margin-top: 5%;
+  padding: 3%;
+  color: #414342;
+  margin-right: +5px;
+  border-radius: 7px;
+  border-color: #e7ac94;
+  border-width: 1px;
+  background-color: #e7ac94;
+  font-size: 1vw;
+  float: right;
 }
-.clearBug{
-    float: none;
-
+.clearBug {
+  float: none;
 }
-.noBorder{
-    border: none;
+.noBorder {
+  border: none;
 }
-.bug-content-header{
-    text-align: center;
+.bug-content-header {
+  text-align: center;
 }
-.padding{
-    padding-left: 3%;
-    padding-right: 3%;
+.padding {
+  padding-left: 3%;
+  padding-right: 3%;
 }
