@@ -109,10 +109,10 @@ currentOBJ.ProjectPriority =document.getElementById("PriorityUpdate").value;
 currentOBJ.BugTargetDate =document.getElementById("TargetDateUpdate").value;
 currentOBJ.BugActualDate=document.getElementById("ActualDateUpdate").value;
 currentOBJ.BugResolutionSummary=document.getElementById("ResolutionSummaryUpdate").value;
-console.log(BugNumber)
+//console.log(BugNumber)
 localStorage.removeItem(BugNumber);
-console.log(localStorage)
+//console.log(localStorage)
 localStorage.setItem(BugNumber,JSON.stringify(currentOBJ));
-console.log(localStorage)
+//console.log(localStorage)
 location.reload();
 }

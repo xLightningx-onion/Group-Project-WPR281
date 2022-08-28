@@ -16,7 +16,7 @@ function EditProject(ProjectID){
             ProjectShortDescToUpdate = currentOBJ.ProjectDescription
         }
     }
-    document.getElementById("ProjectIDToUpdate").innerHTML = ProjectShortDescToUpdate;
+    document.getElementById("ProjectIDToUpdate").innerHTML = ProjectIdToUpdate;
     document.getElementById("ProjectNameToUpdate").value = ProjectNameToUpdate;
     document.getElementById("ProjectShortDescToUpdate").innerHTML = ProjectShortDescToUpdate;
 
@@ -27,5 +27,17 @@ function BackToProjectInfo(){
     document.getElementById("ProjectInfo").className = "content";
 }
 function UpdateProject(){
+    let ProjectNumber = document.getElementById('ProjectIDToUpdate').innerHTML;
 
+    currentOBJ = JSON.parse(localStorage.getItem(ProjectNumber));
+
+    currentOBJ.ProjectName = document.getElementById("ProjectNameToUpdate").value;
+    currentOBJ.ProjectDescription = document.getElementById("ProjectShortDescToUpdate").value;
+    
+
+    localStorage.removeItem(ProjectNumber);
+
+    localStorage.setItem(ProjectNumber,JSON.stringify(currentOBJ));
+
+    location.reload();
 }

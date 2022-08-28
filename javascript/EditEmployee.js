@@ -25,10 +25,10 @@ function editEmployee(EmployeeID){
             EmployeeLastNameToUpdate = currentOBJ.EmployeeLastName;
             EmployeeEmailToUpdate = currentOBJ.EmployeeEmail;
             EmployeeUserNameToUpdate = currentOBJ.EmployeeUsername;
-
         }
         
     }
+    document.getElementById("EmployeeIdUpdate").innerHTML = EmployeeIdToUpdate;
     document.getElementById("EmployeeFirstNameToUpdate").value = EmployeeNameToUpdate;
     document.getElementById("EmployeeLastNameToUpdate").value = EmployeeLastNameToUpdate;
     document.getElementById("EmployeeEmailToUpdate").value = EmployeeEmailToUpdate;
@@ -44,5 +44,18 @@ function BackToEmployees(){
     document.getElementById("7").className = "active";
 }
 function UpdateEmployee(){
+    let EmpNumber = document.getElementById('EmployeeIdUpdate').innerHTML;
 
+    currentOBJ = JSON.parse(localStorage.getItem(EmpNumber));
+
+    currentOBJ.EmployeeFirstName = document.getElementById("EmployeeFirstNameToUpdate").value;
+    currentOBJ.EmployeeLastName = document.getElementById("EmployeeLastNameToUpdate").value;
+    currentOBJ.EmployeeEmail = document.getElementById("EmployeeEmailToUpdate").value;
+    currentOBJ.EmployeeUsername = document.getElementById("EmployeeUserNameToUpdate").value;
+
+    localStorage.removeItem(EmpNumber);
+
+    localStorage.setItem(EmpNumber,JSON.stringify(currentOBJ));
+
+    location.reload();
 }
