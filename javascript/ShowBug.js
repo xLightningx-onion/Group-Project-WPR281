@@ -35,6 +35,20 @@ function ShowBugPage(BugIDinput){
 
     ItsAProject = ProjectList();
 
+    currentOBJ = JSON.parse(localStorage.getItem(BugIDinput));
+    ProjectIdToShow = currentOBJ.ProjectId;
+    BugNameToShow = currentOBJ.BugName;
+    ShortDescToShow = currentOBJ.BugShortDesc;
+    LongDescToShow = currentOBJ.BugLongDesc;
+    EmpAssignedToShow = currentOBJ.BugAssignedEmployee;
+    FoundByToShow = currentOBJ.BugFoundBy;
+    DateFoundToShow = currentOBJ.BugDateFound;
+    StatusToShow = currentOBJ.ProjectStatus;
+    PriorityToShow = currentOBJ.ProjectPriority;
+    TargetDateToShow = currentOBJ.BugTargetDate;
+    ActualDateToShow = currentOBJ.BugActualDate;
+    ResolutionSummaryToShow = currentOBJ.BugResolutionSummary
+   /*
     //getting bug info
     for(i=0; i<ItsABug.length;i++)
     {
@@ -54,14 +68,22 @@ function ShowBugPage(BugIDinput){
             ResolutionSummaryToShow = currentOBJ.BugResolutionSummary
         }
     }
+    */
+    /*
     //getting project info
     for(i=0; i<ItsAProject.length;i++){
         currentOBJ = JSON.parse(localStorage.getItem(ItsAProject[i]));
         if(currentOBJ.ProjectID == ProjectIdToShow){
             ProjectNameToShow = currentOBJ.ProjectName;
         }
-    }
+        */
+       currentProject = JSON.parse(localStorage.getItem(currentOBJ.ProjectId));
+       ProjectNameToShow = currentProject.ProjectName;
+   
+    //clearButtons
+    document.getElementById("bug-button-wrapper").innerHTML = "";
     //show info on page
+    
     document.getElementById("BugProjectNameShow").innerHTML = ProjectNameToShow;
     document.getElementById("BugProjectIdShow").innerHTML = ProjectIdToShow;
     document.getElementById("BugNameShow").innerHTML = BugNameToShow;
@@ -77,6 +99,8 @@ function ShowBugPage(BugIDinput){
     document.getElementById("BugTargetDateShow").innerHTML = TargetDateToShow;
     document.getElementById("BugActualDateShow").innerHTML = ActualDateToShow;
     document.getElementById("BugResolutionSummaryShow").innerHTML = ResolutionSummaryToShow;
+
+    document.getElementById("bug-button-wrapper").innerHTML += "<button class='backToBoard' type='button' id='backToBoard' onclick='editbugs("+BugIdToShow+")'>Update</button>"+"<button class='backToBoard' type='button' id='backToBoard' onclick='BackToBoard()'>Back</button>"
 
 }
 function BackToBoard(){

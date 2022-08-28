@@ -11,18 +11,21 @@
     <link rel="stylesheet" href="./css/board.css">
     <link rel="stylesheet" href="./css/table.css">
     <link rel="stylesheet" href="./css/Showbug.css">
-    
-     <script src="Functions.js"></script>
-    <script src="./javasctipt/pageDisplay.js"></script>
-    <script src="AddProject.js"></script>
-    <script src="ClearLocalStorage.js"></script>
-    <script src="Grouping.js"></script>
+    <script src="./javascript/EditBugs.js"></script>
+     <script src="./javascript/Functions.js"></script>
+    <script src="./javascript/pageDisplay.js"></script>
+    <script src="./javascript/AddProject.js"></script>
+    <script src="./javascript/ClearLocalStorage.js"></script>
+    <script src="./javascript/Grouping.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="AddEmployee.js"></script>
+    <script src="./javascript/AddEmployee.js"></script>
+    <script src="./javascript/AddBug.js"></script>
+    <script src="./javascript/ShowBug.js"></script>
+    <script src="./javascript/ShowProject.js"></script>
+    
+    <script src="./javascript/EditEmployee.js"></script>
+    <script src="./javascript/EditProjects.js"></script>
 
-    <script src="AddBug.js"></script>
-    <script src="./javasctipt/ShowBug.js"></script>
-    <script src="./javasctipt/ShowProject.js"></script>
     
 
    
@@ -69,6 +72,11 @@
                 <div class="side-nav">
                     <img src="./images/add-user.png" alt="">
                     <a id="6" href="#" onclick="addEmployee()">Add employee</a> 
+                    <div class="clear"></div>
+                </div>
+                <div class="side-nav">
+                    <img src="./images/user.png" alt="">
+                    <a id="7" href="#" onclick="Employee()">Employees</a> 
                     <div class="clear"></div>
                 </div>
                 <div class="button-wrap">
@@ -158,7 +166,7 @@
                     <h1>Projects</h1>
                 </div>
                 <div class="table-wrapper">
-                    <div class="three-col border size padding5" id="ProjectList">
+                    <div class="four-col border  padding" id="ProjectList">
                         <div class="table-header">
                             <h4>Project ID</h4>
                         </div>
@@ -167,18 +175,19 @@
                         </div>
                         <div class="table-header">
                             <h4>Short Description</h4>
+                        </div>  
+                        <div class="table-header">
+
+                            <h4>DELETE</h4>
+
                         </div>
                         <div class="table-header">
                             <h4>DELETE</h4>
                         </div>
                     </div>
-                    <div>
-                        <canvas id="ProjectsChart"></canvas>
-                      </div>
-                      <div>
-                        <canvas id="ThisProjectChart"></canvas>
-                      </div>
                 </div> 
+                
+                
             </div>
             <div class="hide" id="Ticket">
                 <div class="content-header center">
@@ -311,7 +320,7 @@
                     <h1>Bugs</h1>
                 </div>
                 <div class="table-wrapper margin-right">
-                    <div class="twelve-col-grid size " id="bugListWrapper">
+                    <div class="twelve-col-grid " id="bugListWrapper">
                         <div class="table-header">
                             <h4>Bug ID</h4>
                         </div>
@@ -349,6 +358,11 @@
                             <h4>Resolution Summary</h4>
                         </div>
                     </div>
+                </div>
+                <div class="ChartGrid">
+                    <div class="ChartContainer">
+                        <canvas style="width:100%;height:95%;color: black;" id="ProjectsChart"></canvas>
+                    </div>
                 </div> 
             </div>
         </div> 
@@ -357,7 +371,7 @@
         <div class="bug-content-header">
             <h1 id="BugnameDisplay">Bug Name</h1>
         </div>
-        <div class="bug-content-wrapper">
+        <div class="bug-content-wrapper" >
             <div class="bug-show-two-col">
                 <div class="title Border padding" >
                     <h4>Project Name: </h4>
@@ -446,8 +460,7 @@
                 <div class="noBorder">
                     
                 </div>
-                <div class="noBorder">
-                    <button class="backToBoard" type="button" id="backToBoard" onclick="BackToBoard()">Back</button>
+                <div class="noBorder" id="bug-button-wrapper">
                     <div class="clearBug noBorder"></div>
                 </div>
             </div>
@@ -455,10 +468,10 @@
     </div>
     <div class="hide" id="ProjectInfo">
         <div class="content-header">
-            <h1>Project Name</h1>
+            <h1 id="ProjectNameToUpdateShow">Project Name</h1>
         </div>
         <div class="table-wrapper margin-right">
-            <div class="project-info-twelve-col-grid size " id="ProjectInfoWrapper">
+            <div class="project-info-twelve-col-grid  " id="ProjectInfoWrapper">
                 <div class="table-header Border">
                     <h4>Bug Id</h4>
                 </div>
@@ -495,11 +508,219 @@
                 <div class="table-header Border">
                     <h4>Resolution Summary</h4>
                 </div>
-                
+            </div>
+        </div> 
+        <div class="ChartGrid" id = "ThisChart">
+            <div class="ChartContainer">
+                <canvas style="width:100%;height:95%;color: black;" id="ThisProjectChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="hide" id="TicketUpdate">
+        <div class="content-header center">
+            <h1>Update Ticket</h1>
+        </div>
+        <div class="content-body">
+            <div class="input-wrapper">
+                <table>
+                    <tr>
+                      <td>Project ID:</td>
+                      <td>
+                        <p id="ProjectIdTicketUpdate"></p>
+                      </td>  
+                    </tr>
+                    <tr>
+                        <td>Bug ID:</td>
+                        <td>
+                          <p id="BugIdTicketUpdate"></p>
+                        </td>  
+                      </tr>
+                    <tr>
+                        <td><label for="BugNameUpdate">Bug Name: </label></td>
+                        <td><input type="text" name="BugNameUpdate" id="BugNameUpdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="BugShortDescUpdate">Short Description: </label></td>
+                        <td><textarea name="BugShortDescUpdate" id="BugShortDescUpdate" cols="22" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="BugLongDescUpdate">Long Description: </label></td>
+                        <td><textarea name="BugLongDescUpdate" id="BugLongDescUpdate" cols="22" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="AssignedEmployeeUpdate">Employee Assigned: </label></td>
+                        <td>
+                            <select name="AssignedEmployeeUpdate" id="AssignedEmployeeUpdate">
+                            
+                            </select>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td><label for="FoundByUpdate"></label>Found By: </td>
+                        <td><input type="text" name="FoundByUpdate" id="FoundByUpdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="DateFoundUpdate">Date Found:</label></td>
+                        <td><input type="date" name="DateFoundUpdate" id="DateFoundUpdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="StatusUpdate">Status: </label></td>
+                        <td><select name="StatusUpdate" id="StatusUpdate">
+
+                            <option value="todo">To Do</option>
+                            <option value="progress">In Progress</option>
+                            <option value="review">Review</option>
+                            <option value="done">Done</option>
+
+
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="PriorityUpdate">Priority: </label></td>
+                        <td><select name="PriorityUpdate" id="PriorityUpdate">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="TargetDateUpdate">Target Date: </label></td>
+                        <td><input type="date" name="TargetDateUpdate" id="TargetDateUpdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ActualDateUpdate">Actual Date:</label></td>
+                        <td><input type="date" name="ActualDateUpdate" id="ActualDateUpdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ResolutionSummaryUpdate">Resolution Summary: </label></td>
+                        <td><textarea name="ResolutionSummaryUpdate" id="ResolutionSummaryUpdate" cols="22" rows="5"></textarea></td>
+                    </tr>
+                </table>
+                <div class="three-col-grid">
+                    <!--<div>
+                        <button type="button">ADD</button>
+                    </div>-->
+                    <div>
+                        <button type="button" onclick="UpdateBugs()">Update</button>
+                    </div>
+                    <!--<div>
+                        <button type="button">DELETE</button>
+                    </div>-->
+                </div>
+                </div>        
+            </div> 
+        </div>          
+    </div>
+    <div class="hide" id="Employees">
+        <div class="content-header">
+            <h1>Employees</h1>
+        </div>
+        <div class="table-wrapper">
+            <div class="six-col border  padding" id="EmployeeList">
+                <div class="table-header">
+                    <h4>Employee ID</h4>
+                </div>
+                <div class="table-header">
+                    <h4>First Name</h4>
+                </div>
+                <div class="table-header">
+                    <h4>Last Name</h4>
+                </div>  
+                <div class="table-header">
+                    <h4>Email</h4>
+                </div>
+                <div class="table-header">
+                    <h4>Username</h4>
+                </div>
+                <div class="table-header">
+                    <h4>Profile picture</h4>
+                </div>
             </div>
         </div> 
     </div>
-    <script src="LoadPopulate.js"></script>
-    <script src="Chart.js"></script>
+    <div class="hide" id="EmployeeEdit">
+        <div class="content-header center">
+            <h1>Edit Employee</h1>
+        </div>
+        <div class="content-body">
+            <div class="input-wrapper">
+                <table>
+                    <tr>
+                        <td><label for="EmployeeFirstNameToUpdate">First Name: </label></td>
+                        <td><input type="text" name="EmployeeFirstNameToUpdate" id="EmployeeFirstNameToUpdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="EmployeeLastNameToUpdate">Last Name: </label></td>
+                        <td><input type="text" name="EmployeeLastNameToUpdate" id="EmployeeLastNameToUpdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="EmployeeEmailToUpdate">Email :</label></td>
+                        <td><input type="email" name="EmployeeEmailToUpdate" id="EmployeeEmailToUpdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="EmployeeUserNameToUpdate">Username: </label></td>
+                        <td><input type="text" name="EmployeeUserNameToUpdate" id="EmployeeUserNameToUpdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="EmployeeProfilePicToUpdate">Picture: </label></td>
+                        <td><input type="file" name="EmployeeProfilePicToUpdate" id="EmployeeProfilePicToUpdate"></td>
+                    </tr>
+                </table>
+                <div class="three-col-grid">
+                    <div>
+                        <button type="button" onclick="BackToEmployees()">Back</button>
+                    </div>
+                    <div>
+                        <button type="button" id="btnSaveEmployee" onclick="UpdateEmployee()">Update</button>
+                    </div>
+                    <!--<div>
+                        <button type="button">DELETE</button>
+                    </div>-->
+                </div>
+                </div>        
+            </div> 
+        </div>                
+        </div>
+    </div>
+    <div class="hide" id="ProjectEdit">
+        <div class="content-header center">
+            <h1>&nbsp Edit Project</h1>
+        </div>
+        <div class="content-body">
+            <div class="input-wrapper">
+                <table>
+                    <tr>
+                        <td>Project ID:</td>
+                        <td><p id="ProjectIDToUpdate"></p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ProjectNameToUpdate">Project Name: </label></td>
+                        <td><input type="text" name="ProjectNameToUpdate" id="ProjectNameToUpdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ProjectShortDescToUpdate">Short Description: </label></td>
+                        <td><textarea name="ProjectShortDescToUpdate" id="ProjectShortDescToUpdate" cols="22" rows="5"></textarea></td>
+                    </tr>
+                    
+                </table>
+                <div class="three-col-grid"> 
+                    <div>
+                        <button type="button" onclick="BackToProjectInfo()">Back</button>
+                    </div>
+                    <div>
+                        <button type="button" onclick="UpdateProject()">Update</button>
+                    </div>
+                    <!--
+                    <div>
+                        <button type="button">DELETE</button>
+                    </div>
+                     -->
+                </div>
+            </div>        
+        </div> 
+    </div> 
+    <script src="./javascript/LoadPopulate.js"></script>
+   
+
 </body>
 </html>

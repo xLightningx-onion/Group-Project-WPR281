@@ -35,6 +35,7 @@ for(i=0 ; i <populatekeyList.length;i++)
     numbersOnlykeyList.push(populatekeyList[i]);
   }
 }
+
 numbersOnlykeyList.sort();
 return numbersOnlykeyList;
 }
@@ -44,20 +45,24 @@ return numbersOnlykeyList;
 function EmployeeList()
 {
   let numberList =NumbersKeyList();
+  console.log(numberList);
   let employees =[];
-  for(i = 0;i<NumbersKeyList.length;i++)
+  for(i = 0;i<numberList.length;i++)
   {
     let currOBJ = JSON.parse(localStorage.getItem(parseInt(numberList[i])));
+    console.log(currOBJ);
     if (currOBJ.ProjectType == "Employee")
     {
+      console.log("if running")
         employees.push(numberList[i]);
     }
   }
   employees.sort();
+  console.log("The Employees" + employees);
   return employees;
 
 }
-
+//console.log("The emp" + EmployeeList());
 function BugList()
 {
     let numberList =NumbersKeyList();
@@ -81,7 +86,7 @@ function ProjectList()
 {
     let numberList =NumbersKeyList();
     let projects =[];
-    for(i = 0;i<NumbersKeyList.length;i++)
+    for(i = 0;i<numberList.length;i++)
     {
         let currOBJ = JSON.parse(localStorage.getItem(parseInt(numberList[i])));
       if (currOBJ.ProjectType == "Project")
@@ -102,7 +107,8 @@ function ThisProjectAVGChart(ProjectID)
   let lowCount =0;
   let mediumCount =0;
   let highCount = 0;
-console.log(ProjectID)
+
+//console.log(ProjectID)
   for(i=0;i<bugs.length;i++)
   {
    let  currentOBJ = JSON.parse(localStorage.getItem(bugs[i]));
@@ -129,21 +135,41 @@ console.log(ProjectID)
   lowCount = (lowCount/bugs.length)*100;
   mediumCount = (mediumCount/bugs.length)*100;
   highCount = (highCount/bugs.length)*100;
+  if((lowCount==0 && mediumCount==0) 
+       || (lowCount==0 && highCount==0)
+       || (mediumCount==0 && highCount==0))
+       {
+        if(lowCount>0)
+        {
+          lowCount = 100;
+        }
+        else if(mediumCount>0)
+        {
+        mediumCount =100;
+        }
+        else
+        {
+         highCount =100; 
+        }
+       }
 
-  let labels = ['High Priority','Medium Priority','Low Priority',];
+  let labels = ['High Priority(%)','Medium Priority(%)','Low Priority(%)',];
   let data = {
               labels: labels,
                datasets: [{label: 'My First dataset',
                           backgroundColor: [ 'rgba(255, 99, 132, 0.2)',
-                                          'rgba(54, 162, 235, 0.2)',
-                                          'rgba(255, 206, 86, 0.2)'],
+                                           'rgba(255, 206, 86, 0.2)',
+                                          'rgba(54, 162, 235, 0.2)'],
                              borderColor: ['rgba(255, 99, 132, 1)',
-                                         'rgba(54, 162, 235, 1)',
-                                          'rgba(255, 206, 86, 1)'],
+                                           'rgba(255, 206, 86, 1)',
+                                         'rgba(54, 162, 235, 1)' ],
                              data: [highCount,mediumCount,lowCount],
+                             hoverOffset:10,
+                             weight:100
                           }]
              };
-  let config = {type: 'pie',data: data,options: {}};
+  let config = {type: 'doughnut',data: data,options: {responsive: true,
+    maintainAspectRatio: false, plugins:{ legend:{labels:{color:"black"}}, title:{color:'black',display:true,text:'Current Project Bug Priority'}}}};
   return config;
 }
 
@@ -177,21 +203,62 @@ function projectsAVGChart()
     lowCount = (lowCount/bugs.length)*100;
     mediumCount = (mediumCount/bugs.length)*100;
     highCount = (highCount/bugs.length)*100;
+    if((lowCount==0 && mediumCount==0) 
+    || (lowCount==0 && highCount==0)
+    || (mediumCount==0 && highCount==0))
+    {
+     if(lowCount>0)
+     {
+       lowCount = 100;
+     }
+     else if(mediumCount>0)
+     {
+     mediumCount =100;
+     }
+     else
+     {
+      highCount =100; 
+     }
+    }
 
-   
-    let labels = ['High Priority','Medium Priority','Low Priority',];
+
+
+
+
+
+
+
+
+
+    let labels = ['High Priority(%)','Medium Priority(%)','Low Priority(%)',];
       let data = {
                   labels: labels,
                    datasets: [{label: 'My First dataset',
-                              backgroundColor: [ 'rgba(255, 99, 132, 0.2)',
-                                              'rgba(54, 162, 235, 0.2)',
-                                              'rgba(255, 206, 86, 0.2)'],
-                                 borderColor: ['rgba(255, 99, 132, 1)',
-                                             'rgba(54, 162, 235, 1)',
-                                              'rgba(255, 206, 86, 1)'],
+                               backgroundColor: [ 'rgba(255, 99, 132, 0.2)',
+                                                'rgba(255, 206, 86, 0.2)',
+                                                'rgba(54, 162, 235, 0.2)'],
+                                    borderColor: ['rgba(255, 99, 132, 1)',
+                                                'rgba(255, 206, 86, 1)',
+                                                 'rgba(54, 162, 235, 1)' ],
                                  data: [highCount,mediumCount,lowCount],
+                               
+                                 hoverOffset:10,
+                                 weight:100
                               }]
                  };
-      let config = {type: 'pie',data: data,options: {}};
+      let config = {type: 'doughnut',data: data,options: {responsive: true,
+        maintainAspectRatio: false , plugins:{legend:{labels:{color:"black"}}, title:{color:'black',display:true,text:'Overall Project Bug Priority'}}}};
       return config;
+}
+//svsvsfvdfvdfv
+
+function NewThisProjectChart()
+{
+  ThisProjectChart.destroy();
+  
+}
+
+function NewProjectsChart()
+{
+  ProjectsChart.destroy();
 }

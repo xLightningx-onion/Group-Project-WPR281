@@ -1,6 +1,20 @@
 function showProject(projectID){
+  
+    NewThisProjectChart();
+    ThisProjectChart = new Chart(document.getElementById('ThisProjectChart'),ThisProjectAVGChart(projectID));
+
     let projectIdToDisplay = projectID;
     let BugArray = [];
+    let ProjectArr = [];
+    let ProjectNameToShow;
+    ProjectArr = ProjectList();
+    //console.log(ProjectArr);
+    for(i=0; i<ProjectArr.length;i++){
+        currentOBJ = JSON.parse(localStorage.getItem(ProjectArr[i]));
+        if(currentOBJ.ProjectID == projectIdToDisplay){
+            ProjectNameToShow = currentOBJ.ProjectName;
+        }
+    }
     document.getElementById("ProjectInfo").className = "content";
     document.getElementById("Projects").className = "hide";
     document.getElementById("1").className = "";
@@ -26,6 +40,8 @@ function showProject(projectID){
     {
         currentOBJ = JSON.parse(localStorage.getItem(BugArray[i]));
         if(currentOBJ.ProjectId == projectIdToDisplay){
+            
+            document.getElementById("ProjectNameToUpdateShow").innerHTML = ProjectNameToShow;
             document.getElementById("ProjectInfoWrapper").innerHTML += "<div class='Border padding projectIDhover' onclick='ShowBugPage("+currentOBJ.BugId+")'><h4>"+currentOBJ.BugId+"</h4></div>";
             document.getElementById("ProjectInfoWrapper").innerHTML += "<div class='Border padding'><h4>"+currentOBJ.BugName+"</h4></div>";
             document.getElementById("ProjectInfoWrapper").innerHTML += "<div class='Border padding'><h4>"+currentOBJ.BugShortDesc+"</h4></div>";
@@ -50,12 +66,31 @@ function showProject(projectID){
             document.getElementById("ProjectInfoWrapper").innerHTML += "<div class='noBorder'><h4></h4></div>";
             document.getElementById("ProjectInfoWrapper").innerHTML += "<div class='noBorder'><h4></h4></div>";
             document.getElementById("ProjectInfoWrapper").innerHTML += "<div class='noBorder'><h4></h4></div>";
-            document.getElementById("ProjectInfoWrapper").innerHTML += "<div class='noBorder'><h4></h4></div>";
-            document.getElementById("ProjectInfoWrapper").innerHTML += "<div class='noBorder'><button class='backToBoard' type='button' id='backToBoard' onclick='BackToProject()'>Back</button></div>"; 
+            document.getElementById("ProjectInfoWrapper").innerHTML += "<div class='noBorder'><button class='backToBoard' type='button' id='backToBoard' onclick='BackToProject()'>Back</button></div>";
+            document.getElementById("ProjectInfoWrapper").innerHTML += "<div class='noBorder'><button class='backToBoard' type='button' id='backToBoard' onclick='EditProject("+projectIdToDisplay+")'>Update</button></div>"; 
         
 }
 function BackToProject(){
     document.getElementById("ProjectInfo").className = "hide";
     document.getElementById("Projects").className = "content";
     document.getElementById("1").className = "active";
+    document.getElementById("ProjectList").innerHTML += "";
+    projectsList = ProjectList();
+
+
+    /*
+    for(i=0;i<projects.length;i++)
+    {
+        console.log("For loop running");
+     let currentOBJ = JSON.parse(localStorage.getItem(projects[i]));
+     document.getElementById("ProjectList").innerHTML += "<div class='projectIDhover' onclick='showProject("+currentOBJ.ProjectID+")'>" 
+     + currentOBJ.ProjectID +"</div>" +  "<div>"+ currentOBJ.ProjectName +"</div>"    +"<div>"
+     + currentOBJ.ProjectDescription+"</div><div> <button onclick='DeleteProject("+currentOBJ.ProjectID+")'>Delete Project "+ currentOBJ.ProjectID+" </button> </div>" ; 
+
+
+    }
+*/
+
+   
+
 }
