@@ -45,15 +45,16 @@ return numbersOnlykeyList;
 function EmployeeList()
 {
   let numberList =NumbersKeyList();
-  //console.log(numberList);
+  console.log(numberList);
   let employees =[];
   for(i = 0;i<numberList.length;i++)
   {
     let currOBJ = JSON.parse(localStorage.getItem(parseInt(numberList[i])));
-    //console.log(currOBJ);
+    console.log(currOBJ);
     if (currOBJ.ProjectType == "Employee")
     {
-        employees.push(NumbersKeyList[i]);
+      console.log("if running")
+        employees.push(numberList[i]);
     }
   }
   employees.sort();
@@ -85,7 +86,7 @@ function ProjectList()
 {
     let numberList =NumbersKeyList();
     let projects =[];
-    for(i = 0;i<NumbersKeyList.length;i++)
+    for(i = 0;i<numberList.length;i++)
     {
         let currOBJ = JSON.parse(localStorage.getItem(parseInt(numberList[i])));
       if (currOBJ.ProjectType == "Project")

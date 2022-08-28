@@ -14,7 +14,7 @@ function editEmployee(EmployeeID){
     let EmployeePictureToUpdate;
     
     let EmployeeArray = EmployeeList();
-    //console.log(EmployeeArray);
+    console.log(EmployeeArray);
 
     for (let i = 0; i < EmployeeArray.length; i++) {
         //console.log(EmployeeID);
