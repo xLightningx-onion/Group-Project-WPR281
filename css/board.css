@@ -1,112 +1,108 @@
-.four-col-grid{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    
+.four-col-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
-h1{
-    margin-right: 2%;
+h1 {
+  margin-right: 2%;
 }
-.column{
-    margin-right: 5%;
-    background-color: #838888;
-    border-radius: 10px;
-  
+.column {
+  margin-right: 5%;
+  background-color: #838888;
+  border-radius: 10px;
 }
-.column h4{
-    text-align: center;
+.column h4 {
+  text-align: center;
 }
-.projects-wrapper{
-    margin: 2%;
-    background-color: #999f9f;
-    border-radius: 10px;
-    padding: 7%;
+.projects-wrapper {
+  margin: 2%;
+  background-color: #999f9f;
+  border-radius: 10px;
+  padding: 7%;
 }
 /* .projects-wrapper:hover(){
     transform: scale(1.5);
     background-color: black;
 } */
-.project-info{
-    margin-top: 2%;
-    background-color: #b2b6b6;
-    /* background: radial-gradient(circle at center, rgb(8, 0, 255), rgb(8, 0, 255), rgb(132, 128, 254)); */
-    border-radius: 10px;
-    padding: 5%;
+.project-info {
+  margin-top: 2%;
+  background-color: #b2b6b6;
+  /* background: radial-gradient(circle at center, rgb(8, 0, 255), rgb(8, 0, 255), rgb(132, 128, 254)); */
+  border-radius: 10px;
+  padding: 5%;
 }
-.status-bar{
-    align-items: center;
+.status-bar {
+  align-items: center;
 }
-.status-bar img{
-    width: 40%;
-    height: auto;
-    float: left;
-    margin: 9% 5% 0% 5%;
+.status-bar img {
+  width: 40%;
+  height: auto;
+  float: left;
+  margin: 9% 5% 0% 5%;
 }
-.employee img{
-    border-radius: 50%;
-    width: 50%;
+.employee img {
+  border-radius: 50%;
+  width: 50%;
 }
-.Ticket p{
-    float: left;
+.Ticket p {
+  float: left;
 }
-.project-info:hover{
-    /* background-color: rgb(144, 140, 253); */
-    background: radial-gradient(circle at center, #f06236, #ec9074, #f2c3b4);
-    box-shadow: 3px 3px 3px #934027;
-    transform: scale(1.005);
-    box-shadow: 0 0 3px black;
+.project-info:hover {
+  /* background-color: rgb(144, 140, 253); */
+  background: radial-gradient(circle at center, #f06236, #ec9074, #f2c3b4);
+  box-shadow: 3px 3px 3px #934027;
+  transform: scale(1.005);
+  box-shadow: 0 0 3px black;
   margin-top: 0px;
   margin-left: +3px;
-    /* background-color: black; */
+  /* background-color: black; */
 }
-#send-back-bug{
-    color: #e7ac94;
-    margin-right: +5px;
-    border-radius: 7px;
-    border-color: #414342;
-    border-width: 1px;
-    background-color: #414342;
-    font-size: 1vw;
-    ;
+#send-back-bug {
+  color: #e7ac94;
+  margin-right: +5px;
+  border-radius: 7px;
+  border-color: #414342;
+  border-width: 1px;
+  background-color: #414342;
+  font-size: 1vw;
 }
-#send-back-bug:active{
-    color: #FEFCFB;
-    border-radius: 12px;
-    border-color: black;
+#send-back-bug:active {
+  color: #fefcfb;
+  border-radius: 12px;
+  border-color: black;
 }
-#move-bug{
-    color: #e7ac94;
-    margin-left: +5px;
-    border-radius: 7px;
-    border-color: #414342;
-    border-width: 1px;
-    background-color: #414342;
-    font-size: 1vw;
-    ;
+#move-bug {
+  color: #e7ac94;
+  margin-left: +5px;
+  border-radius: 7px;
+  border-color: #414342;
+  border-width: 1px;
+  background-color: #414342;
+  font-size: 1vw;
 }
-#move-bug:active{
-    color: #FEFCFB;
-    border-radius: 12px;
-    border-color: black;
+#move-bug:active {
+  color: #fefcfb;
+  border-radius: 12px;
+  border-color: black;
 }
-#delete-bug{
-    /* margin-left: +5px; */
-    font-size: 1vw;
-    color: #414342;
-    border-radius: 7px;
-    border-color: #e7ac94;
-    border-width: 1px;
-    background-color: #e7ac94;
+#delete-bug {
+  /* margin-left: +5px; */
+  font-size: 1vw;
+  color: #414342;
+  border-radius: 7px;
+  border-color: #e7ac94;
+  border-width: 1px;
+  background-color: #e7ac94;
 }
-#delete-bug:active{
-    color: #FEFCFB;
-    border-radius: 12px;
-    border-color: #f06236;
+#delete-bug:active {
+  color: #fefcfb;
+  border-radius: 12px;
+  border-color: #f06236;
 }
-.on_bug_move{
-    color: #FEFCFB;
-    display: flex; 
-    justify-content: flex-end;
-    width: 95%;
-    margin: auto;
-    margin-bottom: 3px;
+.on_bug_move {
+  color: #fefcfb;
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 3px;
 }
