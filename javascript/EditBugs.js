@@ -93,5 +93,26 @@ function editbugs(bugID){
     
 }
 function UpdateBugs(){
-    
+let BugNumber = document.getElementById('BugIdTicketUpdate').innerHTML;
+
+currentOBJ = JSON.parse(localStorage.getItem(BugNumber));
+currentOBJ.ProjectId;
+          
+currentOBJ.BugName  = document.getElementById("BugNameUpdate").value;       
+currentOBJ.BugShortDesc= document.getElementById("BugShortDescUpdate").value;      
+currentOBJ.BugLongDesc = document.getElementById("BugLongDescUpdate").value;      
+currentOBJ.BugAssignedEmployee=document.getElementById("AssignedEmployeeUpdate").value;
+currentOBJ.BugFoundBy =document.getElementById("FoundByUpdate").value;
+currentOBJ.BugDateFound = document.getElementById("DateFoundUpdate").value; 
+currentOBJ.ProjectStatus=document.getElementById("StatusUpdate").value;
+currentOBJ.ProjectPriority =document.getElementById("PriorityUpdate").value;
+currentOBJ.BugTargetDate =document.getElementById("TargetDateUpdate").value;
+currentOBJ.BugActualDate=document.getElementById("ActualDateUpdate").value;
+currentOBJ.BugResolutionSummary=document.getElementById("ResolutionSummaryUpdate").value;
+console.log(BugNumber)
+localStorage.removeItem(BugNumber);
+console.log(localStorage)
+localStorage.setItem(BugNumber,JSON.stringify(currentOBJ));
+console.log(localStorage)
+location.reload();
 }

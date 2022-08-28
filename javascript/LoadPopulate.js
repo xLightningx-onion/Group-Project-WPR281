@@ -391,4 +391,6 @@ function PopulatePage()
 
 Populate();
 let ProjectsChart = new Chart(document.getElementById('ProjectsChart'),projectsAVGChart());
+document.getElementById('ProjectsChart').style.backgroundColor ="#838888";
 let ThisProjectChart = new Chart(document.getElementById('ThisProjectChart'),projectsAVGChart());
+document.getElementById('ThisProjectChart').style.backgroundColor="#838888";

@@ -35,6 +35,20 @@ function ShowBugPage(BugIDinput){
 
     ItsAProject = ProjectList();
 
+    currentOBJ = JSON.parse(localStorage.getItem(BugIDinput));
+    ProjectIdToShow = currentOBJ.ProjectId;
+    BugNameToShow = currentOBJ.BugName;
+    ShortDescToShow = currentOBJ.BugShortDesc;
+    LongDescToShow = currentOBJ.BugLongDesc;
+    EmpAssignedToShow = currentOBJ.BugAssignedEmployee;
+    FoundByToShow = currentOBJ.BugFoundBy;
+    DateFoundToShow = currentOBJ.BugDateFound;
+    StatusToShow = currentOBJ.ProjectStatus;
+    PriorityToShow = currentOBJ.ProjectPriority;
+    TargetDateToShow = currentOBJ.BugTargetDate;
+    ActualDateToShow = currentOBJ.BugActualDate;
+    ResolutionSummaryToShow = currentOBJ.BugResolutionSummary
+   /*
     //getting bug info
     for(i=0; i<ItsABug.length;i++)
     {
@@ -54,15 +68,20 @@ function ShowBugPage(BugIDinput){
             ResolutionSummaryToShow = currentOBJ.BugResolutionSummary
         }
     }
+    */
+    /*
     //getting project info
     for(i=0; i<ItsAProject.length;i++){
         currentOBJ = JSON.parse(localStorage.getItem(ItsAProject[i]));
         if(currentOBJ.ProjectID == ProjectIdToShow){
             ProjectNameToShow = currentOBJ.ProjectName;
         }
-    }
+        */
+       currentProject = JSON.parse(localStorage.getItem(currentOBJ.ProjectId));
+       ProjectNameToShow = currentProject.ProjectName;
+   
     //clearButtons
-    document.getElementById("bug-button-wrapper").innerHTML = ""
+    document.getElementById("bug-button-wrapper").innerHTML = "";
     //show info on page
     
     document.getElementById("BugProjectNameShow").innerHTML = ProjectNameToShow;
