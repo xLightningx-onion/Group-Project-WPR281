@@ -107,24 +107,28 @@ function ThisProjectAVGChart(ProjectID)
   let lowCount =0;
   let mediumCount =0;
   let highCount = 0;
-
+   let CurrentProjectBugCount =0;
 //console.log(ProjectID)
   for(i=0;i<bugs.length;i++)
   {
+    console.log(bugs)
    let  currentOBJ = JSON.parse(localStorage.getItem(bugs[i]));
     if(currentOBJ.ProjectId == ProjectID)
     {
       if(currentOBJ.ProjectPriority == "Low")
       {
       lowCount++;
+      CurrentProjectBugCount++;
       }
       else if(currentOBJ.ProjectPriority == "Medium")
       {
       mediumCount++;
+      CurrentProjectBugCount++;
       }
       else if(currentOBJ.ProjectPriority == "High")
       {
       highCount++;
+      CurrentProjectBugCount++;
       }
 
 
@@ -132,9 +136,13 @@ function ThisProjectAVGChart(ProjectID)
 
 
   }
-  lowCount = (lowCount/bugs.length)*100;
-  mediumCount = (mediumCount/bugs.length)*100;
-  highCount = (highCount/bugs.length)*100;
+console.log(lowCount)
+console.log(CurrentProjectBugCount)
+  lowCount = (lowCount/CurrentProjectBugCount)*100;
+  mediumCount = (mediumCount/CurrentProjectBugCount)*100;
+  highCount = (highCount/CurrentProjectBugCount)*100;
+
+
   if((lowCount==0 && mediumCount==0) 
        || (lowCount==0 && highCount==0)
        || (mediumCount==0 && highCount==0))
@@ -174,6 +182,12 @@ function ThisProjectAVGChart(ProjectID)
 }
 
 
+
+function ClearStorage()
+{
+    localStorage.clear(); 
+}
+
 function projectsAVGChart()
 {
   let bugs = BugList();
@@ -203,6 +217,7 @@ function projectsAVGChart()
     lowCount = (lowCount/bugs.length)*100;
     mediumCount = (mediumCount/bugs.length)*100;
     highCount = (highCount/bugs.length)*100;
+    
     if((lowCount==0 && mediumCount==0) 
     || (lowCount==0 && highCount==0)
     || (mediumCount==0 && highCount==0))
