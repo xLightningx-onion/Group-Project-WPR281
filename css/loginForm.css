@@ -1,0 +1,27 @@
+.login-wrapper{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Roboto Condensed", sans-serif;
+    background-image: linear-gradient(
+        to right,
+        #020202,
+        #282626,
+        #555250,
+        #aea8a3
+    );
+}
+.body-wrapper{
+    background-color: #838888;
+}
+.button-wrapper button{
+    color: #414342;
+    border-radius: 7px;
+    border-color: #e7ac94;
+    border-width: 1px;
+    background-color: #e7ac94;
+    font-size: 1vw;
+}
+.button-wrapper{
+    width: 40%;
+    margin: auto;
+}
