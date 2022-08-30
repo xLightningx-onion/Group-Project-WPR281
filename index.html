@@ -29,8 +29,8 @@
 <body>
     <div id="MainWrapper" class="main-wrapper">
 
-        <div id="main-two-col" class=".main-two-col">
-            <div id="sidebarDiv" class="sidebar">
+        <div class=".main-two-col-hide">
+            <div id="sidebarDiv" class="hide">
                 <div class="sidebar-header">
                         <img src="./images/antivirus.png" alt="">
                         <h1>Baking Bad</h1>
@@ -76,7 +76,7 @@
                     </div>
                 </div>
             </div>
-            <div class="content" id="Board" >
+            <div class="hide" id="Board" >
                 <div class="content-header">
                     <h1>Board</h1>
                     <div class="four-col-grid">
@@ -709,6 +709,31 @@
                 </div> 
             </div> 
         </div> 
+    </div>
+    <div id="FormWrapper" class="login-wrapper">
+        <form action="" class="table-wrapper">
+            <div class="body-wrapper">
+                <header>
+                    <h1>Login</h1>
+                </header>
+                <body>
+                    <table>
+                        <tr>
+                            <td><label for="UsernameInputForm">Username: </label></td>
+                            <td><input type="text" name="UsernameInputForm" id="UsernameInputForm"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="PasswInputForm">Password: </label></td>
+                            <td><input type="text" name="PasswInputForm" id="PasswInputForm"></td>
+                        </tr>
+                    </table>
+                    <div class="button-wrapper">
+                        <button type="button">Login</button>
+                    </div>
+    
+                </body>
+            </div>
+        </form>
     </div>
     <script src="./javascript/LoadPopulate.js"></script>
    
